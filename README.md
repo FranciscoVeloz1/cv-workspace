@@ -15,7 +15,7 @@ Meta-repository for Francisco's CV-related projects. Shared Cursor rules and scr
 Clone with submodules:
 
 ```bash
-git clone --recurse-submodules <path-to-this-repo>
+git clone --recurse-submodules git@github.com:FranciscoVeloz1/cv-workspace.git
 ```
 
 If you already cloned without submodules:
