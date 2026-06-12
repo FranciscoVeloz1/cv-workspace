@@ -1,0 +1,28 @@
+---
+description: CV workspace layout and submodule conventions
+alwaysApply: true
+---
+
+# CV Workspace
+
+This is a **meta-repo**. Project code lives in Git submodules, not at the workspace root.
+
+## Submodules
+
+- **resume-data-source** — JSON resume data (`index.json`) and image assets. Deployed separately to GitHub Pages.
+- **portfolio** — React + Vite portfolio site. Consumes resume data from the published data source.
+- **cv-generator** — Markdown CV templates (`cv-md/`) and converter tooling (`converter/`).
+
+## Workflow
+
+- Run `./scripts/update-submodules.sh` after pulling parent repo changes to sync submodules to latest `main`.
+- When submodules are updated, commit the pointer changes in the parent repo (`./scripts/update-submodules.sh --commit`).
+- Make code changes inside the relevant submodule directory, then commit and push from that submodule's repo.
+- Shared Cursor rules and scripts belong in the parent workspace root (`.cursor/`, `scripts/`).
+
+## Data flow
+
+```
+resume-data-source (index.json) → portfolio (fetches published JSON)
+resume-data-source (cv-md)      → cv-generator (converter scripts)
+```
