@@ -47,6 +47,13 @@ git submodule update --init --recursive
 echo "Updating submodules to latest main..."
 git submodule update --remote --merge
 
+echo "Checking out tracked branch in each submodule..."
+git submodule foreach '
+  branch="$(git config -f "$toplevel/.gitmodules" submodule."$name".branch)"
+  branch="${branch:-main}"
+  git checkout -B "$branch" "origin/$branch"
+'
+
 echo ""
 echo "Submodule status:"
 print_status
