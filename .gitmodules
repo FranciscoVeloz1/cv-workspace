@@ -1,12 +1,12 @@
 [submodule "resume-data-source"]
 	path = resume-data-source
-	url = https://github.com/FranciscoVeloz1/resume-data-source.git
+	url = git@github.com:FranciscoVeloz1/resume-data-source.git
 	branch = main
 [submodule "portfolio"]
 	path = portfolio
-	url = https://github.com/FranciscoVeloz1/portfolio.git
+	url = git@github.com:FranciscoVeloz1/portfolio.git
 	branch = main
 [submodule "cv-generator"]
 	path = cv-generator
-	url = https://github.com/FranciscoVeloz1/cv-generator.git
+	url = git@github.com:FranciscoVeloz1/cv-generator.git
 	branch = main

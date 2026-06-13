@@ -1,0 +1,55 @@
+---
+description: Generate ATS-optimized CVs from template + resume-data-source/index.json
+globs: cv-generator/**/*
+alwaysApply: false
+---
+
+# CV Generation
+
+Generate tailored resumes from `cv-generator/resources/template-cv.md` using `resume-data-source/index.json` as the **only** source of truth. Never put real data in the template.
+
+## Workflow
+
+1. Read the target role or job description to define positioning.
+2. Fill template placeholders from `index.json` (apply selection rules below).
+3. Save to `cv-generator/cv-md-files/<firstname>-<lastname>-<target-role>.md`.
+4. Run `npm run convert` in `cv-generator/` → PDF in `results/`.
+
+## Placeholder Syntax
+
+| Syntax | Meaning |
+| --- | --- |
+| `{{path.to.field}}` | Single value |
+| `{{array[].field}}` | Repeat block per selected entry |
+| `{{array[key=value].field}}` | Filter by field value |
+| `{{..., joined}}` | Comma-join on one line |
+| `{{field?}}` | Omit value and separator when empty |
+| `{{a -> b.field}}` | Resolve IDs (e.g. skill IDs → names) |
+
+Key mappings: `profile.*`, `summary.long` (rewrite per role), `skills[category=X].name` (categories: `languages`, `frontend`, `backend`, `dataAndAI`, `devopsAndCloud`, `databases`, `other`), `workExperience[]`, `projects[]`, `education[]`, `certifications[]`, `achievements[]`, `languages[]`, `socialNetworks[platform=LinkedIn|GitHub].link`.
+
+**Never use** `profilePhoto`, `logo`, `image`, or `video` fields — images break ATS parsing.
+
+## Positioning & Selection
+
+Pick **one** dominant identity (e.g. Senior Full-Stack Engineer, Data Engineer). Every section supports it; cut what does not.
+
+- **Length:** 1 page (junior/mid), 2 max (senior/lead).
+- **Experience:** most recent first; trim older roles to 2–3 bullets or drop.
+- **Projects:** 3–5 max; prioritize complexity and impact.
+- **Certifications:** relevant and recognized only; name, issuer, date — no descriptions.
+- **Empty sections:** remove the heading entirely.
+
+## Writing & ATS
+
+- Bullets: **action verb + what you built + technologies + measurable outcome**.
+- Use metrics when data provides them; avoid generic phrases ("innovative solutions", "cutting-edge").
+- Start bullets with Led, Built, Designed, Automated — not "Responsible for".
+- Keep template structure: H1 name only, H2 sections, H3 entries; no tables, columns, or images.
+- URLs as markdown links: `[LinkedIn](url)`, `[GitHub](url)`, `[Portfolio](url)`, `[email](mailto:email)` — platform name as link text, full URL in `href`. Project repos: `[GitHub](repo-url)`.
+- Dates as `Month Year - Month Year`.
+- Keywords in both Technical Skills and experience bullets; mirror job-description terminology truthfully.
+
+## Checklist
+
+Technical depth · business impact · leadership · scalability · production experience · clear specialization · measurable outcomes
