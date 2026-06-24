@@ -17,7 +17,7 @@ for arg in "$@"; do
       ;;
     -h|--help)
       echo "Usage: $0 [--status] [--commit]"
-      echo "  --status  Show submodule SHAs/branches without updating"
+      echo "  --status  Show repos/ submodule SHAs/branches without updating"
       echo "  --commit  Commit submodule pointer updates in the parent repo"
       exit 0
       ;;
@@ -44,7 +44,7 @@ git submodule sync --recursive
 echo "Initializing submodules..."
 git submodule update --init --recursive
 
-echo "Updating submodules to latest main..."
+echo "Updating submodules to latest tracked branch..."
 git submodule update --remote --merge
 
 echo "Checking out tracked branch in each submodule..."
@@ -59,11 +59,16 @@ echo "Submodule status:"
 print_status
 
 if [ "$COMMIT" = true ]; then
-  if git diff --quiet -- resume-data-source portfolio cv-generator; then
+  SUBMODULE_PATHS=()
+  while IFS= read -r path; do
+    SUBMODULE_PATHS+=("$path")
+  done < <(git config -f .gitmodules --get-regexp '^submodule\..*\.path$' | awk '{print $2}')
+
+  if git diff --quiet -- "${SUBMODULE_PATHS[@]}"; then
     echo ""
     echo "No submodule pointer changes to commit."
   else
-    git add resume-data-source portfolio cv-generator
+    git add "${SUBMODULE_PATHS[@]}"
     git commit -m "$(cat <<'EOF'
 chore: update submodules
 EOF

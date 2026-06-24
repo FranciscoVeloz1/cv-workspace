@@ -5,24 +5,48 @@ alwaysApply: true
 
 # CV Workspace
 
-This is a **meta-repo**. Project code lives in Git submodules, not at the workspace root.
+This is a **meta-repo**. Project code lives in Git submodules under **`repos/`**, not at the workspace root.
 
 ## Submodules
 
-- **resume-data-source** — JSON resume data (`index.json`) and image assets. Deployed separately to GitHub Pages.
-- **portfolio** — React + Vite portfolio site. Consumes resume data from the published data source.
-- **cv-generator** — Markdown CV templates (`cv-md/`) and converter tooling (`converter/`).
+- **repos/resume-data-source** — JSON resume data (`index.json`) and image assets. Deployed separately to GitHub Pages.
+- **repos/portfolio** — React + Vite portfolio site. Consumes resume data from the published data source.
+- **repos/cv-generator** — Markdown CV templates (`cv-md/`) and converter tooling (`converter/`).
+
+Showcase projects (linked from `repos/resume-data-source/index.json` `projects[]`):
+
+- **repos/rn-speed-art** — React Native design library
+- **repos/react-node-template** — React + Node.js REST API monorepo template
+- **repos/React-Next-Dashboard** — Next.js dashboard (BoxBook, Lab Maintenance, Stack Questions)
+- **repos/Mettaton-compiler** — Robotics programming language and compiler
+- **repos/Smart-house** — IoT smart home platform
+- **repos/mintel** — Smart House landing page
+
+Other projects:
+
+- **repos/car-history-app** — Vehicle history tracking app
+- **repos/groceries-app** — Groceries list app
+- **repos/js-arrays-methods** — JS arrays methods reference
+- **repos/screen-recorder** — Screen recorder
+- **repos/arqueologIA-api** — Archaeology AI API
+- **repos/greed-island-card-api** — Greed Island Card Lists API
+- **repos/boda-app** — Wedding app
+- **repos/NexaRize-Components** — React components made by NexaRize (tracks `dev` branch)
+- **repos/nexa-components-test** — NexaRize components test app
+- **repos/NexaRize-Electric-car** — Open-source electric vehicle project (Node.js + React)
+- **repos/mettaton-v2** — Mettaton compiler V2
 
 ## Workflow
 
-- Run `./scripts/update-submodules.sh` after pulling parent repo changes to sync submodules to latest `main`.
+- Run `./scripts/update-submodules.sh` after pulling parent repo changes to sync submodules to their tracked branches.
 - When submodules are updated, commit the pointer changes in the parent repo (`./scripts/update-submodules.sh --commit`).
-- Make code changes inside the relevant submodule directory, then commit and push from that submodule's repo.
+- Make code changes inside the relevant submodule directory under `repos/`, then commit and push from that submodule's repo.
 - Shared Cursor rules and scripts belong in the parent workspace root (`.cursor/`, `scripts/`).
 
 ## Data flow
 
 ```
-resume-data-source (index.json) → portfolio (fetches published JSON)
-resume-data-source (cv-md)      → cv-generator (converter scripts)
+repos/resume-data-source (index.json) → repos/portfolio (fetches published JSON)
+repos/resume-data-source (index.json projects[].repo) → showcase project submodules
+repos/resume-data-source (cv-md)      → repos/cv-generator (converter scripts)
 ```

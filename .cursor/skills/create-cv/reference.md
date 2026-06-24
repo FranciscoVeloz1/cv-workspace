@@ -1,6 +1,6 @@
 # Create CV — Reference
 
-Detailed mapping between `template-cv.md` placeholders and `resume-data-source/index.json` fields.
+Detailed mapping between `template-cv.md` placeholders and `repos/resume-data-source/index.json` fields.
 
 ## JSON schema overview
 
@@ -107,7 +107,7 @@ When parsing a JD, map requirements to data sections:
 
 ## Filename examples
 
-Output directory: `cv-generator/cv-md-files/`
+Output directory: `repos/cv-generator/cv-md-files/`
 
 | Target role | Filename |
 | --- | --- |

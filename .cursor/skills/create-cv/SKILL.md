@@ -1,6 +1,6 @@
 ---
 name: create-cv
-description: Generates a tailored, ATS-optimized resume markdown file from job requirements using resume-data-source/index.json and cv-generator/resources/template-cv.md. Use when the user asks to create, generate, tailor, or write a CV/resume for a specific job, role, or job description.
+description: Generates a tailored, ATS-optimized resume markdown file from job requirements using repos/resume-data-source/index.json and repos/cv-generator/resources/template-cv.md. Use when the user asks to create, generate, tailor, or write a CV/resume for a specific job, role, or job description.
 ---
 
 # Create CV
@@ -12,13 +12,13 @@ Generate a job-targeted resume as a **finished markdown file** — not a filled 
 | | |
 | --- | --- |
 | **Input** | Job requirements: job description, role title, required skills, company context, or user-stated targeting notes |
-| **Data source** | `resume-data-source/index.json` (single source of truth — never invent experience) |
-| **Structure source** | `cv-generator/resources/template-cv.md` (read-only skeleton — do not overwrite) |
-| **Output** | `cv-generator/cv-md-files/<firstname>-<lastname>-<target-role>.md` |
+| **Data source** | `repos/resume-data-source/index.json` (single source of truth — never invent experience) |
+| **Structure source** | `repos/cv-generator/resources/template-cv.md` (read-only skeleton — do not overwrite) |
+| **Output** | `repos/repos/cv-generator/cv-md-files/<firstname>-<lastname>-<target-role>.md` |
 
-Example output path: `cv-generator/cv-md-files/francisco-veloz-senior-fullstack.md`
+Example output path: `repos/cv-generator/cv-md-files/francisco-veloz-senior-fullstack.md`
 
-After saving, optionally run `npm run convert` inside `cv-generator/` to produce a PDF in `results/`. The markdown file is the primary deliverable.
+After saving, optionally run `npm run convert` inside `repos/cv-generator/` to produce a PDF in `results/`. The markdown file is the primary deliverable.
 
 ## Workflow
 
@@ -33,7 +33,7 @@ CV Generation Progress:
 - [ ] Step 5: Write tailored sections
 - [ ] Step 6: Assemble markdown file
 - [ ] Step 7: Validate output
-- [ ] Step 8: Save to cv-generator/cv-md-files/
+- [ ] Step 8: Save to repos/cv-generator/cv-md-files/
 ```
 
 ### Step 1: Parse job requirements
@@ -51,7 +51,7 @@ If requirements are vague, infer a reasonable target role from the strongest mat
 
 ### Step 2: Read resume data
 
-Read `resume-data-source/index.json` completely before writing anything.
+Read `repos/resume-data-source/index.json` completely before writing anything.
 
 Key sections:
 
@@ -218,7 +218,7 @@ Before saving, verify:
 Write the file to:
 
 ```
-cv-generator/cv-md-files/<firstname>-<lastname>-<target-role>.md
+repos/cv-generator/cv-md-files/<firstname>-<lastname>-<target-role>.md
 ```
 
 - Lowercase, hyphen-separated
@@ -242,4 +242,4 @@ Tell the user the saved path. Offer to run `npm run convert` if they want a PDF.
 ## Additional resources
 
 - Full placeholder-to-JSON mapping: [reference.md](reference.md)
-- Cursor rule (auto-attached in cv-generator): `.cursor/rules/cv-generation.mdc`
+- Cursor rule (auto-attached in repos/cv-generator): `.cursor/rules/cv-generation.mdc`

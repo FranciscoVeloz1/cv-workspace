@@ -1,19 +1,19 @@
 ---
-description: Generate ATS-optimized CVs from template + resume-data-source/index.json
-globs: cv-generator/**/*
+description: Generate ATS-optimized CVs from template + repos/resume-data-source/index.json
+globs: repos/cv-generator/**/*
 alwaysApply: false
 ---
 
 # CV Generation
 
-Generate tailored resumes from `cv-generator/resources/template-cv.md` using `resume-data-source/index.json` as the **only** source of truth. Never put real data in the template.
+Generate tailored resumes from `repos/cv-generator/resources/template-cv.md` using `repos/resume-data-source/index.json` as the **only** source of truth. Never put real data in the template.
 
 ## Workflow
 
 1. Read the target role or job description to define positioning.
 2. Fill template placeholders from `index.json` (apply selection rules below).
-3. Save to `cv-generator/cv-md-files/<firstname>-<lastname>-<target-role>.md`.
-4. Run `npm run convert` in `cv-generator/` → PDF in `results/`.
+3. Save to `repos/cv-generator/cv-md-files/<firstname>-<lastname>-<target-role>.md`.
+4. Run `npm run convert` in `repos/cv-generator/` → PDF in `results/`.
 
 ## Placeholder Syntax
 

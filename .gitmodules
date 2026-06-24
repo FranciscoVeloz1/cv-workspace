@@ -1,12 +1,80 @@
 [submodule "resume-data-source"]
-	path = resume-data-source
+	path = repos/resume-data-source
 	url = git@github.com:FranciscoVeloz1/resume-data-source.git
 	branch = main
 [submodule "portfolio"]
-	path = portfolio
+	path = repos/portfolio
 	url = git@github.com:FranciscoVeloz1/portfolio.git
 	branch = main
 [submodule "cv-generator"]
-	path = cv-generator
+	path = repos/cv-generator
 	url = git@github.com:FranciscoVeloz1/cv-generator.git
+	branch = main
+[submodule "rn-speed-art"]
+	path = repos/rn-speed-art
+	url = git@github.com:FranciscoVeloz1/rn-speed-art.git
+	branch = main
+[submodule "react-node-template"]
+	path = repos/react-node-template
+	url = git@github.com:FranciscoVeloz1/react-node-template.git
+	branch = main
+[submodule "React-Next-Dashboard"]
+	path = repos/React-Next-Dashboard
+	url = git@github.com:FranciscoVeloz1/React-Next-Dashboard.git
+	branch = main
+[submodule "Mettaton-compiler"]
+	path = repos/Mettaton-compiler
+	url = git@github.com:FranciscoVeloz1/Mettaton-compiler.git
+	branch = main
+[submodule "Smart-house"]
+	path = repos/Smart-house
+	url = git@github.com:FranciscoVeloz1/Smart-house.git
+	branch = main
+[submodule "mintel"]
+	path = repos/mintel
+	url = git@github.com:FranciscoVeloz1/mintel.git
+	branch = main
+[submodule "car-history-app"]
+	path = repos/car-history-app
+	url = git@github.com:FranciscoVeloz1/car-history-app.git
+	branch = main
+[submodule "groceries-app"]
+	path = repos/groceries-app
+	url = git@github.com:FranciscoVeloz1/groceries-app.git
+	branch = main
+[submodule "js-arrays-methods"]
+	path = repos/js-arrays-methods
+	url = git@github.com:FranciscoVeloz1/js-arrays-methods.git
+	branch = main
+[submodule "screen-recorder"]
+	path = repos/screen-recorder
+	url = git@github.com:FranciscoVeloz1/screen-recorder.git
+	branch = main
+[submodule "arqueologIA-api"]
+	path = repos/arqueologIA-api
+	url = git@github.com:FranciscoVeloz1/arqueologIA-api.git
+	branch = main
+[submodule "greed-island-card-api"]
+	path = repos/greed-island-card-api
+	url = git@github.com:FranciscoVeloz1/greed-island-card-api.git
+	branch = main
+[submodule "boda-app"]
+	path = repos/boda-app
+	url = git@github.com:FranciscoVeloz1/boda-app.git
+	branch = main
+[submodule "NexaRize-Components"]
+	path = repos/NexaRize-Components
+	url = git@github.com:FranciscoVeloz1/NexaRize-Components.git
+	branch = dev
+[submodule "NexaRize-Electric-car"]
+	path = repos/NexaRize-Electric-car
+	url = git@github.com:FranciscoVeloz1/NexaRize-Electric-car.git
+	branch = main
+[submodule "mettaton-v2"]
+	path = repos/mettaton-v2
+	url = git@github.com:FranciscoVeloz1/mettaton-v2.git
+	branch = main
+[submodule "nexa-components-test"]
+	path = repos/nexa-components-test
+	url = git@github.com:FranciscoVeloz1/nexa-components-test.git
 	branch = main
