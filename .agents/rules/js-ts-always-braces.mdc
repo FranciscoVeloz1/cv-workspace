@@ -1,0 +1,67 @@
+---
+description: Always use braces and explicit returns in JavaScript/TypeScript
+globs: **/*.{js,ts,jsx,tsx,mjs,cjs}
+alwaysApply: false
+---
+
+# Always Use Braces
+
+In JavaScript and TypeScript, always use block bodies with braces. Do not rely on implicit returns or single-line bodies without braces.
+
+## Arrow functions
+
+Use a block body. Return values explicitly when needed.
+
+```typescript
+// ❌ BAD — implicit return / omitted braces
+const log = () => console.log("something");
+const double = (n: number) => n * 2;
+
+// ✅ GOOD
+const log = () => {
+  console.log("something");
+};
+
+const double = (n: number) => {
+  return n * 2;
+};
+```
+
+## Control flow
+
+Always wrap `if`, `else`, `for`, `while`, `do`, and `switch` bodies in braces.
+
+```typescript
+// ❌ BAD
+if (condition) return;
+else console.log("something");
+
+for (const item of items) process(item);
+
+// ✅ GOOD
+if (condition) {
+  return;
+} else {
+  console.log("something");
+}
+
+for (const item of items) {
+  process(item);
+}
+```
+
+## Methods and callbacks
+
+Apply the same rule inside object methods, class methods, and callbacks.
+
+```typescript
+// ❌ BAD
+array.map((item) => item.id);
+
+// ✅ GOOD
+array.map((item) => {
+  return item.id;
+});
+```
+
+When editing existing code in these files, expand braceless or implicit-return forms to match this style.

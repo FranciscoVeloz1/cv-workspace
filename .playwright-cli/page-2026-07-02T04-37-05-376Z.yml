@@ -1,0 +1,104 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - navigation [ref=e4]:
+      - link "Francisco Veloz" [ref=e5] [cursor=pointer]:
+        - /url: "#/"
+      - list [ref=e6]:
+        - listitem [ref=e7]:
+          - link "YouTube" [ref=e8] [cursor=pointer]:
+            - /url: https://www.youtube.com/channel/UC_OcxydUU_51oT8mbcedriw
+        - listitem [ref=e9]:
+          - link "GitHub" [ref=e10] [cursor=pointer]:
+            - /url: https://github.com/FranciscoVeloz1
+        - listitem [ref=e11]:
+          - link "LinkedIn" [ref=e12] [cursor=pointer]:
+            - /url: https://www.linkedin.com/in/franciscoveloz/
+        - listitem [ref=e13]:
+          - generic [ref=e14] [cursor=pointer]:
+            - generic [ref=e15]: 
+            - generic [ref=e16]: 
+    - generic [ref=e167]:
+      - paragraph [ref=e169]: Francisco's projects
+      - generic [ref=e170]:
+        - link "image React Native Speed Art Nov 1, 2022 Design library for React Native with customizable, reusable components and a utility-class system th..." [ref=e171] [cursor=pointer]:
+          - /url: "#/portfolio/projects/10"
+          - img "image" [ref=e172]
+          - generic [ref=e173]:
+            - paragraph [ref=e174]: React Native Speed Art
+            - paragraph [ref=e175]: Nov 1, 2022
+            - paragraph [ref=e176]: Design library for React Native with customizable, reusable components and a utility-class system th...
+        - link "image React & Node.js REST API Template Oct 20, 2022 Production-ready monorepo template built with React, Node.js, and TypeScript. Includes JWT authentic..." [ref=e177] [cursor=pointer]:
+          - /url: "#/portfolio/projects/11"
+          - img "image" [ref=e178]
+          - generic [ref=e179]:
+            - paragraph [ref=e180]: React & Node.js REST API Template
+            - paragraph [ref=e181]: Oct 20, 2022
+            - paragraph [ref=e182]: Production-ready monorepo template built with React, Node.js, and TypeScript. Includes JWT authentic...
+        - link "image BoxBook Apr 7, 2022 Social book-tracking platform built with Next.js that lets users manage reading progress, reviews, r..." [ref=e183] [cursor=pointer]:
+          - /url: "#/portfolio/projects/1"
+          - img "image" [ref=e184]
+          - generic [ref=e185]:
+            - paragraph [ref=e186]: BoxBook
+            - paragraph [ref=e187]: Apr 7, 2022
+            - paragraph [ref=e188]: Social book-tracking platform built with Next.js that lets users manage reading progress, reviews, r...
+        - link "image Lab Maintenance Mar 23, 2022 Maintenance and support ticketing system for school computer laboratories, built on a custom Next.js..." [ref=e189] [cursor=pointer]:
+          - /url: "#/portfolio/projects/2"
+          - img "image" [ref=e190]
+          - generic [ref=e191]:
+            - paragraph [ref=e192]: Lab Maintenance
+            - paragraph [ref=e193]: Mar 23, 2022
+            - paragraph [ref=e194]: Maintenance and support ticketing system for school computer laboratories, built on a custom Next.js...
+        - link "image Stack Questions Mar 10, 2022 Stack Overflow-style Q&A community built with Next.js. Anyone can browse questions and answers, whil..." [ref=e195] [cursor=pointer]:
+          - /url: "#/portfolio/projects/3"
+          - img "image" [ref=e196]
+          - generic [ref=e197]:
+            - paragraph [ref=e198]: Stack Questions
+            - paragraph [ref=e199]: Mar 10, 2022
+            - paragraph [ref=e200]: Stack Overflow-style Q&A community built with Next.js. Anyone can browse questions and answers, whil...
+        - link "image Mettaton Compiler Jun 8, 2021 Custom robotics-focused programming language and compiler for Arduino, built with JavaScript and Nod..." [ref=e201] [cursor=pointer]:
+          - /url: "#/portfolio/projects/4"
+          - img "image" [ref=e202]
+          - generic [ref=e203]:
+            - paragraph [ref=e204]: Mettaton Compiler
+            - paragraph [ref=e205]: Jun 8, 2021
+            - paragraph [ref=e206]: Custom robotics-focused programming language and compiler for Arduino, built with JavaScript and Nod...
+        - link "image Mintel Feb 6, 2021 Fully responsive landing page for the Smart House platform, built with React and Bootstrap. Presents..." [ref=e207] [cursor=pointer]:
+          - /url: "#/portfolio/projects/6"
+          - img "image" [ref=e208]
+          - generic [ref=e209]:
+            - paragraph [ref=e210]: Mintel
+            - paragraph [ref=e211]: Feb 6, 2021
+            - paragraph [ref=e212]: Fully responsive landing page for the Smart House platform, built with React and Bootstrap. Presents...
+        - link "image Smart House Jun 4, 2020 IoT smart home platform built with JavaScript and Node.js, enabling remote control of lighting, fans..." [ref=e213] [cursor=pointer]:
+          - /url: "#/portfolio/projects/5"
+          - img "image" [ref=e214]
+          - generic [ref=e215]:
+            - paragraph [ref=e216]: Smart House
+            - paragraph [ref=e217]: Jun 4, 2020
+            - paragraph [ref=e218]: IoT smart home platform built with JavaScript and Node.js, enabling remote control of lighting, fans...
+  - contentinfo [ref=e149]:
+    - generic [ref=e150]:
+      - generic [ref=e151]:
+        - generic [ref=e152]:
+          - link " franciscoveloz245@gmail.com" [ref=e153] [cursor=pointer]:
+            - /url: mailto:franciscoveloz245@gmail.com
+            - generic [ref=e154]: 
+            - text: franciscoveloz245@gmail.com
+          - link " Francisco Veloz" [ref=e155] [cursor=pointer]:
+            - /url: https://www.youtube.com/channel/UC_OcxydUU_51oT8mbcedriw
+            - generic [ref=e156]: 
+            - text: Francisco Veloz
+        - generic [ref=e157]:
+          - link " FranciscoVeloz1" [ref=e158] [cursor=pointer]:
+            - /url: https://github.com/FranciscoVeloz1
+            - generic [ref=e159]: 
+            - text: FranciscoVeloz1
+          - link " Francisco González Veloz" [ref=e160] [cursor=pointer]:
+            - /url: https://www.linkedin.com/in/franciscoveloz/
+            - generic [ref=e161]: 
+            - text: Francisco González Veloz
+        - link " +52 474 130 9933" [ref=e163] [cursor=pointer]:
+          - /url: tel:+524741309933
+          - generic [ref=e164]: 
+          - text: +52 474 130 9933
+      - paragraph [ref=e165]: © Francisco González Veloz

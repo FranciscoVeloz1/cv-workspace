@@ -1,0 +1,44 @@
+- generic [ref=f1e2]:
+  - link "Skip to main content" [ref=f1e3] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=f1e4]:
+    - generic [ref=f1e5]:
+      - link "Francisco Veloz" [ref=f1e6] [cursor=pointer]:
+        - /url: "#/"
+      - generic [ref=f1e7]:
+        - button "Switch to light theme" [pressed] [ref=f1e8] [cursor=pointer]:
+          - img [ref=f1e9]
+          - img [ref=f1e15]
+        - button "Open menu" [ref=f1e17] [cursor=pointer]:
+          - img [ref=f1e18]
+  - main [ref=f1e19]:
+    - paragraph [ref=f1e20]: Loading…
+  - contentinfo [ref=f1e21]:
+    - generic [ref=f1e22]:
+      - button "Back to top" [ref=f1e24] [cursor=pointer]:
+        - img [ref=f1e25]
+        - text: Back to top
+      - generic [ref=f1e27]:
+        - generic [ref=f1e28]:
+          - link "franciscoveloz245@gmail.com" [ref=f1e29] [cursor=pointer]:
+            - /url: mailto:franciscoveloz245@gmail.com
+            - img [ref=f1e30]
+            - text: franciscoveloz245@gmail.com
+          - link "Francisco Veloz" [ref=f1e33] [cursor=pointer]:
+            - /url: https://www.youtube.com/channel/UC_OcxydUU_51oT8mbcedriw
+            - img [ref=f1e34]
+            - text: Francisco Veloz
+        - generic [ref=f1e36]:
+          - link "FranciscoVeloz1" [ref=f1e37] [cursor=pointer]:
+            - /url: https://github.com/FranciscoVeloz1
+            - img [ref=f1e38]
+            - text: FranciscoVeloz1
+          - link "Francisco González Veloz" [ref=f1e40] [cursor=pointer]:
+            - /url: https://www.linkedin.com/in/franciscoveloz/
+            - img [ref=f1e41]
+            - text: Francisco González Veloz
+        - link "+52 474 130 9933" [ref=f1e44] [cursor=pointer]:
+          - /url: tel:+524741309933
+          - img [ref=f1e45]
+          - text: +52 474 130 9933
+      - paragraph [ref=f1e47]: © Francisco González Veloz

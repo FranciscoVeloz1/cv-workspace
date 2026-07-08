@@ -78,3 +78,7 @@
 	path = repos/nexa-components-test
 	url = git@github.com:FranciscoVeloz1/nexa-components-test.git
 	branch = main
+[submodule "personal-api"]
+	path = repos/personal-api
+	url = git@github.com:FranciscoVeloz1/personal-api.git
+	branch = main

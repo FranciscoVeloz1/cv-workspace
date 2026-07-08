@@ -1,0 +1,48 @@
+---
+description: Investigate and report edge cases and side effects of agent-made changes
+alwaysApply: true
+---
+
+# Change Impact Analysis
+
+After making or proposing code changes, investigate how they can fail or affect other behavior, then tell the user clearly.
+
+## Before finishing
+
+Trace the change beyond the edited lines:
+
+- **Callers and consumers** — APIs, imports, props, events, config, env vars, build/deploy steps
+- **Data paths** — null/empty input, boundary values, invalid types, stale or missing state
+- **Concurrency and timing** — races, double submits, unmount during async work, cache invalidation
+- **Platform differences** — browser, Node, mobile, SSR vs client, permissions, offline
+- **Regression risk** — existing tests, similar code paths, feature flags, backwards compatibility
+
+## What to report
+
+In the completion summary, include a short **Impact** section when the change is non-trivial:
+
+1. **Edge cases** — scenarios that may break or behave unexpectedly
+2. **Side effects** — other files, flows, or users affected even when the happy path works
+3. **Mitigations** — what was handled in the change, what was not, and what to verify manually
+
+Skip this section only for truly trivial edits (typos, comments, formatting with zero behavior change).
+
+## How to write it
+
+- Be specific: name files, functions, or flows when relevant
+- Separate confirmed risks from unknowns; say when you did not run tests or could not trace usage
+- Prefer actionable checks over vague warnings
+
+```markdown
+## Impact
+
+**Edge cases**
+- Empty `items` array: list renders blank; loading state unchanged.
+
+**Side effects**
+- `repos/portfolio` fetches the same endpoint; cache TTL may show stale data until refresh.
+
+**Mitigations / verify**
+- Handled null `user` in the form submit path.
+- Manually test logout → login and a slow network response.
+```
