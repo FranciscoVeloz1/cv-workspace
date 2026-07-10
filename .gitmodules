@@ -82,3 +82,7 @@
 	path = repos/personal-api
 	url = git@github.com:FranciscoVeloz1/personal-api.git
 	branch = main
+[submodule "fitness-nutrition-tracker"]
+	path = repos/fitness-nutrition-tracker
+	url = git@github.com:FranciscoVeloz1/fitness-nutrition-tracker.git
+	branch = main
