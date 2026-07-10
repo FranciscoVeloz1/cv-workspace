@@ -86,3 +86,7 @@
 	path = repos/fitness-nutrition-tracker
 	url = git@github.com:FranciscoVeloz1/fitness-nutrition-tracker.git
 	branch = main
+[submodule "user-management-app"]
+	path = repos/user-management-app
+	url = git@github.com:FranciscoVeloz1/user-management-app.git
+	branch = main
