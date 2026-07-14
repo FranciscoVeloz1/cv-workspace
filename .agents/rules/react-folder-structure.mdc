@@ -1,0 +1,63 @@
+---
+description: Standard React src folder layout (components, hooks, utils, types)
+globs: "**/src/**/*.{ts,tsx,js,jsx}"
+alwaysApply: false
+---
+
+# React Folder Structure
+
+Use this layout for every React app under `src/` (canonical reference: `repos/screen-recorder`). Adapt paths for Next.js (`app/` vs `src/`) but keep the same separation of concerns.
+
+## Layout
+
+```
+src/
+  main.tsx                 # entry
+  App.tsx                  # composition only — wire hooks → components
+  index.css                # global styles
+  components/
+    ComponentName/
+      index.tsx            # component + named export
+      ComponentName.module.css
+      ComponentName.test.tsx
+    icons/                 # shared icons only
+  hooks/
+    useFeature.ts
+    useFeature.test.ts
+  utils/
+    pureHelper.ts
+    pureHelper.test.ts
+  types/
+    domain.ts
+  test/
+    setup.ts               # test runner setup only
+```
+
+## Rules
+
+1. **One folder per UI component** under `components/`. Entry is always `index.tsx` with a **named export** matching the folder (`export function Header`).
+2. **Colocate** CSS Modules (`ComponentName.module.css`) and tests (`*.test.ts(x)`) next to the code they cover.
+3. **Import components by folder** — `from "./components/Header"` (resolves to `index.tsx`). Do not deep-import `.../Header/index`.
+4. **`App.tsx` composes** — no heavy logic. Business/state logic lives in `hooks/`; pure helpers in `utils/`; shared domain types in `types/`.
+5. **Hooks** are `useXxx.ts` files in `hooks/`. Do not bury hooks inside component folders unless they are strictly private to that component and never reused.
+6. **Utils are pure** — no React hooks in `utils/`. No JSX in `types/`.
+7. **Do not** dump free `.tsx` files at `components/` root (except shared buckets like `icons/`). Do not put feature UI in `hooks/`, `utils/`, or `types/`.
+
+```tsx
+// ❌ BAD — flat component + logic in App
+// components/Header.tsx
+// App.tsx with fetch/state
+
+// ✅ GOOD
+// components/Header/index.tsx
+import styles from "./Header.module.css";
+export function Header() {
+  return <h1 className={styles.title}>Title</h1>;
+}
+
+// App.tsx
+import { Header } from "./components/Header";
+import { useScreenRecorder } from "./hooks/useScreenRecorder";
+```
+
+When scaffolding or refactoring a React project, match this structure unless the active repo already has a documented, intentional variation — then follow the repo and note the difference.
