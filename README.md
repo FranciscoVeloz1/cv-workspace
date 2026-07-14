@@ -44,6 +44,7 @@ Additional repos included as submodules for local development:
 |-----------|-------------|
 | [car-history-app](https://github.com/FranciscoVeloz1/car-history-app) | Vehicle history tracking app |
 | [groceries-app](https://github.com/FranciscoVeloz1/groceries-app) | Groceries list app |
+| [full-groceries-app](https://github.com/FranciscoVeloz1/full-groceries-app) | Full groceries list app (GitHub Pages) |
 | [js-arrays-methods](https://github.com/FranciscoVeloz1/js-arrays-methods) | JS arrays methods reference |
 | [screen-recorder](https://github.com/FranciscoVeloz1/screen-recorder) | Screen recorder |
 | [arqueologIA-api](https://github.com/FranciscoVeloz1/arqueologIA-api) | Archaeology AI API |
