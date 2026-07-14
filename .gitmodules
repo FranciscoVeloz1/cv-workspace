@@ -90,3 +90,6 @@
 	path = repos/user-management-app
 	url = git@github.com:FranciscoVeloz1/user-management-app.git
 	branch = main
+[submodule "repos/full-groceries-app"]
+	path = repos/full-groceries-app
+	url = git@github.com:FranciscoVeloz1/full-groceries-app.git
