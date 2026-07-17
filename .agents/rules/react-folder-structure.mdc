@@ -1,19 +1,19 @@
 ---
-description: Standard React src folder layout (components, hooks, utils, types)
+description: Standard React src folder layout (components, pages, hooks, utils, types)
 globs: "**/src/**/*.{ts,tsx,js,jsx}"
 alwaysApply: false
 ---
 
 # React Folder Structure
 
-Use this layout for every React app under `src/` (canonical reference: `repos/screen-recorder`). Adapt paths for Next.js (`app/` vs `src/`) but keep the same separation of concerns.
+Use this layout for every React app under `src/` (canonical reference: `repos/screen-recorder`; routed apps also use `pages/` as in `repos/full-groceries-app`). Adapt paths for Next.js (`app/` vs `src/`) but keep the same separation of concerns.
 
 ## Layout
 
 ```
 src/
   main.tsx                 # entry
-  App.tsx                  # composition only — wire hooks → components
+  App.tsx                  # composition only — wire hooks → components / routes
   index.css                # global styles
   components/
     ComponentName/
@@ -21,6 +21,11 @@ src/
       ComponentName.module.css
       ComponentName.test.tsx
     icons/                 # shared icons only
+  pages/                   # route-level screens (apps with a router)
+    PageName/
+      index.tsx            # page + named export
+      PageName.module.css
+      PageName.test.tsx
   hooks/
     useFeature.ts
     useFeature.test.ts
@@ -36,16 +41,18 @@ src/
 ## Rules
 
 1. **One folder per UI component** under `components/`. Entry is always `index.tsx` with a **named export** matching the folder (`export function Header`).
-2. **Colocate** CSS Modules (`ComponentName.module.css`) and tests (`*.test.ts(x)`) next to the code they cover.
-3. **Import components by folder** — `from "./components/Header"` (resolves to `index.tsx`). Do not deep-import `.../Header/index`.
-4. **`App.tsx` composes** — no heavy logic. Business/state logic lives in `hooks/`; pure helpers in `utils/`; shared domain types in `types/`.
-5. **Hooks** are `useXxx.ts` files in `hooks/`. Do not bury hooks inside component folders unless they are strictly private to that component and never reused.
-6. **Utils are pure** — no React hooks in `utils/`. No JSX in `types/`.
-7. **Do not** dump free `.tsx` files at `components/` root (except shared buckets like `icons/`). Do not put feature UI in `hooks/`, `utils/`, or `types/`.
+2. **One folder per route page** under `pages/` when the app uses a router. Same pattern as components: `pages/LoginPage/index.tsx` with `export function LoginPage`. Keep route shells in `pages/`; keep reusable UI in `components/`. Skip `pages/` for single-screen apps (e.g. screen-recorder).
+3. **Colocate** CSS Modules (`ComponentName.module.css` / `PageName.module.css`) and tests (`*.test.ts(x)`) next to the code they cover.
+4. **Import by folder** — `from "./components/Header"` or `from "./pages/LoginPage"` (resolves to `index.tsx`). Do not deep-import `.../Header/index`.
+5. **`App.tsx` composes** — no heavy logic. Wire providers, routes, and hooks; business/state logic lives in `hooks/`; pure helpers in `utils/`; shared domain types in `types/`.
+6. **Hooks** are `useXxx.ts` files in `hooks/`. Do not bury hooks inside component or page folders unless they are strictly private to that folder and never reused.
+7. **Utils are pure** — no React hooks in `utils/`. No JSX in `types/`.
+8. **Do not** dump free `.tsx` files at `components/` or `pages/` root (except shared buckets like `components/icons/`). Do not put feature UI in `hooks/`, `utils/`, or `types/`.
 
 ```tsx
-// ❌ BAD — flat component + logic in App
+// ❌ BAD — flat component/page + logic in App
 // components/Header.tsx
+// pages/LoginPage.tsx
 // App.tsx with fetch/state
 
 // ✅ GOOD
@@ -55,8 +62,15 @@ export function Header() {
   return <h1 className={styles.title}>Title</h1>;
 }
 
+// pages/LoginPage/index.tsx
+import styles from "./LoginPage.module.css";
+export function LoginPage() {
+  return <main className={styles.page}>…</main>;
+}
+
 // App.tsx
 import { Header } from "./components/Header";
+import { LoginPage } from "./pages/LoginPage";
 import { useScreenRecorder } from "./hooks/useScreenRecorder";
 ```
 
