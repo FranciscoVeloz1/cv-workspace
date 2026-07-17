@@ -1,72 +1,96 @@
 # Groceries App Backend Integration Specifications
 
-These specifications split the Full Groceries App ↔ `personal-api` integration into small, independently reviewable implementation units.
+These specifications split the Mandado SPA (`full-groceries-app`) ↔ `personal-api` integration into small, independently reviewable implementation units.
 
-Both apps stay on **separate hosts**. The API does **not** host the groceries SPA. Guests keep today’s static client-only behavior. Administrators with `full-groceries-app` `ADMIN` unlock product CRUD, an in-app **Precio Real** shopping session, and grocery history via the API.
+**Baseline:** `personal-api` **`main`** has fitness + Application permissions and **no groceries tables or module**. Build groceries **from scratch** (do not migrate an Int `category` column — that approach is obsolete). Discard / reset any prior `feat/groceries-api` work that used Int categories or ADMIN-only router gates without READ_ONLY browse.
+
+Both apps stay on **separate hosts**. Catalog data (categories + products) lives in PostgreSQL with `GroceryCategory` as a foreign table from day one. Shopping cart stays **local** in this plan (trips / history UI deferred; trip tables + API still land for later use).
+
+> **For agentic workers:** Execute specs in order (01 → 06). Steps use checkbox (`- [ ]`) syntax. Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement task-by-task.
 
 ## Execution order
 
-1. [01 — Groceries database schema](01-groceries-database-schema.md)
-   - Prisma models, migration, Application + product seed from `products.json`.
-2. [02 — Groceries API module](02-groceries-api-module.md)
-   - `ADMIN`-gated CRUD under `/api/v1/groceries` for products and trips.
-3. [03 — Groceries auth and API client](03-groceries-auth-and-api-client.md)
-   - Env, JWT session, HTTP client, groceries API wrappers, admin capability flag.
-4. [04 — Admin gate and product CRUD UI](04-admin-gate-and-product-crud-ui.md)
-   - Optional login, admin shell, product catalog admin; guest path untouched.
-5. [05 — Priced shopping and history UI](05-priced-shopping-and-history-ui.md)
-   - Excel-equivalent Precio Real session, draft/complete trip, history screens.
+1. [01 — Groceries database schema](01-groceries-category-schema.md)
+   - Creates `GroceryCategory`, `GroceryProduct`, `GroceryTrip`, `GroceryTripItem` with `categoryId` FK; seeds five Mandado categories.
+2. [02 — Groceries API module](02-groceries-categories-and-product-api.md)
+   - New `/api/v1/groceries` module: categories list, product CRUD, trips; `requireAppRole('groceries-app', …)`.
+3. [03 — Auth and API client](03-groceries-auth-and-api-client.md)
+   - JWT session, HTTP client, TanStack Query hooks for catalog reads in the SPA.
+4. [04 — Router, login, and catalog UI](04-router-login-and-catalog-ui.md)
+   - react-router, login gate, categories/products from API; local cart kept.
+5. [05 — Admin product CRUD UI](05-admin-product-crud-ui.md)
+   - groceries-app ADMIN product create/edit/delete via mobile icon actions; category select from API list.
 6. [06 — Groceries E2E](06-groceries-e2e.md)
-   - Guest regression + admin happy path; see also [e2e-local-runbook.md](e2e-local-runbook.md).
+   - Consolidated playwright-cli happy path.
+   - Runbook: [e2e-local-runbook.md](e2e-local-runbook.md).
+
+```mermaid
+flowchart TB
+  S01["01 Schema Category FK from scratch"] --> S02["02 Full groceries API module"]
+  S02 --> S03["03 Auth client + React Query"]
+  S03 --> S04["04 Router + catalog from API"]
+  S04 --> S05["05 Admin product CRUD UI"]
+  S05 --> S06["06 Full-stack Playwright E2E"]
+```
 
 ## Fixed decisions
 
-- Backend: `repos/personal-api` — new `groceries` module (schemas → repository → service → controller → routes).
-- Frontend: `repos/full-groceries-app` — GitHub Pages guest app; API only when groceries admin.
-- Auth: existing JWT login/refresh/`/auth/me`. Application slug **`full-groceries-app`**. Admin = `UserAppPermission.role === ADMIN` for that slug.
-- Guest / non-admin: static `data/products.json`, in-memory cart, Excel/JSON export — **no required login**.
-- Admin unlock: product CRUD against DB, in-app Precio Real shopping session, grocery history.
-- Catalog: **global** `GroceryProduct` rows (not per-user); mutated only by groceries `ADMIN`.
-- Categories: keep ints `1–5` from `src/data/categories.ts`; no Category CRUD in v1.
-- Seed: Application upsert + products from `repos/full-groceries-app/data/products.json` (new UUID PKs; do not reuse numeric JSON ids as PKs).
-- Client patterns: mirror user-management / fitness — `VITE_API_BASE_URL`, refresh token in localStorage, access token in memory, `AuthProvider`.
-- Feature branches: `feat/groceries-api` (`personal-api`), `feat/groceries-admin` (`full-groceries-app`).
-- Local: API `http://localhost:3000`, Vite with `base: '/full-groceries-app/'`, `VITE_API_BASE_URL=http://localhost:3000`.
-- **Working directories:** implement and commit only in the main submodule paths `repos/personal-api` and `repos/full-groceries-app`. Do **not** use git worktrees, isolated checkouts, or `.worktrees/` paths.
+- **API baseline:** Branch from `personal-api` `main`. No groceries code assumed. Prefer a clean branch `feat/groceries-api` (reset prior Int-category work if the branch still exists).
+- **Target SPA:** `repos/full-groceries-app` only (greenfield from static `main`). Do not change `repos/groceries-app` in this plan.
+- **Catalog source of truth:** `personal-api` PostgreSQL. Remove runtime imports of `data/products.json` and `src/data/categories.ts` from the SPA (JSON may remain as an optional API seed input only).
+- **Categories:** `GroceryCategory` table from day one; products and trip items use `categoryId` UUID FK. Seed the five Mandado labels in the migration. No category admin UI (list API + seed only).
+- **Product CRUD:** Full ADMIN mutate via `/api/v1/groceries/products`; SPA admin UI in spec 05.
+- **Mobile-first admin actions:** Create / edit / delete (and form save / cancel) use **icon buttons** with accessible names (`aria-label`), not text-only toolbar labels. Min ~44×44px touch targets.
+- **Cart / trips:** Keep cart **in-memory** (`useCart`). Do **not** wire trip UI in the SPA. Trip **tables and API** are included so a later plan can attach cart → trips.
+- **Auth (matches `main`):** Application-scoped permissions via `UserAppPermission` + `requireAppRole('groceries-app', …)`. Seed Application slug `groceries-app`. `/me` returns `permissions[]`. SPA derives `isGroceriesAdmin` from membership with `role === 'ADMIN'`.
+- **Role matrix on groceries routes:** READ_ONLY+ for GET (categories, products, trips); ADMIN for product/trip mutations.
+- **SPA stack additions:** `react-router-dom`, `@tanstack/react-query`.
+- **Separate hosts:** API `http://localhost:3000`, SPA Vite with `base: '/full-groceries-app/'`, `VITE_API_BASE_URL=http://localhost:3000`.
+- **Online catalog:** No offline write queue for products/categories.
+- **Related plans:** [`docs/plans/groceries-app-rework/`](../groceries-app-rework/) targets a different repo; do not merge. Follow-up plan folder later for cart → trips / history UI.
+
+## Auth / role matrix (`groceries-app` membership)
+
+| Action | No groceries membership | READ_ONLY | ADMIN |
+| --- | --- | --- | --- |
+| Login | yes | yes | yes |
+| Browse categories and products | 403 | yes | yes |
+| Local cart add / export / import | n/a (need browse first) | yes | yes |
+| Product create / update / delete | 403 | 403 | yes |
+| Category mutate | n/a (seed only this plan) | n/a | seed / later API |
 
 ## Review contract
 
 Each specification has:
 
 - a limited file boundary;
-- test-first acceptance criteria;
+- test-first acceptance criteria (or explicit UI verification for UI-only specs);
 - a standalone commit boundary; and
-- explicit dependency and verification requirements.
+- explicit dependency and verification / E2E requirements.
 
 Do not begin a later specification until its listed dependency is merged or otherwise available in the working branch.
 
 ## Branch setup (before Task 1 of spec 01 / 03)
 
-Create feature branches **in place** under the repo directories below (not worktrees):
-
 ```bash
 cd repos/personal-api
 git checkout main && git pull
+# If feat/groceries-api exists with Int-category leftovers, delete or reset it:
+# git branch -D feat/groceries-api
 git checkout -b feat/groceries-api
 
 cd ../full-groceries-app
 git checkout main && git pull
-git checkout -b feat/groceries-admin
+git checkout -b feat/personal-api-integration
 ```
 
-All later `cd repos/personal-api` / `cd repos/full-groceries-app` commands in these specs mean those same directories on the feature branches above.
-## Spec coverage map
+## Global constraints
 
-| Requirement | Spec |
-|-------------|------|
-| DB + migrations for product list | 01 |
-| Product list CRUD API | 02 |
-| Cart → real prices in frontend (Excel-like) | 05 (+ trip APIs in 02) |
-| History of groceries done | 02 + 05 |
-| Admin-only full features | 02 gate + 03/04 capability |
-| Non-admin current behavior | README + 04 + 06 regression |
+- Feature branches: `feat/groceries-api` (`personal-api`), `feat/personal-api-integration` (`full-groceries-app`).
+- REST base: `/api/v1/groceries/...` with `authenticate` + `requireAppRole('groceries-app', …)`.
+- Product IDs are UUID strings; SPA cart types must use string ids.
+- Vite router must use `basename={import.meta.env.BASE_URL}` because `base` is `/full-groceries-app/`.
+- Session storage key: `mandado:auth:v1` (refresh token only).
+- Do not host the SPA from personal-api.
+- Do not implement category admin screens or trip/history UI in this plan set.
+- Do not introduce Int `category` columns at any point.

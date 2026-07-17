@@ -1,177 +1,145 @@
-# Groceries ↔ personal-api local E2E runbook
+# Mandado (full-groceries-app) ↔ personal-api local E2E runbook
 
 ## Prerequisites
 
-1. Postgres with migrations from `feat/groceries-api` applied
+1. Branch `feat/groceries-api` built **from scratch** on `main` (Category FK tables; no Int `category` column)
 2. API on `http://localhost:3000` with `CORS_ORIGINS` including `http://localhost:5173`
-3. Groceries Vite on `http://localhost:5173` with `VITE_API_BASE_URL=http://localhost:3000`
-4. Seeded bootstrap admin with **both** `user-management-app` and `groceries-app` `ADMIN`
-5. `npm run db:seed-groceries` completed at least once
+3. SPA Vite on `http://localhost:5173` with `VITE_API_BASE_URL=http://localhost:3000`
+4. `npm run db:seed-admin` (Application `groceries-app` exists)
+5. `npm run db:seed-groceries`
+6. Users with `groceries-app` membership:
+   - `groceries.user@example.com` / `password123` (READ_ONLY)
+   - `groceries.admin@example.com` / `password123` (ADMIN)
 
-## Start services
-
-Work in the main repo directories on the feature branches (`feat/groceries-api`, `feat/groceries-rework`) — not worktrees.
+## Start services (worktrees)
 
 ```bash
-# Terminal A — API (repos/personal-api on feat/groceries-api)
-cd repos/personal-api
-# if using docker:
-# docker compose up -d
-npx prisma migrate deploy
+# Terminal A — API worktree
+cd repos/personal-api/.worktrees/feat-groceries-api
+node scripts/start-embedded-db.mjs --migrate --detach   # if Postgres not already up
 npm run db:seed-admin
 npm run db:seed-groceries
 npm run dev
 
-# Terminal B — Groceries SPA (repos/groceries-app on feat/groceries-rework)
-cd repos/groceries-app
+# Terminal B — SPA worktree
+cd repos/full-groceries-app/.worktrees/feat-personal-api-integration
 cp -n .env.example .env
 npm run dev
 ```
 
-## SPA routes (after groceries-app-rework)
+App base path: `/full-groceries-app/` → `http://localhost:5173/full-groceries-app/`.
 
-Navigation is URL-based (`react-router`). App base path remains `/groceries-app/`.
-
-| Path | Access |
-|------|--------|
-| `/` | Public — categories |
-| `/products/:categoryId` | Public — product list |
-| `/cart` | Public — cart (state survives navigation via `CartProvider`) |
-| `/login` | Public — admin login |
-| `/admin` | Redirects to `/admin/products` |
-| `/admin/products` | Admin only — product CRUD |
-| `/admin/shopping` | Admin only — priced shopping draft |
-| `/admin/history` | Admin only — completed trips list |
-| `/admin/history/:tripId` | Admin only — deep link to a trip detail |
-| `/forbidden` | Authenticated non-admin |
-
-Unauthenticated visits to `/admin/*` redirect to `/login`. Authenticated users without `groceries-app` ADMIN redirect to `/forbidden`.
-
-## Credentials
-
-Use the same values as `ADMIN_EMAIL` / `ADMIN_PASSWORD` from personal-api `.env`.
-
-Example locals:
-
-- email: `admin@example.com`
-- password: `password123`
-
-## Playwright-cli
-
-Install/check:
+## Provision users
 
 ```bash
-npx --no-install playwright-cli --version || npm install -g @playwright/cli@latest
-```
-
-App base path is `/groceries-app/`. Re-snapshot after each navigation and substitute refs from `snapshot` output.
-
-### A) Guest regression (no login)
-
-```bash
-playwright-cli open "http://localhost:5173/groceries-app/"
-playwright-cli snapshot
-# Expect categories — no forced login
-
-# Open a category (use ref from snapshot)
-playwright-cli click <categoryRef>
-playwright-cli snapshot
-
-# Add a product to cart
-playwright-cli click <addToCartRef>
-playwright-cli snapshot
-
-# Open cart
-playwright-cli click <cartBadgeRef>
-playwright-cli snapshot
-# Expect Export Excel / Export JSON controls present
-
-playwright-cli click <exportExcelRef>
-# Expect download or success without auth errors
-```
-
-### B) Admin happy path
-
-```bash
-playwright-cli open "http://localhost:5173/groceries-app/"
-playwright-cli snapshot
-
-# Open Admin / Login (or navigate directly)
-playwright-cli open "http://localhost:5173/groceries-app/login"
-# OR: playwright-cli click <adminEntryRef>
-playwright-cli snapshot
-
-playwright-cli fill <emailRef> "admin@example.com"
-playwright-cli fill <passwordRef> "password123"
-playwright-cli click <submitRef>
-playwright-cli snapshot
-# Expect redirect to /admin/products
-
-# --- Products ---
-# Create a product named "E2E Test Item" (category + price)
-playwright-cli snapshot
-# Confirm it appears in the list
-
-# --- Shopping ---
-# NavLink "Compra" → /admin/shopping
-playwright-cli click <adminShoppingNavRef>
-playwright-cli snapshot
-# Add from catalog OR start from cart
-# Fill Precio Real on one line
-playwright-cli fill <realPriceRef> "42.5"
-playwright-cli click <saveDraftRef>
-playwright-cli snapshot
-playwright-cli click <completeTripRef>
-playwright-cli snapshot
-# Confirm dialog if present, accept — expect navigate to /admin/history/:tripId
-
-# --- History ---
-# NavLink "Historial" → /admin/history (or land on deep link after complete)
-playwright-cli click <adminHistoryNavRef>
-playwright-cli snapshot
-# Open the completed trip
-playwright-cli click <tripRowRef>
-playwright-cli snapshot
-# Expect read-only Precio Real 42.5
-
-# --- Protected redirects ---
-# Logged out: open /admin/products → expect /login
-# Non-admin: open /admin/products → expect /forbidden
-
-# --- Logout ---
-playwright-cli click <logoutRef>
-playwright-cli snapshot
-# Expect guest categories at /
-```
-
-## API smoke (optional)
-
-```bash
+# Source ADMIN_EMAIL / ADMIN_PASSWORD from personal-api .env
 ACCESS=$(curl -s -X POST http://localhost:3000/api/v1/auth/login \
   -H 'Content-Type: application/json' \
   -d "{\"email\":\"$ADMIN_EMAIL\",\"password\":\"$ADMIN_PASSWORD\"}" \
   | python3 -c 'import sys,json; print(json.load(sys.stdin)["accessToken"])')
 
-curl -s http://localhost:3000/api/v1/groceries/products \
-  -H "Authorization: Bearer $ACCESS" | python3 -m json.tool | head
+curl -s -X POST http://localhost:3000/api/v1/users \
+  -H "Authorization: Bearer $ACCESS" \
+  -H 'Content-Type: application/json' \
+  -d '{
+    "email":"groceries.user@example.com",
+    "name":"Groceries User",
+    "password":"password123",
+    "permissions":[{"applicationSlug":"groceries-app","role":"READ_ONLY"}]
+  }'
+
+curl -s -X POST http://localhost:3000/api/v1/users \
+  -H "Authorization: Bearer $ACCESS" \
+  -H 'Content-Type: application/json' \
+  -d '{
+    "email":"groceries.admin@example.com",
+    "name":"Groceries Admin",
+    "password":"password123",
+    "permissions":[{"applicationSlug":"groceries-app","role":"ADMIN"}]
+  }'
 ```
 
-Expect `200` and a `products` array.
+Ignore conflict if users already exist.
 
-Unauthenticated:
+## Sanity curl
 
 ```bash
-curl -s -o /dev/null -w "%{http_code}\n" http://localhost:3000/api/v1/groceries/products
+USER_ACCESS=$(curl -s -X POST http://localhost:3000/api/v1/auth/login \
+  -H 'Content-Type: application/json' \
+  -d '{"email":"groceries.user@example.com","password":"password123"}' \
+  | python3 -c 'import sys,json; print(json.load(sys.stdin)["accessToken"])')
+
+curl -s http://localhost:3000/api/v1/groceries/categories \
+  -H "Authorization: Bearer $USER_ACCESS" | python3 -m json.tool
+
+curl -s "http://localhost:3000/api/v1/groceries/products" \
+  -H "Authorization: Bearer $USER_ACCESS" | python3 -c \
+  'import sys,json; p=json.load(sys.stdin)["products"][0]; assert "categoryId" in p and isinstance(p["category"], dict)'
 ```
 
-Expect `401`.
+Expect five categories and products with `categoryId` + nested `category` (never Int `category`).
 
-## Failure triage
+## Playwright-cli happy path
 
-| Symptom | Check |
-|---------|-------|
-| SPA CORS errors | `CORS_ORIGINS` includes exact Vite origin |
-| Login succeeds but no admin UI | `groceries-app` ADMIN membership missing — re-run `db:seed-admin` after spec 01 changes |
-| Empty admin catalog | Run `db:seed-groceries` |
-| Playwright 404 on `/` | Use `/groceries-app/` base path |
-| Guest export broken | Spec 04/05 regressions — CartPage guest controls must remain |
+Verified locally with `playwright-cli` against the worktrees above. Prefer **role / accessible name** selectors (stable across runs).
+
+```bash
+playwright-cli open "http://localhost:5173/full-groceries-app/"
+# Redirects to /login
+
+playwright-cli fill "Correo" "groceries.user@example.com"   # or textbox ref from snapshot
+playwright-cli fill "Contraseña" "password123"
+playwright-cli click "Iniciar sesión"
+# Expect categories: Limpieza personal, Limpieza global, Mascotas, Comida, Extras
+
+playwright-cli click "🍎 Comida"
+# URL includes category UUID …1114; products like Aceite, Agua, …
+
+playwright-cli click "Add Aceite to cart"
+playwright-cli click "Open cart"
+# Expect Carrito with Aceite line; local only (no trips API)
+
+# --- ADMIN icon CRUD ---
+playwright-cli open "http://localhost:5173/full-groceries-app/login"
+playwright-cli fill "Correo" "groceries.admin@example.com"
+playwright-cli fill "Contraseña" "password123"
+playwright-cli click "Iniciar sesión"
+playwright-cli click "Administrar productos"   # aria-label / link name
+playwright-cli click "Agregar producto"        # Plus icon
+# Dialog "Nuevo producto"
+playwright-cli fill "Nombre" "E2E Detergente"
+playwright-cli fill "Precio" "45"
+playwright-cli select "Categoría" "Limpieza global"
+playwright-cli click "Guardar producto"
+# Row "E2E Detergente" appears in admin list
+
+# --- READ_ONLY forbidden ---
+playwright-cli open "http://localhost:5173/full-groceries-app/login"
+playwright-cli fill "Correo" "groceries.user@example.com"
+playwright-cli fill "Contraseña" "password123"
+playwright-cli click "Iniciar sesión"
+playwright-cli goto "http://localhost:5173/full-groceries-app/admin/products"
+# Expect /forbidden (Acceso restringido); no Administrar productos link when browsing as READ_ONLY
+```
+
+## Pass criteria
+
+- Catalog comes from API with `categoryId` FK (not bundled JSON).
+- Cart remains local.
+- groceries-app ADMIN can CRUD via icon actions (`aria-label`s); READ_ONLY cannot open admin.
+- No Int `category` in API responses.
+
+## Backend regression
+
+```bash
+cd repos/personal-api/.worktrees/feat-groceries-api
+npm run test:integration -- tests/integration/groceries-schema.test.ts tests/integration/groceries.test.ts
+```
+
+## SPA regression
+
+```bash
+cd repos/full-groceries-app/.worktrees/feat-personal-api-integration
+npm test
+npm run build
+```
