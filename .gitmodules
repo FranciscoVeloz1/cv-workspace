@@ -93,3 +93,7 @@
 [submodule "repos/pdf-to-png"]
 	path = repos/pdf-to-png
 	url = git@github.com:FranciscoVeloz1/pdf-to-png.git
+[submodule "repos/full-groceries-app"]
+	path = repos/full-groceries-app
+	url = git@github.com:FranciscoVeloz1/full-groceries-app.git
+	branch = main
