@@ -97,3 +97,6 @@
 	path = repos/full-groceries-app
 	url = git@github.com:FranciscoVeloz1/full-groceries-app.git
 	branch = main
+[submodule "repos/slides-generator"]
+	path = repos/slides-generator
+	url = git@github.com:FranciscoVeloz1/slide-generator.git
