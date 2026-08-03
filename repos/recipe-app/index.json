@@ -629,6 +629,483 @@
         }
       ],
       "sourceImage": "images/IMG_4049.png"
+    },
+    {
+      "sides": [],
+      "drink": null,
+      "instructions": [],
+      "id": "fruta-cottage",
+      "name": "Fruta con cottage",
+      "mealTypes": [
+        "desayuno"
+      ],
+      "ingredients": [
+        {
+          "item": "cottage",
+          "quantity": 6,
+          "unit": "cda",
+          "notes": null
+        },
+        {
+          "item": "fresas",
+          "quantity": 5,
+          "unit": "pz",
+          "notes": "frutos rojos"
+        },
+        {
+          "item": "moras",
+          "quantity": 5,
+          "unit": "pz",
+          "notes": "frutos rojos"
+        },
+        {
+          "item": "arándanos",
+          "quantity": 10,
+          "unit": "pz",
+          "notes": "frutos rojos"
+        },
+        {
+          "item": "nueces",
+          "quantity": 6,
+          "unit": "pz",
+          "notes": null
+        },
+        {
+          "item": "chía",
+          "quantity": "1/2",
+          "unit": "cda",
+          "notes": null
+        },
+        {
+          "item": "avena",
+          "quantity": 2,
+          "unit": "cda",
+          "notes": null
+        }
+      ],
+      "sourceImage": "images/IMG_4051.png"
+    },
+    {
+      "sides": [],
+      "drink": null,
+      "instructions": [],
+      "id": "uvas-18",
+      "name": "Uvas",
+      "mealTypes": [
+        "colacion_1"
+      ],
+      "ingredients": [
+        {
+          "item": "uvas",
+          "quantity": 18,
+          "unit": "pz",
+          "notes": null
+        }
+      ],
+      "sourceImage": "images/IMG_4051.png"
+    },
+    {
+      "sides": [
+        "ensalada de lechuga, jitomate y aguacate"
+      ],
+      "drink": null,
+      "instructions": [],
+      "id": "enfrijoladas",
+      "name": "Enfrijoladas",
+      "mealTypes": [
+        "comida"
+      ],
+      "ingredients": [
+        {
+          "item": "tortillas de maíz",
+          "quantity": 3,
+          "unit": "pz",
+          "notes": null
+        },
+        {
+          "item": "queso de morral",
+          "quantity": 70,
+          "unit": "gr",
+          "notes": null
+        },
+        {
+          "item": "frijoles molidos",
+          "quantity": null,
+          "unit": null,
+          "notes": "bañar las tortillas"
+        }
+      ],
+      "sourceImage": "images/IMG_4051.png"
+    },
+    {
+      "sides": [],
+      "drink": null,
+      "instructions": [],
+      "id": "thins-atun-4051",
+      "name": "Thins de atún",
+      "mealTypes": [
+        "cena"
+      ],
+      "ingredients": [
+        {
+          "item": "pan thins",
+          "quantity": 1,
+          "unit": "pz",
+          "notes": null
+        },
+        {
+          "item": "atún en agua",
+          "quantity": 1,
+          "unit": "lata",
+          "notes": null
+        },
+        {
+          "item": "verdura",
+          "quantity": null,
+          "unit": null,
+          "notes": "al gusto"
+        },
+        {
+          "item": "mayonesa light",
+          "quantity": 1,
+          "unit": "cda",
+          "notes": null
+        }
+      ],
+      "sourceImage": "images/IMG_4051.png"
+    },
+    {
+      "sides": [],
+      "drink": null,
+      "instructions": [],
+      "id": "huevo-espinacas",
+      "name": "Huevo con espinacas",
+      "mealTypes": [
+        "desayuno"
+      ],
+      "ingredients": [
+        {
+          "item": "huevo",
+          "quantity": 2,
+          "unit": "pz",
+          "notes": null
+        },
+        {
+          "item": "espinacas",
+          "quantity": 1,
+          "unit": "puñito",
+          "notes": null
+        },
+        {
+          "item": "tostadas horneadas",
+          "quantity": 2,
+          "unit": "pz",
+          "notes": null
+        },
+        {
+          "item": "guacamole",
+          "quantity": 2,
+          "unit": "cda",
+          "notes": null
+        },
+        {
+          "item": "manzana",
+          "quantity": 1,
+          "unit": "pz",
+          "notes": "jugo verde"
+        },
+        {
+          "item": "espinacas",
+          "quantity": 1,
+          "unit": "puñito",
+          "notes": "jugo verde"
+        },
+        {
+          "item": "pepino",
+          "quantity": "1/2",
+          "unit": "pz",
+          "notes": "jugo verde"
+        },
+        {
+          "item": "apio",
+          "quantity": 1,
+          "unit": "trocito",
+          "notes": "jugo verde"
+        },
+        {
+          "item": "agua",
+          "quantity": 1,
+          "unit": "vaso",
+          "notes": "jugo verde"
+        }
+      ],
+      "sourceImage": "images/IMG_4051.png"
+    },
+    {
+      "sides": [],
+      "drink": null,
+      "instructions": [],
+      "id": "pera",
+      "name": "Pera",
+      "mealTypes": [
+        "colacion_1"
+      ],
+      "ingredients": [
+        {
+          "item": "pera",
+          "quantity": 1,
+          "unit": "pz",
+          "notes": null
+        }
+      ],
+      "sourceImage": "images/IMG_4051.png"
+    },
+    {
+      "sides": [
+        "4 tostadas horneadas"
+      ],
+      "drink": null,
+      "instructions": [],
+      "id": "filete-plancha-verduras",
+      "name": "Filete a la plancha con verduras",
+      "mealTypes": [
+        "comida"
+      ],
+      "ingredients": [
+        {
+          "item": "filete de tilapia",
+          "quantity": 120,
+          "unit": "gr",
+          "notes": null
+        },
+        {
+          "item": "chayote",
+          "quantity": null,
+          "unit": null,
+          "notes": "1 taza verduras al vapor o plancha"
+        },
+        {
+          "item": "zanahoria",
+          "quantity": null,
+          "unit": null,
+          "notes": "1 taza verduras al vapor o plancha"
+        },
+        {
+          "item": "calabaza",
+          "quantity": null,
+          "unit": null,
+          "notes": "1 taza verduras al vapor o plancha"
+        }
+      ],
+      "sourceImage": "images/IMG_4051.png"
+    },
+    {
+      "sides": [],
+      "drink": null,
+      "instructions": [],
+      "id": "manzana",
+      "name": "Manzana",
+      "mealTypes": [
+        "colacion_1",
+        "colacion_2"
+      ],
+      "ingredients": [
+        {
+          "item": "manzana",
+          "quantity": 1,
+          "unit": "pz",
+          "notes": null
+        }
+      ],
+      "sourceImage": "images/IMG_4051.png"
+    },
+    {
+      "sides": [],
+      "drink": null,
+      "instructions": [],
+      "id": "tostadas-preparadas-4051",
+      "name": "Tostadas preparadas",
+      "mealTypes": [
+        "cena"
+      ],
+      "ingredients": [
+        {
+          "item": "tostadas horneadas",
+          "quantity": 2,
+          "unit": "pz",
+          "notes": null
+        },
+        {
+          "item": "cottage",
+          "quantity": 3,
+          "unit": "cda",
+          "notes": null
+        },
+        {
+          "item": "aguacate",
+          "quantity": "1/3",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item": "pepino",
+          "quantity": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item": "lechuga",
+          "quantity": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "sourceImage": "images/IMG_4051.png"
+    },
+    {
+      "sides": [],
+      "drink": null,
+      "instructions": [],
+      "id": "molletes-4051",
+      "name": "Molletes",
+      "mealTypes": [
+        "desayuno"
+      ],
+      "ingredients": [
+        {
+          "item": "pan thins",
+          "quantity": 1,
+          "unit": "pz",
+          "notes": null
+        },
+        {
+          "item": "frijoles",
+          "quantity": "1/4",
+          "unit": "taza",
+          "notes": "molidos con 1 cda de aceite"
+        },
+        {
+          "item": "pechuga de pollo o carne de res asada",
+          "quantity": 80,
+          "unit": "gr",
+          "notes": null
+        }
+      ],
+      "sourceImage": "images/IMG_4051.png"
+    },
+    {
+      "sides": [
+        "2 a 4 tostadas horneadas"
+      ],
+      "drink": null,
+      "instructions": [],
+      "id": "ceviche-atun",
+      "name": "Ceviche de atún",
+      "mealTypes": [
+        "comida"
+      ],
+      "ingredients": [
+        {
+          "item": "atún en cubitos",
+          "quantity": 120,
+          "unit": "gr",
+          "notes": null
+        },
+        {
+          "item": "jitomate",
+          "quantity": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item": "pepino",
+          "quantity": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item": "cebolla morada",
+          "quantity": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item": "elote",
+          "quantity": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item": "mayonesa light",
+          "quantity": 1,
+          "unit": "cda",
+          "notes": null
+        }
+      ],
+      "sourceImage": "images/IMG_4051.png"
+    },
+    {
+      "sides": [],
+      "drink": null,
+      "instructions": [],
+      "id": "pepino-rodajas",
+      "name": "Pepino en rodajas",
+      "mealTypes": [
+        "colacion_1",
+        "colacion_2"
+      ],
+      "ingredients": [
+        {
+          "item": "pepino",
+          "quantity": 1,
+          "unit": "pz",
+          "notes": "en rodajas"
+        }
+      ],
+      "sourceImage": "images/IMG_4051.png"
+    },
+    {
+      "sides": [],
+      "drink": null,
+      "instructions": [],
+      "id": "smoothie-fresas-4051",
+      "name": "Smoothie de fresas",
+      "mealTypes": [
+        "cena"
+      ],
+      "ingredients": [
+        {
+          "item": "leche deslactosada",
+          "quantity": "1/2",
+          "unit": "taza",
+          "notes": null
+        },
+        {
+          "item": "fresas",
+          "quantity": 5,
+          "unit": "pz",
+          "notes": null
+        },
+        {
+          "item": "almendras",
+          "quantity": 7,
+          "unit": "pz",
+          "notes": null
+        },
+        {
+          "item": "canela",
+          "quantity": 1,
+          "unit": null,
+          "notes": "pizca"
+        },
+        {
+          "item": "hielo",
+          "quantity": null,
+          "unit": null,
+          "notes": "al gusto"
+        }
+      ],
+      "sourceImage": "images/IMG_4051.png"
     }
   ],
   "menus": [
@@ -704,6 +1181,81 @@
         },
         "cena": {
           "recipeId": "smoothie-fresas-4049"
+        }
+      }
+    },
+    {
+      "id": "menu-4",
+      "label": "Menú 4",
+      "sourceImage": "images/IMG_4051.png",
+      "row": 1,
+      "slots": {
+        "desayuno": {
+          "recipeId": "fruta-cottage",
+          "drink": "Té o café"
+        },
+        "colacion_1": {
+          "recipeId": "uvas-18"
+        },
+        "comida": {
+          "recipeId": "enfrijoladas",
+          "drink": "Agua de jamaica"
+        },
+        "colacion_2": {
+          "recipeId": "jicama-taza"
+        },
+        "cena": {
+          "recipeId": "thins-atun-4051"
+        }
+      }
+    },
+    {
+      "id": "menu-5",
+      "label": "Menú 5",
+      "sourceImage": "images/IMG_4051.png",
+      "row": 2,
+      "slots": {
+        "desayuno": {
+          "recipeId": "huevo-espinacas",
+          "drink": "Jugo verde"
+        },
+        "colacion_1": {
+          "recipeId": "pera"
+        },
+        "comida": {
+          "recipeId": "filete-plancha-verduras",
+          "drink": "Agua de piña"
+        },
+        "colacion_2": {
+          "recipeId": "manzana"
+        },
+        "cena": {
+          "recipeId": "tostadas-preparadas-4051"
+        }
+      }
+    },
+    {
+      "id": "menu-6",
+      "label": "Menú 6",
+      "sourceImage": "images/IMG_4051.png",
+      "row": 3,
+      "slots": {
+        "desayuno": {
+          "recipeId": "molletes-4051",
+          "drink": "Té o café"
+        },
+        "colacion_1": {
+          "recipeId": "manzana"
+        },
+        "comida": {
+          "recipeId": "ceviche-atun",
+          "drink": "Agua de limón"
+        },
+        "colacion_2": {
+          "recipeId": "pepino-rodajas"
+        },
+        "cena": {
+          "recipeId": "smoothie-fresas-4051"
         }
       }
     }
