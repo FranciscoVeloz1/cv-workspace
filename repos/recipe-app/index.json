@@ -1,0 +1,18 @@
+{
+  "version": "1.0.0",
+  "meta": {
+    "title": "Plan de alimentación",
+    "locale": "es-MX",
+    "source": "en forma salud y nutrición",
+    "mealSlots": [
+      { "id": "desayuno", "label": "Desayuno", "time": "9:00am" },
+      { "id": "colacion_1", "label": "Colación", "time": "12:00pm" },
+      { "id": "comida", "label": "Comida", "time": "3:00 / 4:00pm" },
+      { "id": "colacion_2", "label": "Colación", "time": "6:00pm" },
+      { "id": "cena", "label": "Cena", "time": "8-9pm" }
+    ]
+  },
+  "recommendations": [],
+  "recipes": [],
+  "menus": []
+}
