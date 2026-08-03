@@ -12,7 +12,18 @@
       { "id": "cena", "label": "Cena", "time": "8-9pm" }
     ]
   },
-  "recommendations": [],
+  "recommendations": [
+    "Beber 2 litros de agua natural",
+    "Acompañar las comidas con Café o té (Manzanilla, hierbabuena y limón)",
+    "Realizar ejercicio de 60 a 90 min (Anaeróbico)",
+    "Preferir alimentos integrales",
+    "No dejar más de 4 horas por cada comida",
+    "Combinar los desayunos, comidas y cenas de los menús",
+    "No añadir sal extra a las comidas (solo para cocinar y no en exceso)",
+    "Preferir condimentar los alimentos con especias",
+    "No consumir refresco ni bebidas gaseosas (solo agua mineral)",
+    "Agregar limón a las comidas"
+  ],
   "recipes": [],
   "menus": []
 }
