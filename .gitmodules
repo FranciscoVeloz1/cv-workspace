@@ -103,6 +103,6 @@
 [submodule "repos/heic-to-png"]
 	path = repos/heic-to-png
 	url = git@github.com:FranciscoVeloz1/heic-to-png.git
-[submodule "/home/francisco/repos/cv-workspace/repos/recipe-app"]
-	path = /home/francisco/repos/cv-workspace/repos/recipe-app
+[submodule "repos/recipe-app"]
+	path = repos/recipe-app
 	url = git@github.com:FranciscoVeloz1/recipe-app.git
