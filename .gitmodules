@@ -100,3 +100,6 @@
 [submodule "repos/slides-generator"]
 	path = repos/slides-generator
 	url = git@github.com:FranciscoVeloz1/slide-generator.git
+[submodule "repos/heic-to-png"]
+	path = repos/heic-to-png
+	url = git@github.com:FranciscoVeloz1/heic-to-png.git
