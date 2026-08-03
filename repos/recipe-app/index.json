@@ -1106,6 +1106,421 @@
         }
       ],
       "sourceImage": "images/IMG_4051.png"
+    },
+    {
+      "sides": [],
+      "drink": null,
+      "instructions": [],
+      "id": "tinga-res-tostadas",
+      "name": "Tinga de res",
+      "mealTypes": [
+        "desayuno"
+      ],
+      "ingredients": [
+        {
+          "item": "tostadas horneadas",
+          "quantity": 2,
+          "unit": "pz",
+          "notes": null
+        },
+        {
+          "item": "panela",
+          "quantity": 2,
+          "unit": "reb",
+          "notes": null
+        },
+        {
+          "item": "tinga de res",
+          "quantity": 60,
+          "unit": "gr",
+          "notes": null
+        },
+        {
+          "item": "aguacate",
+          "quantity": "1/3",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item": "pepino",
+          "quantity": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item": "lechuga",
+          "quantity": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item": "jitomate",
+          "quantity": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "sourceImage": "images/IMG_4052.png"
+    },
+    {
+      "sides": [
+        "2 tortillas de maíz",
+        "1/2 aguacate"
+      ],
+      "drink": null,
+      "instructions": [],
+      "id": "pechuga-asada",
+      "name": "Pechuga asada",
+      "mealTypes": [
+        "comida"
+      ],
+      "ingredients": [
+        {
+          "item": "pechuga de pollo",
+          "quantity": 120,
+          "unit": "gr",
+          "notes": null
+        },
+        {
+          "item": "chayote",
+          "quantity": null,
+          "unit": null,
+          "notes": "verduras al vapor"
+        },
+        {
+          "item": "zanahoria",
+          "quantity": null,
+          "unit": null,
+          "notes": "verduras al vapor"
+        },
+        {
+          "item": "coliflor",
+          "quantity": null,
+          "unit": null,
+          "notes": "verduras al vapor"
+        }
+      ],
+      "sourceImage": "images/IMG_4052.png"
+    },
+    {
+      "sides": [],
+      "drink": null,
+      "instructions": [],
+      "id": "tostadas-preparadas-4052",
+      "name": "Tostadas preparadas",
+      "mealTypes": [
+        "cena"
+      ],
+      "ingredients": [
+        {
+          "item": "tostadas horneadas",
+          "quantity": 2,
+          "unit": "pz",
+          "notes": null
+        },
+        {
+          "item": "panela",
+          "quantity": 40,
+          "unit": "gr",
+          "notes": null
+        },
+        {
+          "item": "aguacate",
+          "quantity": "1/3",
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item": "pepino",
+          "quantity": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item": "lechuga",
+          "quantity": null,
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "sourceImage": "images/IMG_4052.png"
+    },
+    {
+      "sides": [],
+      "drink": null,
+      "instructions": [],
+      "id": "chilaquiles",
+      "name": "Chilaquiles",
+      "mealTypes": [
+        "desayuno"
+      ],
+      "ingredients": [
+        {
+          "item": "tortillas de maíz",
+          "quantity": 2,
+          "unit": "pz",
+          "notes": "freidora de aire"
+        },
+        {
+          "item": "salsa",
+          "quantity": null,
+          "unit": null,
+          "notes": "al gusto"
+        },
+        {
+          "item": "panela",
+          "quantity": null,
+          "unit": null,
+          "notes": "espolvorear"
+        },
+        {
+          "item": "huevo",
+          "quantity": 2,
+          "unit": "pz",
+          "notes": "al gusto"
+        }
+      ],
+      "sourceImage": "images/IMG_4052.png"
+    },
+    {
+      "sides": [],
+      "drink": null,
+      "instructions": [],
+      "id": "papaya-taza",
+      "name": "Papaya",
+      "mealTypes": [
+        "colacion_1"
+      ],
+      "ingredients": [
+        {
+          "item": "papaya",
+          "quantity": 1,
+          "unit": "taza",
+          "notes": null
+        }
+      ],
+      "sourceImage": "images/IMG_4052.png"
+    },
+    {
+      "sides": [
+        "2 tortillas de maíz"
+      ],
+      "drink": null,
+      "instructions": [],
+      "id": "carne-asada-nopales",
+      "name": "Carne asada",
+      "mealTypes": [
+        "comida"
+      ],
+      "ingredients": [
+        {
+          "item": "carne asada",
+          "quantity": 120,
+          "unit": "gr",
+          "notes": null
+        },
+        {
+          "item": "nopales",
+          "quantity": null,
+          "unit": null,
+          "notes": "guisados con jitomate y cebolla"
+        },
+        {
+          "item": "jitomate",
+          "quantity": null,
+          "unit": null,
+          "notes": "con nopales"
+        },
+        {
+          "item": "cebolla",
+          "quantity": null,
+          "unit": null,
+          "notes": "con nopales"
+        }
+      ],
+      "sourceImage": "images/IMG_4052.png"
+    },
+    {
+      "sides": [],
+      "drink": null,
+      "instructions": [],
+      "id": "almendras-punado",
+      "name": "Almendras",
+      "mealTypes": [
+        "colacion_2"
+      ],
+      "ingredients": [
+        {
+          "item": "almendras",
+          "quantity": 1,
+          "unit": "puñito",
+          "notes": null
+        }
+      ],
+      "sourceImage": "images/IMG_4052.png"
+    },
+    {
+      "sides": [],
+      "drink": null,
+      "instructions": [],
+      "id": "avena-canela",
+      "name": "Avena con canela",
+      "mealTypes": [
+        "cena"
+      ],
+      "ingredients": [
+        {
+          "item": "avena",
+          "quantity": "1/3",
+          "unit": "taza",
+          "notes": null
+        },
+        {
+          "item": "leche de almendras",
+          "quantity": "1/2",
+          "unit": "taza",
+          "notes": null
+        },
+        {
+          "item": "fresas",
+          "quantity": 5,
+          "unit": "pz",
+          "notes": null
+        },
+        {
+          "item": "almendras o nueces",
+          "quantity": "7 almendras ó 6 nueces",
+          "unit": null,
+          "notes": null
+        }
+      ],
+      "sourceImage": "images/IMG_4052.png"
+    },
+    {
+      "sides": [],
+      "drink": null,
+      "instructions": [],
+      "id": "hot-cakes-avena",
+      "name": "Hot cakes",
+      "mealTypes": [
+        "desayuno"
+      ],
+      "ingredients": [
+        {
+          "item": "hot cakes de harina de avena",
+          "quantity": "2-3",
+          "unit": "pz",
+          "notes": null
+        },
+        {
+          "item": "huevo",
+          "quantity": 2,
+          "unit": "pz",
+          "notes": "agregar a la mezcla"
+        },
+        {
+          "item": "maple sin azúcar",
+          "quantity": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item": "manzana",
+          "quantity": 1,
+          "unit": "pz",
+          "notes": "en gajos"
+        },
+        {
+          "item": "almendras",
+          "quantity": 7,
+          "unit": "pz",
+          "notes": null
+        }
+      ],
+      "sourceImage": "images/IMG_4052.png"
+    },
+    {
+      "sides": [
+        "2 tortillas de maíz",
+        "1/3 aguacate"
+      ],
+      "drink": null,
+      "instructions": [],
+      "id": "fajitas-calabacitas",
+      "name": "Fajitas con calabacitas",
+      "mealTypes": [
+        "comida"
+      ],
+      "ingredients": [
+        {
+          "item": "fajitas de pollo y res",
+          "quantity": 120,
+          "unit": "gr",
+          "notes": null
+        },
+        {
+          "item": "calabacitas con jitomate y cebolla",
+          "quantity": 1,
+          "unit": "taza",
+          "notes": null
+        }
+      ],
+      "sourceImage": "images/IMG_4052.png"
+    },
+    {
+      "sides": [],
+      "drink": null,
+      "instructions": [],
+      "id": "ensalada-fria",
+      "name": "Ensalada fría",
+      "mealTypes": [
+        "cena"
+      ],
+      "ingredients": [
+        {
+          "item": "jamón de pavo",
+          "quantity": 60,
+          "unit": "gr",
+          "notes": null
+        },
+        {
+          "item": "panela",
+          "quantity": 60,
+          "unit": "gr",
+          "notes": null
+        },
+        {
+          "item": "lechuga",
+          "quantity": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item": "espinacas",
+          "quantity": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item": "zanahoria rallada",
+          "quantity": null,
+          "unit": null,
+          "notes": null
+        },
+        {
+          "item": "pasta cocida",
+          "quantity": "1/2",
+          "unit": "taza",
+          "notes": null
+        },
+        {
+          "item": "aderezo Clemente Jacques",
+          "quantity": 1,
+          "unit": "cda",
+          "notes": null
+        }
+      ],
+      "sourceImage": "images/IMG_4052.png"
     }
   ],
   "menus": [
@@ -1256,6 +1671,80 @@
         },
         "cena": {
           "recipeId": "smoothie-fresas-4051"
+        }
+      }
+    },
+    {
+      "id": "menu-7",
+      "label": "Menú 7",
+      "sourceImage": "images/IMG_4052.png",
+      "row": 1,
+      "slots": {
+        "desayuno": {
+          "recipeId": "tinga-res-tostadas",
+          "drink": "Té de manzanilla"
+        },
+        "colacion_1": {
+          "recipeId": "pepino-rodajas"
+        },
+        "comida": {
+          "recipeId": "pechuga-asada",
+          "drink": "Agua de limón"
+        },
+        "colacion_2": {
+          "recipeId": "manzana"
+        },
+        "cena": {
+          "recipeId": "tostadas-preparadas-4052"
+        }
+      }
+    },
+    {
+      "id": "menu-8",
+      "label": "Menú 8",
+      "sourceImage": "images/IMG_4052.png",
+      "row": 2,
+      "slots": {
+        "desayuno": {
+          "recipeId": "chilaquiles",
+          "drink": "Té de manzanilla"
+        },
+        "colacion_1": {
+          "recipeId": "papaya-taza"
+        },
+        "comida": {
+          "recipeId": "carne-asada-nopales",
+          "drink": "Agua de jamaica"
+        },
+        "colacion_2": {
+          "recipeId": "almendras-punado"
+        },
+        "cena": {
+          "recipeId": "avena-canela"
+        }
+      }
+    },
+    {
+      "id": "menu-9",
+      "label": "Menú 9",
+      "sourceImage": "images/IMG_4052.png",
+      "row": 3,
+      "slots": {
+        "desayuno": {
+          "recipeId": "hot-cakes-avena"
+        },
+        "colacion_1": {
+          "recipeId": "jicama-taza"
+        },
+        "comida": {
+          "recipeId": "fajitas-calabacitas",
+          "drink": "Agua de limón"
+        },
+        "colacion_2": {
+          "recipeId": "pepino-rodajas"
+        },
+        "cena": {
+          "recipeId": "ensalada-fria"
         }
       }
     }
