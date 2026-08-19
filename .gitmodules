@@ -100,3 +100,7 @@
 [submodule "repos/slides-generator"]
 	path = repos/slides-generator
 	url = git@github.com:FranciscoVeloz1/slide-generator.git
+[submodule "repos/finance-app"]
+	path = repos/finance-app
+	url = git@github.com:FranciscoVeloz1/finance-app.git
+	branch = main
