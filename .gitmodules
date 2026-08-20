@@ -104,3 +104,7 @@
 	path = repos/finance-app
 	url = git@github.com:FranciscoVeloz1/finance-app.git
 	branch = main
+[submodule "kanban-dashboard"]
+	path = repos/kanban-dashboard
+	url = git@github.com:FranciscoVeloz1/kanban-dashboard.git
+	branch = main
