@@ -106,3 +106,11 @@
 [submodule "repos/recipe-app"]
 	path = repos/recipe-app
 	url = git@github.com:FranciscoVeloz1/recipe-app.git
+[submodule "repos/finance-app"]
+	path = repos/finance-app
+	url = git@github.com:FranciscoVeloz1/finance-app.git
+	branch = main
+[submodule "kanban-dashboard"]
+	path = repos/kanban-dashboard
+	url = git@github.com:FranciscoVeloz1/kanban-dashboard.git
+	branch = main

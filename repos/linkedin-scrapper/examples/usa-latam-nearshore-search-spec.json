@@ -1,0 +1,13 @@
+{
+  "prompt": "Find remote USA nearshore/LATAM-friendly senior fullstack React Node roles targeting ~$90/hr for Francisco Veloz (PwC Dev Lead, Guadalajara).",
+  "keywords": [
+    "nearshore",
+    "senior software engineer",
+    "React"
+  ],
+  "locations": ["United States"],
+  "workModes": ["remote"],
+  "recencyDays": 30,
+  "exclusions": ["junior", "intern", "entry level"],
+  "limit": 12
+}

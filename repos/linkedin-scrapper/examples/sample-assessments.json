@@ -1,0 +1,25 @@
+{
+  "assessments": [
+    {
+      "jobId": "1111111111",
+      "decision": "qualified",
+      "fitScore": 9,
+      "fitReason": "Exact Python + React + RAG/LangChain match for LATAM remote",
+      "applyAdvice": "Lead with RAG/LangChain delivery and bilingual client-facing experience; cite AWS Lambda work."
+    },
+    {
+      "jobId": "2222222222",
+      "decision": "rejected",
+      "fitScore": 1,
+      "fitReason": "Excluded junior/intern role",
+      "applyAdvice": ""
+    },
+    {
+      "jobId": "3333333333",
+      "decision": "qualified",
+      "fitScore": 8,
+      "fitReason": "Senior AI engineer, Americas remote; tooling-aligned",
+      "applyAdvice": "Emphasize AI feature shipping and TypeScript product delivery; note compensation is Not listed."
+    }
+  ]
+}

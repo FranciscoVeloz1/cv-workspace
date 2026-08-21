@@ -1,0 +1,25 @@
+{
+  "runId": "sample-dry-run",
+  "createdAt": "2026-07-23T18:00:00.000Z",
+  "updatedAt": "2026-07-23T18:00:00.000Z",
+  "prompt": "Senior fullstack AI developer roles, Python + React, LATAM or Americas remote, exclude junior/intern",
+  "searchSpec": {
+    "prompt": "Senior fullstack AI developer roles, Python + React, LATAM or Americas remote, exclude junior/intern",
+    "keywords": ["senior fullstack", "AI", "Python", "React"],
+    "locations": ["Latin America", "Mexico", "Remote"],
+    "workModes": ["remote"],
+    "recencyDays": 14,
+    "exclusions": ["junior", "intern"],
+    "limit": 20
+  },
+  "counts": {
+    "collected": 3,
+    "unique": 3,
+    "failed": 0
+  },
+  "warnings": [],
+  "artifacts": {
+    "rawJobs": "raw-jobs.json",
+    "manifest": "manifest.json"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "jobs": [
+    {
+      "jobId": "1111111111",
+      "canonicalUrl": "https://www.linkedin.com/jobs/view/1111111111/",
+      "title": "Senior Fullstack AI Developer (Python + React)",
+      "company": "Devsu",
+      "location": "Guadalajara, Jalisco, Mexico",
+      "workMode": "remote",
+      "postedAt": "2026-07-20",
+      "compensation": "$80 - $120/hr",
+      "description": "Build RAG systems with Python, LangChain, React, and AWS Lambda for LATAM clients.",
+      "extractionStatus": "ok",
+      "warnings": [],
+      "source": {
+        "searchUrl": "https://www.linkedin.com/jobs/search/?keywords=senior%20fullstack%20AI",
+        "collectedAt": "2026-07-23T18:00:00.000Z"
+      }
+    },
+    {
+      "jobId": "2222222222",
+      "canonicalUrl": "https://www.linkedin.com/jobs/view/2222222222/",
+      "title": "Junior Frontend Intern",
+      "company": "Example Startup",
+      "location": "Remote",
+      "workMode": "remote",
+      "postedAt": "2026-07-22",
+      "compensation": "Not listed",
+      "description": "Entry-level React internship.",
+      "extractionStatus": "ok",
+      "warnings": [],
+      "source": {
+        "searchUrl": "https://www.linkedin.com/jobs/search/?keywords=senior%20fullstack%20AI",
+        "collectedAt": "2026-07-23T18:00:00.000Z"
+      }
+    },
+    {
+      "jobId": "3333333333",
+      "canonicalUrl": "https://www.linkedin.com/jobs/view/3333333333/",
+      "title": "Senior Software Engineer - AI (Cursor/Claude)",
+      "company": "A.Team",
+      "location": "Americas (Remote)",
+      "workMode": "remote",
+      "postedAt": "2026-07-21",
+      "compensation": "Not listed",
+      "description": "Ship AI features with modern tooling. Strong TypeScript and product sense.",
+      "extractionStatus": "ok",
+      "warnings": [],
+      "source": {
+        "searchUrl": "https://www.linkedin.com/jobs/search/?keywords=senior%20fullstack%20AI",
+        "collectedAt": "2026-07-23T18:00:00.000Z"
+      }
+    }
+  ]
+}
