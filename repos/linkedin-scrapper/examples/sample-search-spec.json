@@ -1,9 +1,0 @@
-{
-  "prompt": "Senior fullstack AI developer roles, Python + React, LATAM or Americas remote, exclude junior/intern",
-  "keywords": ["senior fullstack", "AI", "Python", "React"],
-  "locations": ["Latin America", "Mexico", "Remote"],
-  "workModes": ["remote"],
-  "recencyDays": 14,
-  "exclusions": ["junior", "intern"],
-  "limit": 20
-}
