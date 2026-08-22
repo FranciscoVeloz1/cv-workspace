@@ -9,8 +9,8 @@
   "scripts": {
     "dev": "tsx src/main.ts",
     "build": "tsc",
-    "test": "node --import tsx --test --experimental-test-isolation=none src/**/*.test.ts src/*.test.ts",
-    "test:watch": "node --import tsx --test --experimental-test-isolation=none --watch src/**/*.test.ts src/*.test.ts",
+    "test": "node --import tsx --test --experimental-test-isolation=none src/*.test.ts src/sources/*.test.ts",
+    "test:watch": "node --import tsx --test --experimental-test-isolation=none --watch src/*.test.ts src/sources/*.test.ts",
     "typecheck": "tsc --noEmit",
     "lint": "eslint src --ext .ts"
   },
