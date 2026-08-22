@@ -38,6 +38,16 @@ describe('scoreJob', () => {
     assert.deepEqual(result.matched, []);
   });
 
+  it('does not treat C as a match inside React', () => {
+    const job = sampleJob({
+      title: 'React Engineer',
+      description: 'Frontend React work.',
+      employment: 'full_time'
+    });
+    const result = scoreJob(job, ['C', 'React']);
+    assert.deepEqual(result.matched, ['React']);
+  });
+
   it('returns 1 for contractor-only with no skills', () => {
     const job = sampleJob({
       title: 'Writer',

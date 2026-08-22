@@ -1,4 +1,5 @@
 import type { Job } from './schema.js';
+import { haystackHasSkill } from './skills.js';
 
 const WORK_AUTH =
   /\bauthori[sz](?:ed?|ation) to work in the (united states|u\.?s\.?a?)\b/i;
@@ -49,23 +50,13 @@ function isAmericasOrRemote(location: string): boolean {
   });
 }
 
-function skillNeedles(skillName: string): string[] {
-  const lower = skillName.toLowerCase();
-  const needles = new Set<string>([lower]);
-  needles.add(lower.replace(/\.js$/u, ''));
-  needles.add(lower.replace(/\s+/gu, ''));
-  return [...needles];
-}
-
-function isSoftwareJob(job: Job, skillNames: string[], haystack: string): boolean {
+function isSoftwareJob(_job: Job, skillNames: string[], haystack: string): boolean {
   if (SOFTWARE_MARKERS.test(haystack)) {
     return true;
   }
 
   return skillNames.some((name) => {
-    return skillNeedles(name).some((needle) => {
-      return needle.length > 0 && haystack.includes(needle);
-    });
+    return haystackHasSkill(haystack, name);
   });
 }
 

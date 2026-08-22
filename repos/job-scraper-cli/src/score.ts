@@ -1,4 +1,5 @@
 import type { Job } from './schema.js';
+import { haystackHasSkill } from './skills.js';
 
 const CONTRACTOR = /\b(contractor|contract|freelance|1099|b2b)\b/i;
 
@@ -8,19 +9,10 @@ export type ScoredJob = {
   matched: string[];
 };
 
-function skillNeedles(skillName: string): string[] {
-  const lower = skillName.toLowerCase();
-  const needles = new Set<string>([lower]);
-  needles.add(lower.replace(/\.js$/u, ''));
-  return [...needles];
-}
-
 export function scoreJob(job: Job, skillNames: string[]): ScoredJob {
   const haystack = `${job.title} ${job.description} ${job.tags.join(' ')}`.toLowerCase();
   const matched = skillNames.filter((name) => {
-    return skillNeedles(name).some((needle) => {
-      return needle.length > 0 && haystack.includes(needle);
-    });
+    return haystackHasSkill(haystack, name);
   });
 
   let score = matched.length;
