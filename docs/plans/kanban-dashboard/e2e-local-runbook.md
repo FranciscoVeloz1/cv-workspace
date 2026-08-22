@@ -15,8 +15,8 @@ Local, separate-host happy path for `kanban-dashboard` ↔ `personal-api`. Use w
 ## Prerequisites
 
 - Node.js matching each repo’s engines
-- Docker (or equivalent) for PostgreSQL
-- Feature branches: `feat/kanban-api` on `personal-api`, `feat/kanban-dashboard` on `kanban-dashboard`
+- PostgreSQL on `:5432` — Docker Compose **or** embedded: `node scripts/start-embedded-db.mjs --migrate` from `personal-api` (Docker is not required)
+- Feature branches: `feat/kanban` on `personal-api`, `feat/kanban-dashboard` on `kanban-dashboard`
 - Specs 05–09 implemented and migrated
 
 ## 1. API environment
@@ -26,22 +26,30 @@ Local, separate-host happy path for `kanban-dashboard` ↔ `personal-api`. Use w
 ```bash
 NODE_ENV=development
 PORT=3000
-DATABASE_URL=postgresql://postgres:postgres@localhost:5432/personal_api
+DATABASE_URL=postgresql://personal_api:personal_api@localhost:5432/personal_api
 JWT_ACCESS_SECRET=dev-access-secret-at-least-32-chars!!
 JWT_REFRESH_SECRET=dev-refresh-secret-at-least-32-chars!
 CORS_ORIGINS=http://localhost:5173,http://127.0.0.1:5173
 JWT_ACCESS_EXPIRES_IN=15m
 JWT_REFRESH_EXPIRES_IN=7d
+ADMIN_EMAIL=admin@example.com
+ADMIN_PASSWORD=AdminTest1!
+ADMIN_NAME=Initial Admin
 ```
 
-Do not commit secrets. Ensure `.env.example` documents `CORS_ORIGINS` including the SPA origin.
+Do not commit secrets. `CORS_ORIGINS` **must** include the SPA origin. If Vite prints `:5174`, add that origin or the browser shows a CORS failure that looks like an auth bug.
 
 Start DB + migrate + admin seed:
 
 ```bash
 cd repos/personal-api
-npm run db:up          # or: docker compose up -d
+# Option A — Docker
+npm run db:up          # if the repo defines it; or: docker compose up -d
 npx prisma migrate deploy
+
+# Option B — embedded Postgres (no Docker)
+node scripts/start-embedded-db.mjs --migrate
+
 export ADMIN_EMAIL=admin@example.com
 export ADMIN_PASSWORD='AdminTest1!'
 export ADMIN_NAME='Initial Admin'
@@ -86,6 +94,8 @@ curl -s -X POST http://localhost:3000/api/v1/users \
 
 On `409 Conflict`: login as that email with the fixture password and confirm `/api/v1/auth/me` email/name. If credentials differ, stop and recreate manually — do not auto-delete unknown accounts.
 
+The Playwright spec clears user A’s tags and tasks via the API at the start of each run so reruns stay idempotent.
+
 Optional: resolve A’s id at runtime:
 
 ```bash
@@ -102,12 +112,12 @@ curl -s http://localhost:3000/api/v1/auth/me -H "Authorization: Bearer $A_ACCESS
 ```bash
 cd repos/kanban-dashboard
 cp .env.example .env
-# VITE_API_BASE_URL=http://localhost:3000
+# VITE_API_BASE_URL=http://localhost:3000   ← origin only, no /api/v1
 npm install
 npm run dev
 ```
 
-Note the printed origin. If not `:5173`, update `CORS_ORIGINS` and `KANBAN_SPA_URL` / Playwright `baseURL`.
+Note the printed origin. If not `:5173`, update `CORS_ORIGINS` and `KANBAN_SPA_URL`.
 
 ## 4. Manual smoke (optional)
 
@@ -121,6 +131,8 @@ Note the printed origin. If not `:5173`, update `CORS_ORIGINS` and `KANBAN_SPA_U
 
 ## 5. Playwright
 
+API and SPA must already be running.
+
 ```bash
 cd repos/kanban-dashboard
 npx playwright install chromium
@@ -128,6 +140,8 @@ KANBAN_SPA_URL=http://localhost:5173 npm run test:e2e
 ```
 
 Expected: all tests PASS.
+
+Isolation uses a **second browser context** as user B after A’s card is in Finished, then A continues with edit/delete.
 
 Exploratory (optional):
 
@@ -139,6 +153,7 @@ npx --yes @playwright/cli@latest open http://localhost:5173/login
 ## 6. Cleanup
 
 - Stop Vite and API processes.
+- Embedded Postgres: stop the `start-embedded-db.mjs` process if you started it.
 - Optional DB wipe for a clean re-run: drop/recreate DB or delete fixture users via admin tools.
 - Do not commit `.env` or access tokens.
 
