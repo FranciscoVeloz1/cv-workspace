@@ -114,3 +114,10 @@
 	path = repos/kanban-dashboard
 	url = git@github.com:FranciscoVeloz1/kanban-dashboard.git
 	branch = main
+[submodule "/home/francisco/repos/cv-workspace/repos/kanban-cli"]
+	path = /home/francisco/repos/cv-workspace/repos/kanban-cli
+	url = git@github.com:FranciscoVeloz1/kanban-cli.git
+	branch = main
+[submodule "repos/job-scraper-cli"]
+	path = repos/job-scraper-cli
+	url = git@github.com:FranciscoVeloz1/job-scraper-cli.git
