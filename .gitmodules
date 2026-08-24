@@ -1,123 +1,123 @@
 [submodule "resume-data-source"]
-	path = repos/resume-data-source
+	path = repos/personal-projects/resume-data-source
 	url = git@github.com:FranciscoVeloz1/resume-data-source.git
 	branch = main
 [submodule "portfolio"]
-	path = repos/portfolio
+	path = repos/personal-projects/portfolio
 	url = git@github.com:FranciscoVeloz1/portfolio.git
 	branch = main
 [submodule "cv-generator"]
-	path = repos/cv-generator
+	path = repos/utils/cv-generator
 	url = git@github.com:FranciscoVeloz1/cv-generator.git
 	branch = main
 [submodule "rn-speed-art"]
-	path = repos/rn-speed-art
+	path = repos/personal-projects/rn-speed-art
 	url = git@github.com:FranciscoVeloz1/rn-speed-art.git
 	branch = main
 [submodule "react-node-template"]
-	path = repos/react-node-template
+	path = repos/personal-projects/react-node-template
 	url = git@github.com:FranciscoVeloz1/react-node-template.git
 	branch = main
 [submodule "React-Next-Dashboard"]
-	path = repos/React-Next-Dashboard
+	path = repos/templates/React-Next-Dashboard
 	url = git@github.com:FranciscoVeloz1/React-Next-Dashboard.git
 	branch = main
 [submodule "Mettaton-compiler"]
-	path = repos/Mettaton-compiler
+	path = repos/personal-projects/Mettaton-compiler
 	url = git@github.com:FranciscoVeloz1/Mettaton-compiler.git
 	branch = main
 [submodule "Smart-house"]
-	path = repos/Smart-house
+	path = repos/personal-projects/Smart-house
 	url = git@github.com:FranciscoVeloz1/Smart-house.git
 	branch = main
 [submodule "mintel"]
-	path = repos/mintel
+	path = repos/personal-projects/mintel
 	url = git@github.com:FranciscoVeloz1/mintel.git
 	branch = main
 [submodule "car-history-app"]
-	path = repos/car-history-app
+	path = repos/personal-projects/car-history-app
 	url = git@github.com:FranciscoVeloz1/car-history-app.git
 	branch = main
 [submodule "groceries-app"]
-	path = repos/groceries-app
+	path = repos/personal-projects/groceries-app
 	url = git@github.com:FranciscoVeloz1/groceries-app.git
 	branch = main
 [submodule "js-arrays-methods"]
-	path = repos/js-arrays-methods
+	path = repos/docs/js-arrays-methods
 	url = git@github.com:FranciscoVeloz1/js-arrays-methods.git
 	branch = main
 [submodule "screen-recorder"]
-	path = repos/screen-recorder
+	path = repos/personal-projects/screen-recorder
 	url = git@github.com:FranciscoVeloz1/screen-recorder.git
 	branch = main
 [submodule "arqueologIA-api"]
-	path = repos/arqueologIA-api
+	path = repos/personal-projects/arqueologIA-api
 	url = git@github.com:FranciscoVeloz1/arqueologIA-api.git
 	branch = main
 [submodule "greed-island-card-api"]
-	path = repos/greed-island-card-api
+	path = repos/personal-projects/greed-island-card-api
 	url = git@github.com:FranciscoVeloz1/greed-island-card-api.git
 	branch = main
 [submodule "boda-app"]
-	path = repos/boda-app
+	path = repos/personal-projects/boda-app
 	url = git@github.com:FranciscoVeloz1/boda-app.git
 	branch = main
 [submodule "NexaRize-Components"]
-	path = repos/NexaRize-Components
+	path = repos/personal-projects/NexaRize-Components
 	url = git@github.com:FranciscoVeloz1/NexaRize-Components.git
 	branch = dev
 [submodule "NexaRize-Electric-car"]
-	path = repos/NexaRize-Electric-car
+	path = repos/personal-projects/NexaRize-Electric-car
 	url = git@github.com:FranciscoVeloz1/NexaRize-Electric-car.git
 	branch = main
 [submodule "mettaton-v2"]
-	path = repos/mettaton-v2
+	path = repos/personal-projects/mettaton-v2
 	url = git@github.com:FranciscoVeloz1/mettaton-v2.git
 	branch = main
 [submodule "nexa-components-test"]
-	path = repos/nexa-components-test
+	path = repos/personal-projects/nexa-components-test
 	url = git@github.com:FranciscoVeloz1/nexa-components-test.git
 	branch = main
 [submodule "personal-api"]
-	path = repos/personal-api
+	path = repos/productive-apps/personal-api
 	url = git@github.com:FranciscoVeloz1/personal-api.git
 	branch = main
 [submodule "fitness-nutrition-tracker"]
-	path = repos/fitness-nutrition-tracker
+	path = repos/productive-apps/fitness-nutrition-tracker
 	url = git@github.com:FranciscoVeloz1/fitness-nutrition-tracker.git
 	branch = main
 [submodule "user-management-app"]
-	path = repos/user-management-app
+	path = repos/productive-apps/user-management-app
 	url = git@github.com:FranciscoVeloz1/user-management-app.git
 	branch = main
 [submodule "repos/pdf-to-png"]
-	path = repos/pdf-to-png
+	path = repos/utils/pdf-to-png
 	url = git@github.com:FranciscoVeloz1/pdf-to-png.git
 [submodule "repos/full-groceries-app"]
-	path = repos/full-groceries-app
+	path = repos/productive-apps/full-groceries-app
 	url = git@github.com:FranciscoVeloz1/full-groceries-app.git
 	branch = main
 [submodule "repos/slides-generator"]
-	path = repos/slides-generator
+	path = repos/utils/slides-generator
 	url = git@github.com:FranciscoVeloz1/slide-generator.git
 [submodule "repos/heic-to-png"]
-	path = repos/heic-to-png
+	path = repos/utils/heic-to-png
 	url = git@github.com:FranciscoVeloz1/heic-to-png.git
 [submodule "repos/recipe-app"]
-	path = repos/recipe-app
+	path = repos/personal-projects/recipe-app
 	url = git@github.com:FranciscoVeloz1/recipe-app.git
 [submodule "repos/finance-app"]
-	path = repos/finance-app
+	path = repos/productive-apps/finance-app
 	url = git@github.com:FranciscoVeloz1/finance-app.git
 	branch = main
 [submodule "kanban-dashboard"]
-	path = repos/kanban-dashboard
+	path = repos/productive-apps/kanban-dashboard
 	url = git@github.com:FranciscoVeloz1/kanban-dashboard.git
 	branch = main
 [submodule "kanban-cli"]
-	path = repos/kanban-cli
+	path = repos/productive-apps/kanban-cli
 	url = git@github.com:FranciscoVeloz1/kanban-cli.git
 	branch = main
 [submodule "repos/job-scraper-cli"]
-	path = repos/job-scraper-cli
+	path = repos/utils/job-scraper-cli
 	url = git@github.com:FranciscoVeloz1/job-scraper-cli.git
