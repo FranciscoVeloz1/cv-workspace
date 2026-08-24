@@ -62,12 +62,12 @@ create-tag <name>
 delete-tag <name>              # [--id]
 list-tasks [--status <status>]
 show-task <title>              # [--id]; prints line + description
-create-task <title> --description <text> [--tag <name>] [--deadline YYYY-MM-DD]
+create-task <title> --description <text> [--tag <name>] [--deadline YYYY-MM-DD] [--checklist <item>]
 update-task <title>            # at least one field flag; [--id]
 delete-task <title>            # [--id]
 ```
 
-`update-task` flags: `--title` `--description` `--status` `--tag` `--deadline` `--clear-tag` `--clear-deadline`. Do not combine `--tag` with `--clear-tag`, or `--deadline` with `--clear-deadline`.
+`update-task` flags: `--title` `--description` `--status` `--tag` `--deadline` `--clear-tag` `--clear-deadline` `--checklist`. Repeat `--checklist` once per item. Do not combine `--tag` with `--clear-tag`, or `--deadline` with `--clear-deadline`.
 
 Status values: `PENDING`, `IN_PROGRESS`, `FINISHED` (also `pending`, `in-progress`, `finished`).
 
@@ -75,7 +75,9 @@ Move a card = `update-task '<title>' --status IN_PROGRESS` (or `FINISHED` / `PEN
 
 `create-task` requires `--description`. If the user omitted it, ask; do not invent body text.
 
-There is no tag rename (API has no tag PATCH). No checklist flags. No `--json`.
+Put pending work in `--checklist`, not as markdown in `--description`. The dashboard checklist UI only reads the API `checklist` field.
+
+There is no tag rename (API has no tag PATCH). No `--json`.
 
 ## Agent workflow
 
