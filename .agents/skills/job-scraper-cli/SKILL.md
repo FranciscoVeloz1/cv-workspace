@@ -1,11 +1,11 @@
 ---
 name: job-scraper-cli
-description: Runs repos/job-scraper-cli against public remote job feeds, ranks listings against resume-data-source skills, and writes a full markdown proposal document of matching positions. Use when the user asks to scrape jobs, find contractor or remote roles, generate a job-search report, or produce proposed job positions from job-scraper-cli.
+description: Runs repos/utils/job-scraper-cli against public remote job feeds, ranks listings against resume-data-source skills, and writes a full markdown proposal document of matching positions. Use when the user asks to scrape jobs, find contractor or remote roles, generate a job-search report, or produce proposed job positions from job-scraper-cli.
 ---
 
 # job-scraper-cli
 
-Search **public** remote job feeds with `repos/job-scraper-cli` and **bring as output a full document with the proposal job positions**. Do not scrape or automate LinkedIn. Do not call board APIs with ad-hoc `curl`/`fetch` — run this CLI.
+Search **public** remote job feeds with `repos/utils/job-scraper-cli` and **bring as output a full document with the proposal job positions**. Do not scrape or automate LinkedIn. Do not call board APIs with ad-hoc `curl`/`fetch` — run this CLI.
 
 Candidate default (Mexico-based, US contractor search): remote / Americas, software roles, prefer contractor; drop US-only location and “authorized to work in the United States”. The CLI already applies those filters and scores skill overlap (+1 contractor).
 
@@ -17,20 +17,20 @@ Resolve from the user message. Unspecified → defaults.
 |-------|---------|---------|
 | `limit` | `15` | `--limit` |
 | `min-score` | `2` | `--min-score` |
-| `resume` | CLI default (`repos/resume-data-source/index.json` from this package) | `--resume` |
+| `resume` | CLI default (`repos/personal-projects/resume-data-source/index.json` from this package) | `--resume` |
 | `browser` | `false` | omit Playwright; pass `--no-browser` |
 | `title-keywords` | none | post-filter JSON: title or tags must match at least one (case-insensitive) |
 | `exclude-companies` | none | post-filter JSON: drop exact/substring company names |
 | `must-have-skills` | none | post-filter JSON: `matched` must include all of these (resume skill names) |
 | `top-picks` | `3` | first N remaining rows after sort (already score-desc) |
 | `excerpt-chars` | `400` | trim `job.description` in the document |
-| `output-path` | `repos/job-scraper-cli/proposals/YYYY-MM-DD-job-proposals.md` (today’s date, local) | write the document; also paste it in the reply |
+| `output-path` | `repos/utils/job-scraper-cli/proposals/YYYY-MM-DD-job-proposals.md` (today’s date, local) | write the document; also paste it in the reply |
 
 If the user names a role (“staff frontend”, “Python backend”), put those words in `title-keywords`. If they name companies to skip, use `exclude-companies`.
 
 ## Invoke
 
-From `repos/job-scraper-cli` (workspace: `/home/francisco/repos/cv-workspace/repos/job-scraper-cli`):
+From `repos/utils/job-scraper-cli` (workspace: `/home/francisco/repos/cv-workspace/repos/utils/job-scraper-cli`):
 
 ```bash
 npm install

@@ -6,7 +6,7 @@ alwaysApply: false
 
 # React Folder Structure
 
-Use this layout for every React app under `src/` (canonical reference: `repos/screen-recorder`; routed apps also use `pages/` as in `repos/full-groceries-app`). Adapt paths for Next.js (`app/` vs `src/`) but keep the same separation of concerns.
+Use this layout for every React app under `src/` (canonical reference: `repos/personal-projects/screen-recorder`; routed apps also use `pages/` as in `repos/productive-apps/full-groceries-app`). Adapt paths for Next.js (`app/` vs `src/`) but keep the same separation of concerns.
 
 ## Layout
 

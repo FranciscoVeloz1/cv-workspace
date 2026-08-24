@@ -5,48 +5,46 @@ alwaysApply: true
 
 # CV Workspace
 
-This is a **meta-repo**. Project code lives in Git submodules under **`repos/`**, not at the workspace root.
+This is a **meta-repo**. Project code lives in Git submodules under **`repos/<category>/`**, not at the workspace root. Categories: `docs`, `templates`, `productive-apps`, `utils`, `personal-projects`.
 
 ## Submodules
 
-- **repos/resume-data-source** — JSON resume data (`index.json`) and image assets. Deployed separately to GitHub Pages.
-- **repos/portfolio** — React + Vite portfolio site. Consumes resume data from the published data source.
-- **repos/cv-generator** — Markdown CV templates (`cv-md/`) and converter tooling (`converter/`).
+- **repos/personal-projects/resume-data-source** — JSON resume data (`index.json`) and image assets. Deployed separately to GitHub Pages.
+- **repos/personal-projects/portfolio** — React + Vite portfolio site. Consumes resume data from the published data source.
+- **repos/utils/cv-generator** — Markdown CV templates (`cv-md/`) and converter tooling (`converter/`).
 
-Showcase projects (linked from `repos/resume-data-source/index.json` `projects[]`):
+Showcase projects (linked from `repos/personal-projects/resume-data-source/index.json` `projects[]`):
 
-- **repos/rn-speed-art** — React Native design library
-- **repos/react-node-template** — React + Node.js REST API monorepo template
-- **repos/React-Next-Dashboard** — Next.js dashboard (BoxBook, Lab Maintenance, Stack Questions)
-- **repos/Mettaton-compiler** — Robotics programming language and compiler
-- **repos/Smart-house** — IoT smart home platform
-- **repos/mintel** — Smart House landing page
+- **repos/personal-projects/rn-speed-art** — React Native design library
+- **repos/personal-projects/react-node-template** — React + Node.js REST API monorepo template
+- **repos/templates/React-Next-Dashboard** — Next.js dashboard template (BoxBook, Lab Maintenance, Stack Questions)
+- **repos/personal-projects/Mettaton-compiler** — Robotics programming language and compiler
+- **repos/personal-projects/Smart-house** — IoT smart home platform
+- **repos/personal-projects/mintel** — Smart House landing page
 
-Other projects:
+productive-apps (`personal-api` and module clients):
 
-- **repos/car-history-app** — Vehicle history tracking app
-- **repos/groceries-app** — Groceries list app
-- **repos/js-arrays-methods** — JS arrays methods reference
-- **repos/screen-recorder** — Screen recorder
-- **repos/arqueologIA-api** — Archaeology AI API
-- **repos/greed-island-card-api** — Greed Island Card Lists API
-- **repos/boda-app** — Wedding app
-- **repos/NexaRize-Components** — React components made by NexaRize (tracks `dev` branch)
-- **repos/nexa-components-test** — NexaRize components test app
-- **repos/NexaRize-Electric-car** — Open-source electric vehicle project (Node.js + React)
-- **repos/mettaton-v2** — Mettaton compiler V2
+- **repos/productive-apps/personal-api** — Shared platform REST API
+- **repos/productive-apps/user-management-app** — User management SPA
+- **repos/productive-apps/fitness-nutrition-tracker** — Fitness / nutrition SPA
+- **repos/productive-apps/finance-app** — Finance SPA
+- **repos/productive-apps/full-groceries-app** — Groceries SPA
+- **repos/productive-apps/kanban-dashboard** — Kanban SPA
+- **repos/productive-apps/kanban-cli** — Kanban CLI
+
+Other projects live under `repos/personal-projects/` (for example `car-history-app`, `groceries-app`, `screen-recorder`, `arqueologIA-api`, `NexaRize-Components`). Reference notes: `repos/docs/js-arrays-methods`. CLIs: `repos/utils/` (`pdf-to-png`, `heic-to-png`, `slides-generator`, `job-scraper-cli`, `cv-generator`).
 
 ## Workflow
 
-- Run `./scripts/update-submodules.sh` after pulling parent repo changes to sync submodules to their tracked branches.
+- Run `./scripts/update-submodules.sh` after pulling parent repo changes to sync submodules to their tracked branches. Pass a category name (`docs`, `templates`, `productive-apps`, `utils`, `personal-projects`) to limit the update.
 - When submodules are updated, commit the pointer changes in the parent repo (`./scripts/update-submodules.sh --commit`).
-- Make code changes inside the relevant submodule directory under `repos/`, then commit and push from that submodule's repo.
-- Shared Cursor rules and scripts belong in the parent workspace root (`.cursor/`, `scripts/`).
+- Make code changes inside the relevant submodule directory under `repos/<category>/`, then commit and push from that submodule's repo.
+- Shared Cursor rules and scripts belong in the parent workspace root (`.agents/`, `scripts/`).
 
 ## Data flow
 
 ```
-repos/resume-data-source (index.json) → repos/portfolio (fetches published JSON)
-repos/resume-data-source (index.json projects[].repo) → showcase project submodules
-repos/resume-data-source (cv-md)      → repos/cv-generator (converter scripts)
+repos/personal-projects/resume-data-source (index.json) → repos/personal-projects/portfolio (fetches published JSON)
+repos/personal-projects/resume-data-source (index.json projects[].repo) → showcase project submodules
+repos/personal-projects/resume-data-source (cv-md)      → repos/utils/cv-generator (converter scripts)
 ```
