@@ -3,21 +3,29 @@
 param(
   [switch]$Status,
   [switch]$Commit,
+  [Parameter(Position = 0)]
+  [string]$Folder,
   [Alias('h')]
   [switch]$Help
 )
 
 $ErrorActionPreference = 'Stop'
-# Avoid treating expected non-zero git exits (e.g. git diff) as terminating errors in PS 7+.
 if (Get-Variable -Name PSNativeCommandUseErrorActionPreference -ErrorAction SilentlyContinue) {
   $PSNativeCommandUseErrorActionPreference = $false
 }
 
+$ValidFolders = @('docs', 'templates', 'productive-apps', 'utils', 'personal-projects')
+
 if ($Help) {
-  Write-Host "Usage: $($MyInvocation.MyCommand.Name) [-Status] [-Commit]"
-  Write-Host "  -Status  Show repos/ submodule SHAs/branches without updating"
+  Write-Host "Usage: $($MyInvocation.MyCommand.Name) [-Status] [-Commit] [folder]"
+  Write-Host "  -Status  Show submodule SHAs/branches without updating"
   Write-Host "  -Commit  Commit submodule pointer updates in the parent repo"
+  Write-Host "  folder   Limit to repos/<folder>/ : $($ValidFolders -join ', ')"
   exit 0
+}
+
+if ($Folder -and $ValidFolders -notcontains $Folder) {
+  throw "Unknown folder '$Folder'. Use: $($ValidFolders -join ', ')"
 }
 
 $Root = (Resolve-Path (Join-Path $PSScriptRoot '..')).Path
@@ -37,6 +45,7 @@ function Get-SubmoduleEntries {
     if ($line -match '^submodule\.(.+)\.path\s+(.+)$') {
       $name = $Matches[1]
       $path = $Matches[2]
+      if ($Folder -and $path -notlike "repos/$Folder/*") { continue }
       $branch = git config -f .gitmodules --get "submodule.$name.branch"
       if (-not $branch) { $branch = 'main' }
       $entries += [pscustomobject]@{ Name = $name; Path = $path; Branch = $branch }
@@ -45,14 +54,19 @@ function Get-SubmoduleEntries {
   return $entries
 }
 
+$entries = @(Get-SubmoduleEntries)
+if ($entries.Count -eq 0) {
+  throw "No submodule paths matched$(if ($Folder) { " in repos/$Folder/" })."
+}
+
 function Get-SubmoduleStatus {
-  foreach ($entry in Get-SubmoduleEntries) {
+  foreach ($entry in $entries) {
     Push-Location $entry.Path
     try {
       $sha = git rev-parse --short HEAD
       Assert-LastExitCode "git rev-parse failed in $($entry.Path)"
       $branch = git branch --show-current
-      Write-Host "$($entry.Name): $sha on $branch"
+      Write-Host "$($entry.Path): $sha on $branch"
     } finally {
       Pop-Location
     }
@@ -60,7 +74,7 @@ function Get-SubmoduleStatus {
 }
 
 if ($Status) {
-  foreach ($entry in Get-SubmoduleEntries) {
+  foreach ($entry in $entries) {
     Push-Location $entry.Path
     try {
       git fetch origin 2>$null | Out-Null
@@ -72,20 +86,22 @@ if ($Status) {
   exit 0
 }
 
+$submodulePaths = @($entries.Path)
+
 Write-Host 'Syncing submodule configuration...'
 git submodule sync --recursive
 Assert-LastExitCode 'git submodule sync failed'
 
-Write-Host 'Initializing submodules...'
-git submodule update --init --recursive
+Write-Host 'Initializing matched submodules...'
+git submodule update --init --recursive -- @submodulePaths
 Assert-LastExitCode 'git submodule update --init failed'
 
-Write-Host 'Updating submodules to latest tracked branch...'
-git submodule update --remote --merge
+Write-Host 'Updating matched submodules to latest tracked branch...'
+git submodule update --remote --merge -- @submodulePaths
 Assert-LastExitCode 'git submodule update --remote failed'
 
-Write-Host 'Checking out tracked branch in each submodule...'
-foreach ($entry in Get-SubmoduleEntries) {
+Write-Host 'Checking out tracked branch in each matched submodule...'
+foreach ($entry in $entries) {
   Push-Location $entry.Path
   try {
     git checkout -B $entry.Branch "origin/$($entry.Branch)"
@@ -100,17 +116,6 @@ Write-Host 'Submodule status:'
 Get-SubmoduleStatus
 
 if ($Commit) {
-  $submodulePaths = @(
-    git config -f .gitmodules --get-regexp '^submodule\..*\.path$' |
-      ForEach-Object { ($_ -split '\s+', 2)[1] }
-  )
-
-  if ($submodulePaths.Count -eq 0) {
-    Write-Host ''
-    Write-Host 'No submodule paths found in .gitmodules.'
-    exit 0
-  }
-
   git diff --quiet -- @submodulePaths
   if ($LASTEXITCODE -eq 0) {
     Write-Host ''
