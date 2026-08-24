@@ -16,8 +16,8 @@ This is a **meta-repo**. Project code lives in Git submodules under **`repos/<ca
 Showcase projects (linked from `repos/personal-projects/resume-data-source/index.json` `projects[]`):
 
 - **repos/personal-projects/rn-speed-art** — React Native design library
-- **repos/personal-projects/react-node-template** — React + Node.js REST API monorepo template
 - **repos/templates/React-Next-Dashboard** — Next.js dashboard template (BoxBook, Lab Maintenance, Stack Questions)
+- **repos/templates/react-node-template** — React + Node.js REST API monorepo template
 - **repos/personal-projects/Mettaton-compiler** — Robotics programming language and compiler
 - **repos/personal-projects/Smart-house** — IoT smart home platform
 - **repos/personal-projects/mintel** — Smart House landing page

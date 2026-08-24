@@ -15,7 +15,7 @@
 	url = git@github.com:FranciscoVeloz1/rn-speed-art.git
 	branch = main
 [submodule "react-node-template"]
-	path = repos/personal-projects/react-node-template
+	path = repos/templates/react-node-template
 	url = git@github.com:FranciscoVeloz1/react-node-template.git
 	branch = main
 [submodule "React-Next-Dashboard"]

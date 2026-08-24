@@ -31,6 +31,7 @@ Workspace `docs/` (plans, architecture) is **not** a submodule folder. Submodule
 | Submodule | Description |
 |-----------|-------------|
 | [React-Next-Dashboard](https://github.com/FranciscoVeloz1/React-Next-Dashboard) | Next.js dashboard template (BoxBook, Lab Maintenance, Stack Questions) |
+| [react-node-template](https://github.com/FranciscoVeloz1/react-node-template) | React + Node.js REST API monorepo template |
 
 ### productive-apps
 
@@ -65,7 +66,6 @@ Showcase projects linked from `repos/personal-projects/resume-data-source/index.
 | [resume-data-source](https://github.com/FranciscoVeloz1/resume-data-source) | JSON resume data and assets |
 | [portfolio](https://github.com/FranciscoVeloz1/portfolio) | React + Vite portfolio site |
 | [rn-speed-art](https://github.com/FranciscoVeloz1/rn-speed-art) | React Native design library |
-| [react-node-template](https://github.com/FranciscoVeloz1/react-node-template) | React + Node.js REST API monorepo template |
 | [Mettaton-compiler](https://github.com/FranciscoVeloz1/Mettaton-compiler) | Robotics programming language and compiler |
 | [Smart-house](https://github.com/FranciscoVeloz1/Smart-house) | IoT smart home platform |
 | [mintel](https://github.com/FranciscoVeloz1/mintel) | Smart House landing page |

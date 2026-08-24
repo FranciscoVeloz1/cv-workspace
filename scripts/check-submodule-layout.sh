@@ -7,6 +7,7 @@ cd "$ROOT"
 declare -A EXPECTED=(
   [js-arrays-methods]=docs
   [React-Next-Dashboard]=templates
+  [react-node-template]=templates
   [personal-api]=productive-apps
   [user-management-app]=productive-apps
   [fitness-nutrition-tracker]=productive-apps
@@ -22,7 +23,6 @@ declare -A EXPECTED=(
   [resume-data-source]=personal-projects
   [portfolio]=personal-projects
   [rn-speed-art]=personal-projects
-  [react-node-template]=personal-projects
   [Mettaton-compiler]=personal-projects
   [Smart-house]=personal-projects
   [mintel]=personal-projects
