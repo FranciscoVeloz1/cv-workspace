@@ -121,3 +121,7 @@
 [submodule "repos/job-scraper-cli"]
 	path = repos/utils/job-scraper-cli
 	url = git@github.com:FranciscoVeloz1/job-scraper-cli.git
+[submodule "repos/personal-projects/vex-iq-extension"]
+	path = repos/personal-projects/vex-iq-extension
+	url = git@github.com:FranciscoVeloz1/vex-iq-extension.git
+	branch = main
