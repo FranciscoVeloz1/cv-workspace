@@ -49,7 +49,7 @@ JSON rows:
 { job: { id, source, title, company, url, location, employment, description, tags, salary }, score: number, matched: string[] }
 ```
 
-`source`: `himalayas` | `remotive` | `remoteok` | `wwr` | `hn`. `salary` may be `null`.
+`source`: `himalayas` | `remotive` | `remoteok` | `wwr` | `hn` | `jobicy` | `getonbrd`. `salary` may be `null`.
 
 After JSON: apply `title-keywords`, `exclude-companies`, `must-have-skills`. Do not re-rank except stable keep of CLI order.
 
@@ -57,7 +57,7 @@ If `npm install` is missing `node_modules`, install once. Do not commit `node_mo
 
 ## Output document
 
-Write `output-path` (create `proposals/` if needed). Reply with the **full markdown document** (not a summary). Do not commit that file. Remotive listings: personal use only; do not republish to other boards. Keep original job URLs. Credit Remotive and Remote OK in the header.
+Write `output-path` (create `proposals/` if needed). Reply with the **full markdown document** (not a summary). Do not commit that file. Remotive listings: personal use only; do not republish to other boards. Keep original job URLs. Credit Remotive, Remote OK, Jobicy (canonical URL), Himalayas, and Get on Board in the header.
 
 Use this shape:
 
@@ -69,8 +69,8 @@ Candidate: Mexico-based software contractor targeting **US companies**, **remote
 Search: `--limit <n> --min-score <n>` | resume: `<path>` | browser: off/on
 Optional filters: title-keywords / exclude-companies / must-have-skills (or “none”)
 
-Sources: Himalayas, Remotive, Remote OK, We Work Remotely, HN Who’s Hiring.
-Credits: Remotive; Remote OK (keep original URLs). LinkedIn is out of scope.
+Sources: Himalayas, Remotive, Remote OK, We Work Remotely, HN Who’s Hiring, Jobicy, Get on Board.
+Credits: Remotive; Remote OK (keep original URLs); Jobicy (canonical URL). LinkedIn is out of scope.
 
 ## Top picks
 

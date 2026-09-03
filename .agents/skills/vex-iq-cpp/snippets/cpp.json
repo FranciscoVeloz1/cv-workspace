@@ -1,0 +1,43 @@
+{
+  "VEX main": {
+    "prefix": "vex-main",
+    "description": "VEXcode IQ (1st gen) C++ main skeleton",
+    "body": [
+      "#include \"vex.h\"",
+      "",
+      "using namespace vex;",
+      "",
+      "int main() {",
+      "  // Initializing Robot Configuration. DO NOT REMOVE!",
+      "  vexcodeInit();",
+      "",
+      "  $0",
+      "}"
+    ]
+  },
+  "VEX motor": {
+    "prefix": "vex-motor",
+    "description": "IQ1 motor spin / wait / stop",
+    "body": [
+      "motor ${1:Motor1} = motor(${2:PORT1});",
+      "${1:Motor1}.spin(${3:forward});",
+      "wait(${4:1}, seconds);",
+      "${1:Motor1}.stop();"
+    ]
+  },
+  "VEX drivetrain": {
+    "prefix": "vex-drivetrain",
+    "description": "IQ1 two-motor drivetrain",
+    "body": [
+      "motor ${1:leftMotor} = motor(${2:PORT1}, false);",
+      "motor ${3:rightMotor} = motor(${4:PORT2}, true);",
+      "drivetrain ${5:Drivetrain} = drivetrain(${1:leftMotor}, ${3:rightMotor}, ${6:259.34}, ${7:320}, ${8:40}, mm, 1);",
+      "${5:Drivetrain}.driveFor(forward, ${9:200}, mm);"
+    ]
+  },
+  "VEX wait": {
+    "prefix": "vex-wait",
+    "description": "IQ1 wait in milliseconds",
+    "body": "wait(${1:20}, msec);"
+  }
+}
