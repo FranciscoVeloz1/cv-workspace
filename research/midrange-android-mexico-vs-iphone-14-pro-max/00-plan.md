@@ -28,12 +28,12 @@ Primary: fichas de Apple, Samsung, Xiaomi, Google, Motorola, OnePlus, Nothing; A
 
 | # | Question | Suggested source types | Status |
 |---|----------|------------------------|--------|
-| q01 | ¿Qué modelos Android de gama media / calidad-precio aparecen en roundups reputados de 2025–2026 y se venden en México? Lista candidata de ~10. | Xataka México, Android Authority, GSMArena, tiendas MX | Not started |
-| q02 | Para cada modelo de la lista, ¿cuáles son pantalla, RAM, almacenamiento, chipset, cámaras, batería/carga, IP y política de updates en fichas oficiales o GSMArena? | Fichas de marca, GSMArena, Notebookcheck | Not started |
-| q03 | ¿Cuáles son las especificaciones oficiales del iPhone 14 Pro Max en los mismos ejes? | Apple Support / ficha Apple, GSMArena | Not started |
-| q04 | ¿Qué precios en MXN se observan ahora en retail mexicano para esos 10 Android y para el iPhone 14 Pro Max (nuevo, reacondicionado o de segunda mano si el nuevo ya no está)? | Amazon.com.mx, Liverpool, Apple México, tiendas oficiales | Not started |
-| q05 | ¿Los benchmarks y reseñas independientes muestran que esos Android aún quedan atrás del 14 Pro Max en CPU/GPU, procesado de cámara, video o longevidad de software, pese a fichas de RAM/batería/MP más altas? (contra-narrativa) | Geekbench, Notebookcheck, DXOMARK, reseñas The Verge / Android Authority / Xataka | Not started |
-| q06 | ¿Cuáles candidatos de “mejores del mundo” no se venden de forma fiable en México (importación gris, sin garantía local) y por tanto no deben entrar en el top 10? | Amazon MX, sitios oficiales MX, comunicados de lanzamiento | Not started |
+| q01 | ¿Qué modelos Android de gama media / calidad-precio aparecen en roundups reputados de 2025–2026 y se venden en México? Lista candidata de ~10. | Xataka México, Android Authority, GSMArena, tiendas MX | validated — in report |
+| q02 | Para cada modelo de la lista, ¿cuáles son pantalla, RAM, almacenamiento, chipset, cámaras, batería/carga, IP y política de updates en fichas oficiales o GSMArena? | Fichas de marca, GSMArena, Notebookcheck | validated — in report |
+| q03 | ¿Cuáles son las especificaciones oficiales del iPhone 14 Pro Max en los mismos ejes? | Apple Support / ficha Apple, GSMArena | validated — in report |
+| q04 | ¿Qué precios en MXN se observan ahora en retail mexicano para esos 10 Android y para el iPhone 14 Pro Max (nuevo, reacondicionado o de segunda mano si el nuevo ya no está)? | Amazon.com.mx, Liverpool, Apple México, tiendas oficiales | validated — in report |
+| q05 | ¿Los benchmarks y reseñas independientes muestran que esos Android aún quedan atrás del 14 Pro Max en CPU/GPU, procesado de cámara, video o longevidad de software, pese a fichas de RAM/batería/MP más altas? (contra-narrativa) | Geekbench, Notebookcheck, DXOMARK, reseñas The Verge / Android Authority / Xataka | validated — in report |
+| q06 | ¿Cuáles candidatos de “mejores del mundo” no se venden de forma fiable en México (importación gris, sin garantía local) y por tanto no deben entrar en el top 10? | Amazon MX, sitios oficiales MX, comunicados de lanzamiento | validated — in report |
 
 ## Report outline
 
