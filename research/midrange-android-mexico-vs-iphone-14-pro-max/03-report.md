@@ -242,6 +242,42 @@ Lo que **sugiere la evidencia disponible** (inferencia, no hecho de una sola fic
 | One UI y IP alta | **A57** (IP68, 6 OS); **A56** (IP67). Precio A57 9,499 = widget Xataka |
 | SKU Xiaomi barato sin mezclar reviews | Helio 4G, IP65, 1080p — no el Dimensity global |
 | Ficha Motorola más clara | **Edge 70** (PDP + GSMArena). Fusion: resolver UW y UFS |
+| Flagship 2023 en calle MX | **Galaxy S23 Ultra**: zoom 10×, S Pen, QHD. No es gama media. Chip ya no gana a los Poco 2026 |
+
+---
+
+## Actualización: Galaxy S23 Ultra (7 sep 2026)
+
+El S23 Ultra **no entra en el top 10 de gama media**: es un flagship de febrero 2023. Samsung México sigue publicando ficha (p. ej. Graphite 512 GB) [37]. Se añade aquí porque el usuario pidió incluirlo en la tabla de comparación.
+
+**Ficha (GSMArena + Samsung MX).** Dynamic AMOLED 2X 6.8", 1440×3088 (~500 ppi), 120 Hz adaptativo, 1200 nits HBM / 1750 pico; Gorilla Glass Victus 2; S Pen [38][37]. Snapdragon 8 Gen 2 for Galaxy (SM8550-AC, 4 nm), Adreno 740 [38]. RAM/ROM: 8/256, 12/256, 12/512, 12/1 TB, UFS 4.0, sin microSD [38]. Cámaras: 200 MP OIS + 10 MP tele 3× + 10 MP periscopio **10×** + 12 MP UW; selfie 12 MP; vídeo **8K** 24/30 y 4K 60 [38]. 5000 mAh; 45 W (65 % en 30 min en ficha); Qi 15 W; reverse 4.5 W [38]. IP68 1.5 m / 30 min; 163.4×78.1×8.9 mm; **234 g**; USB-C 3.2 [38]. Android 13 de fábrica, hasta 4 major OS; GSMArena lista One UI 8.5 [38]. NanoReview: actualizable a Android 16, 4 años de OS / 5 de seguridad [39].
+
+**Laboratorio.** GSMArena “Our Tests”: GeekBench **4927 (v5.1)** — no es GB6; no mezclar con los GB6 del shortlist. 3DMark Wild Life Extreme **3790**; brillo medido **1274 nits**; Active use **13:24 h** [38]. Review: 68 % en 30 min con adaptador 45 W, 100 % en ~59 min; en el mismo test el 14 Pro Max hizo 48 % / 1:52 h a full [40]. Artículo GSMArena 2023, mismo lab: WL Extreme S23 Ultra **3790** vs 14 Pro Max **3341** [41]. NanoReview (misma fuente que el A16): GB6 **2010 / 5245**; WL Extreme **3723** [39]. Frente al 14 Pro Max NanoReview (**2669 / 7024**, WL **3335**): el iPhone gana CPU; el S23 Ultra gana GPU por poco.
+
+**Cámara.** DXOMARK protocolo **v5**: **140** global (Photo 139, Video 137, Zoom 141) [42]. El 14 Pro Max es **146** v5 (Photo 143, Video 149, Zoom 139) [31]. Mismo protocolo: el iPhone queda por encima en score global y vídeo; el S23 Ultra declara **zoom óptico 10×** que el iPhone no tiene (tele 3× + recorte 2×) [38][27].
+
+**Precios MX.** Lanzamiento 2023 no se re-fetcheó el Newsroom en esta pasada. Canal actual: PDP samsung.com/mx viva, precio no parseable en HTML [37]. Amazon MX reacondicionado 256 GB: **9,289 MXN** (entrega en la página: 1 de junio — posible cache) [43]; Amazon Renewed 8/256: **9,999 MXN**, con “precio nuevo” **30,999 MXN** en el mismo listing [44]. Mercado Libre reacondicionado 256 GB: **18,999 MXN** [45]. Amazon 12/512 “nuevo”: **31,999 MXN** (página con entrega febrero — también posible cache) [46]. Tratar **~9,300–19,000** como banda refurb a verificar el día de compra; **~31,000+** como resto de stock nuevo.
+
+---
+
+## Tabla de ranking (calidad-precio MX, 12 modelos)
+
+Criterio: calidad-precio para comprador en México (rendimiento + batería + precio + software + cámara usable). **No es ranking oficial.** El S23 Ultra y el 14 Pro Max son flagships viejos, no gama media 2026.
+
+| # | Modelo | Precio MXN | Chip / GB6 | Cámara | Batería | Lectura vs 14 Pro Max |
+|---|--------|------------|------------|--------|---------|------------------------|
+| 1 | Poco X8 Pro | 7,999 (12/512) | Dimensity 8500 Ultra · GSMArena GB6 6479 | 50+8, 4K60 | 6500 mAh, 100 W | Casi el multi del A16, mejor GPU, más RAM. Mejor compra nueva del corte. |
+| 2 | **Galaxy S23 Ultra** | refurb **~9,289–18,999**; nuevo listado ~31,999 | 8 Gen 2 Galaxy · NanoReview **2010/5245** (no GB6 GSMArena) | 200+3×+**10×**+UW; DXOMARK **140** v5; 8K; S Pen | 5000 mAh, 45 W, Qi 15 W | Flagship 2023. Zoom/S Pen/QHD que el iPhone no replica. CPU **por debajo** del A16 (5245 vs 7024). GPU ligeramente por encima (WL ~3790 vs ~3341). OS: 4 majors desde Android 13. |
+| 3 | Poco X8 Pro Max | 10,099 (12/512) | Dimensity 9500s · GB6 8539 | 50+8, 4K60 | 8500–9000 mAh, 100 W | Gana CPU y GPU al A16 y al S23 Ultra en sintéticos 2026. Sin tele 10× ni S Pen. |
+| 4 | realme GT 7T | 8,174–9,999 | Dimensity 8400 Max · sin GB6 GSMArena | 50+8, 4K60 | 7000 mAh, 120 W | Gana batería/vatios. Sin tele. |
+| 5 | Galaxy A57 5G | 9,499 (widget Xataka) | Exynos 1680 · 4411 | 50+12+5, 4K30 | 5000 mAh, 45 W | 6 OS, IP68. CPU atrás del A16 y del S23 Ultra. |
+| 6 | Pixel 10a | 10,691–11,599 | Tensor G4 · 4545 | 48+13, sin tele | 5100 mAh, 30 W | Mejor uso foto que ficha. 7 años. Precio de flagship viejo. |
+| 7 | **iPhone 14 Pro Max** | refurb 9,819–11,579 (doto 256 GB) | A16 · NanoReview **2669/7024** | 48+UW+tele 2×/3×, LiDAR, ProRes; DXOMARK **146** v5 | 4323 mAh (lab), ~20 W, MagSafe | Referencia iOS/vídeo Pro. Pierde RAM, USB-C, zoom 10×, S Pen. Chip 2022 aún gana CPU al S23 Ultra. |
+| 8 | Edge 60 Fusion | 8,999 (lanz. 2025) | Dimensity 7300 · 3047 | 50+UW (13 o 50 MP) | 5200 mAh, 68 W | Barato. CPU lejos. 3 major OS. |
+| 9 | Galaxy A56 5G | sin precio | Exynos 1580 · 3899 | 50+12+5 | 5000 mAh, 45 W | A57 del año pasado. |
+| 10 | Motorola Edge 70 | 10,999–12,999 | SD 7 Gen 4 · 4185 | 50+50 UW, sin tele | 4800 mAh, Qi2 | Diseño. Pagas grosor, no chip. |
+| 11 | Motorola Edge 60 | 11,999 (lanz.) | Dimensity 7300 | 50+50+tele 3× | 5200 mAh, 68 W | Único midrange del diez con tele 3×. Chip lento para el precio. |
+| 12 | REDMI Note 15 Pro (MX) | 6,499 | Helio G200 4G | 200 MP, vídeo 1080p | 6500 mAh, 45 W | Presupuesto. No es el 5G global. No rivaliza cámara Pro. |
 
 ---
 
@@ -251,7 +287,7 @@ Lo que **sugiere la evidencia disponible** (inferencia, no hecho de una sola fic
 2. Geekbench Android = un solo número de laboratorio GSMArena, no multi-core de Geekbench.com. El 7024/2669/3335 del iPhone es NanoReview (agregador), no Apple ni Geekbench.com.
 3. 6 GB RAM y 4323 mAh del 14 Pro Max: GSMArena/NanoReview, no Apple Support. Carga 50 %: 35 min (Apple, 20 W) vs 30 min (GSMArena).
 4. Precio A57 9,499 MXN: widget afiliado Xataka, no HTML Samsung MX. Pixel 10a 11,599: junio 2026, no Google Store el 2026-09-06.
-5. No hay DXOMARK de los Android del top 10.
+5. No hay DXOMARK de los Android del top 10 de gama media. El S23 Ultra sí: 140 v5, añadido el 2026-09-07.
 6. Edge 60 Fusion: conflicto GSMArena vs Xataka MX (UW y UFS). Chip 7300 vs 7400 según mercado en GSMArena.
 7. Note 15 Pro MX ≠ Note 15 Pro 5G global. Helio G200-Ultra sin benchmark fetched.
 8. Xataka MX se contradice en megapíxeles de la frontal del Edge 60 vs Edge 60 Pro.
@@ -264,6 +300,7 @@ Lo que **sugiere la evidencia disponible** (inferencia, no hecho de una sola fic
 15. mistoremx.com no se contrastó con un directorio de autorizados de Xiaomi México. Términos de garantía realme.com.mx no se fetcharon.
 16. Active use GSMArena ≠ “29 h de vídeo” de Apple. Single-core del A16 no tiene pareja Android fetched.
 17. No se recuperó ficha oficial Samsung México con tabla de specs (páginas /buy/ en JS).
+18. Galaxy S23 Ultra: precios Amazon/ML con fechas de entrega incoherentes (junio/febrero en fetch del 2026-09-07). Verificar el día de compra. GeekBench GSMArena del S23 Ultra es **v5.1**, no v6.
 
 ---
 
@@ -340,3 +377,23 @@ Lo que **sugiere la evidencia disponible** (inferencia, no hecho de una sola fic
 [35] HONOR Tienda Oficial México (primary). https://www.honor.com/mx/shop/. Accessed 2026-09-06.
 
 [36] Honor X9d — GSMArena (secondary). https://www.gsmarena.com/honor_x9d_5g-14176.php. Accessed 2026-09-06.
+
+[37] Galaxy S23 Ultra Graphite 512 GB — Samsung México (primary). https://www.samsung.com/mx/smartphones/galaxy-s/galaxy-s23-ultra-graphite-512gb-sm-s918bzavltm/. Accessed 2026-09-07.
+
+[38] Samsung Galaxy S23 Ultra — GSMArena (secondary). https://www.gsmarena.com/samsung_galaxy_s23_ultra-12024.php. Accessed 2026-09-07.
+
+[39] Samsung Galaxy S23 Ultra — NanoReview (secondary aggregator). https://nanoreview.net/en/phone/samsung-galaxy-s23-ultra. Accessed 2026-09-07.
+
+[40] "Samsung Galaxy S23 Ultra review: Lab tests" — GSMArena (secondary). https://www.gsmarena.com/samsung_galaxy_s23_ultra-review-2526p3.php. Accessed 2026-09-07.
+
+[41] "Samsung Galaxy S23 Ultra benchmarks — Snapdragon 8 Gen 2 for Galaxy examined" — GSMArena (secondary). https://www.gsmarena.com/samsung_galaxy_s23_ultra_benchmarks__snapdragon_8_gen_2_for_galaxy_examined-news-57447.php. Accessed 2026-09-07.
+
+[42] "Samsung Galaxy S23 Ultra Camera test" — DXOMARK (primary lab), protocolo v5. https://www.dxomark.com/samsung-galaxy-s23-ultra-camera-test/. Accessed 2026-09-07.
+
+[43] Galaxy S23 Ultra 256 GB reacondicionado — Amazon.com.mx. https://www.amazon.com.mx/SAMSUNG-Galaxy-S23-Ultra-Desbloqueado/dp/B0C544TBQM. Accessed 2026-09-07 (página mostró entrega 1 de junio).
+
+[44] Galaxy S23 Ultra 8/256 Lavanda reacondicionado — Amazon.com.mx Renewed. https://www.amazon.com.mx/Samsung-8GB_256GB-Lavanda-Desbloqueado-Reacondicionado/dp/B0C67XHD9C. Accessed 2026-09-07.
+
+[45] Galaxy S23 Ultra 256 GB reacondicionado — Mercado Libre México. https://articulo.mercadolibre.com.mx/MLM-1866819301-galaxy-s23-ultra-256gb-snapdragon-1-ano-garantia-_JM. Accessed 2026-09-07.
+
+[46] Galaxy S23 Ultra 12/512 Verde — Amazon.com.mx. https://www.amazon.com.mx/Samsung-Galaxy-Ultra-12GB_512GB-Desbloqueado/dp/B0BQXG5SP9. Accessed 2026-09-07 (página mostró entrega febrero).
