@@ -32,13 +32,13 @@ Fuentes preferidas por tipo de pregunta: manual del propietario Chevrolet/GM, ca
 
 | # | Question | Suggested source types | Status |
 |---|----------|------------------------|--------|
-| q01 | ¿Qué vehículo es el Cavalier 2021 1.5L LT (mercado, plataforma, motorización) y qué tipo de cuadro de instrumentos OEM se documenta (analógico, LCD, part numbers)? | Manual del propietario Chevrolet, catálogos de partes GM, fichas oficiales de producto | researched — pending validation |
-| q02 | ¿Qué conector o puerto físico une el cuadro al arnés (familia, pines, alimentación, tierra, buses)? | Diagramas de cableado públicos, catálogos de conectores GM/Delphi, bulletins de servicio | researched — pending validation |
-| q03 | ¿Qué protocolo(s) usa el cuadro (GMLAN HS/MS/LS-CAN, LIN, otros) y a qué velocidad? | Arquitectura eléctrica GM/GEM publicada, normas SAE/ISO, service info accesible | researched — pending validation |
-| q04 | ¿Qué indicadores, gauges y mensajes muestra el cuadro, y de qué sensores o ECUs suelen alimentarse esos datos? | Manual del propietario, descripciones IPC/BCM GM, arquitectura de red | researched — pending validation |
-| q05 | ¿Cómo se documenta la lectura o emulación de buses GM/CAN/LIN con Arduino o Raspberry Pi (transceptor, bitrate, stack)? | Datasheets MCP2515/TJA1050/MCP2003, SocketCAN, librerías oficiales | researched — pending validation |
-| q06 | ¿Hay evidencia de que un réplica from-scratch *no* pueda hablar con el bus original (gateway, seguridad, VIN, LIN-only, DBC cerrado)? | Arquitectura GM de seguridad, service info, ausencia de DBC públicos | researched — pending validation |
-| q07 | ¿Qué documentación de servicio, diagramas o piezas de recambio existen específicamente para este cluster, y qué huecos quedan? | GM parts, Chevrolet México/China, NHTSA, vendedores de IPC | researched — pending validation |
+| q01 | ¿Qué vehículo es el Cavalier 2021 1.5L LT (mercado, plataforma, motorización) y qué tipo de cuadro de instrumentos OEM se documenta (analógico, LCD, part numbers)? | Manual del propietario Chevrolet, catálogos de partes GM, fichas oficiales de producto | reported |
+| q02 | ¿Qué conector o puerto físico une el cuadro al arnés (familia, pines, alimentación, tierra, buses)? | Diagramas de cableado públicos, catálogos de conectores GM/Delphi, bulletins de servicio | reported |
+| q03 | ¿Qué protocolo(s) usa el cuadro (GMLAN HS/MS/LS-CAN, LIN, otros) y a qué velocidad? | Arquitectura eléctrica GM/GEM publicada, normas SAE/ISO, service info accesible | reported |
+| q04 | ¿Qué indicadores, gauges y mensajes muestra el cuadro, y de qué sensores o ECUs suelen alimentarse esos datos? | Manual del propietario, descripciones IPC/BCM GM, arquitectura de red | reported |
+| q05 | ¿Cómo se documenta la lectura o emulación de buses GM/CAN/LIN con Arduino o Raspberry Pi (transceptor, bitrate, stack)? | Datasheets MCP2515/TJA1050/MCP2003, SocketCAN, librerías oficiales | reported |
+| q06 | ¿Hay evidencia de que un réplica from-scratch *no* pueda hablar con el bus original (gateway, seguridad, VIN, LIN-only, DBC cerrado)? | Arquitectura GM de seguridad, service info, ausencia de DBC públicos | reported |
+| q07 | ¿Qué documentación de servicio, diagramas o piezas de recambio existen específicamente para este cluster, y qué huecos quedan? | GM parts, Chevrolet México/China, NHTSA, vendedores de IPC | reported |
 
 ## Report outline
 

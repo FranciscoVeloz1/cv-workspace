@@ -1,6 +1,6 @@
 # q05: ¿Cómo se documenta la lectura o emulación de buses GM/CAN/LIN con Arduino o Raspberry Pi (transceptor, bitrate, stack)?
 
-**Status:** researched — pending validation
+**Status:** reported
 **Source types to prioritize:** Datasheets MCP2515/TJA1050/MCP2003, SocketCAN, librerías oficiales
 
 ## Findings

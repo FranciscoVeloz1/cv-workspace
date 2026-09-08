@@ -1,6 +1,6 @@
 # q07: ¿Qué documentación de servicio, diagramas o piezas de recambio existen específicamente para este cluster, y qué huecos quedan?
 
-**Status:** researched — pending validation
+**Status:** reported
 **Source types to prioritize:** GM parts, Chevrolet México/China, NHTSA, vendedores de IPC
 
 ## Findings

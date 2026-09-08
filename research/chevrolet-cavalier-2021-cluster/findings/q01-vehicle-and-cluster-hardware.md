@@ -1,6 +1,6 @@
 # q01: ¿Qué vehículo es el Cavalier 2021 1.5L LT (mercado, plataforma, motorización) y qué tipo de cuadro de instrumentos OEM se documenta (analógico, LCD, part numbers)?
 
-**Status:** researched — pending validation
+**Status:** reported
 **Source types to prioritize:** Manual del propietario Chevrolet, catálogos de partes GM, fichas oficiales de producto
 
 ## Findings

@@ -1,6 +1,6 @@
 # q04: ¿Qué indicadores, gauges y mensajes muestra el cuadro, y de qué sensores o ECUs suelen alimentarse esos datos?
 
-**Status:** researched — pending validation
+**Status:** reported
 **Source types to prioritize:** Manual del propietario, descripciones IPC/BCM GM, arquitectura de red
 
 ## Findings
