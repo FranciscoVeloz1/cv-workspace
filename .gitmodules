@@ -125,3 +125,6 @@
 	path = repos/personal-projects/vex-iq-extension
 	url = git@github.com:FranciscoVeloz1/vex-iq-extension.git
 	branch = main
+[submodule "repos/docs/cavalier-cluster-wiki"]
+	path = repos/docs/cavalier-cluster-wiki
+	url = git@github.com:FranciscoVeloz1/cavalier-cluster-wiki.git
