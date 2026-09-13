@@ -2,4 +2,6 @@
 Thumbs.db
 *.swp
 *~
-/research/
+/research/*
+!/research/ozempic/
+!/research/ozempic/**
