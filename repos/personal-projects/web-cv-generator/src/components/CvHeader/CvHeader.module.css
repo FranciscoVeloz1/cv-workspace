@@ -1,0 +1,38 @@
+.header {
+  margin: 0;
+}
+
+.name {
+  margin: 0 0 4pt;
+  font-family: var(--font-display);
+  font-size: var(--sheet-name-size);
+  font-weight: var(--sheet-name-weight);
+  letter-spacing: var(--sheet-name-tracking);
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.15;
+  hyphens: none;
+}
+
+.headline {
+  margin: 0 0 10pt;
+  text-align: center;
+  font-size: var(--sheet-headline-size);
+  font-weight: var(--sheet-headline-weight);
+  color: var(--sheet-ink);
+}
+
+.rule {
+  height: 0;
+  width: 100%;
+  margin: 0 auto 10pt;
+  border: 0;
+  border-top: 1px solid var(--sheet-rule);
+}
+
+.contact {
+  margin: 0 0 14pt;
+  text-align: center;
+  font-size: var(--sheet-contact-size);
+  color: var(--sheet-ink-muted);
+}

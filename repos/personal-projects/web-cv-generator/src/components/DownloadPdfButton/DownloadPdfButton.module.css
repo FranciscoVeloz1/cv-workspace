@@ -1,0 +1,31 @@
+.button {
+  min-height: var(--chrome-hit);
+  padding: 0 16px;
+  border: 0;
+  border-radius: var(--chrome-radius);
+  background: var(--studio-accent);
+  color: var(--studio-on-accent);
+  font-family: var(--font-chrome);
+  font-size: var(--chrome-button);
+  font-weight: var(--chrome-button-weight);
+  cursor: pointer;
+  transition: background-color var(--motion-fast) var(--motion-ease);
+}
+
+.button:hover:not(:disabled) {
+  background: var(--studio-accent-hover);
+}
+
+.button:focus-visible {
+  outline: 2px solid var(--studio-focus);
+  outline-offset: 2px;
+}
+
+.button:active:not(:disabled) {
+  transform: translateY(1px);
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

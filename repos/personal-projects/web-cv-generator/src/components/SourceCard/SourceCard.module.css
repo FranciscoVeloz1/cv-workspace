@@ -1,0 +1,41 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  min-height: var(--chrome-hit);
+  padding: 16px 20px;
+  border-radius: var(--chrome-radius);
+  border: 1px solid var(--studio-border);
+  background: var(--studio-raised);
+  box-shadow: var(--studio-shadow);
+  text-decoration: none;
+  color: inherit;
+  text-underline-offset: 0.18em;
+  transition:
+    background-color var(--motion-fast) var(--motion-ease),
+    border-color var(--motion-fast) var(--motion-ease);
+}
+
+.card:hover {
+  background: var(--studio-raised-hover);
+}
+
+.card:focus-visible {
+  outline: 2px solid var(--studio-focus);
+  outline-offset: 2px;
+}
+
+.title {
+  color: var(--studio-ink);
+  font-size: 1.125rem;
+  font-weight: 650;
+  line-height: 1.25;
+}
+
+.subtitle {
+  color: var(--studio-ink-muted);
+  font-size: 0.9375rem;
+  font-weight: 400;
+  line-height: 1.4;
+}

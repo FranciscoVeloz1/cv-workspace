@@ -1,0 +1,39 @@
+.item {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12pt;
+}
+
+.heading {
+  margin: 0;
+  font-size: var(--sheet-item-size);
+  font-weight: var(--sheet-item-weight);
+  color: var(--sheet-ink);
+}
+
+.dates {
+  margin: 0;
+  padding-left: 8pt;
+  font-size: var(--sheet-item-size);
+  font-weight: var(--sheet-item-weight);
+  white-space: nowrap;
+  color: var(--sheet-ink);
+}
+
+.bullets {
+  margin: 4pt 0 10pt;
+  padding-left: 16pt;
+  list-style: disc;
+}
+
+.bullets li {
+  color: var(--sheet-ink-body);
+  font-size: var(--sheet-body-size);
+  line-height: var(--sheet-body-line);
+}

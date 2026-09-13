@@ -1,0 +1,39 @@
+.page {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: var(--chrome-gap);
+  padding-top: calc(var(--chrome-gap) + 32px);
+}
+
+.page ::selection {
+  background: var(--studio-accent);
+  color: var(--studio-on-accent);
+}
+
+.heading {
+  margin: 0 0 8px;
+  color: var(--studio-ink);
+  font-family: var(--font-chrome);
+  font-size: var(--chrome-title);
+  font-weight: var(--chrome-title-weight);
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.lede {
+  margin: 0 0 var(--chrome-gap);
+  max-width: 72ch;
+  color: var(--studio-ink-muted);
+  font-size: var(--chrome-body);
+  font-weight: var(--chrome-body-weight);
+  line-height: 1.5;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--chrome-gap);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

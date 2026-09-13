@@ -1,0 +1,763 @@
+{
+  "profile": {
+    "firstName": "Francisco",
+    "lastName": "Veloz",
+    "fullName": "Francisco González Veloz",
+    "headline": "Senior Software Engineer | Python, TypeScript, APIs & Data Pipelines",
+    "email": "franciscoveloz245@gmail.com",
+    "phone": "+52 474 130 9933",
+    "location": "Guadalajara, Jalisco, México",
+    "website": "https://franciscoveloz1.github.io/portfolio/",
+    "profilePhoto": "https://franciscoveloz1.github.io/resume-data-source/images/profile/foto.webp"
+  },
+  "summary": {
+    "short": "Software engineer with 10+ years building production APIs, Python data pipelines, and TypeScript backends. Dev Lead at PwC México.",
+    "long": "Software engineer with 10+ years of experience building production APIs, backend services, and data pipelines with Python, TypeScript, Node.js, and cloud infrastructure. Currently a Dev Lead at PwC México, leading delivery across Node.js and Python backend services and PySpark data pipelines, and owning release workflows that improve deployment reliability for enterprise clients. Earlier work includes Databricks ETL over on-chain and off-chain datasets, Node.js/Express REST APIs, and inventory systems that cut daily processing time by 88%. Used to owning well-scoped delivery independently, including contract work.",
+    "highlights": [
+      "10+ years of experience",
+      "Python, TypeScript, Node.js",
+      "PySpark and Databricks pipelines",
+      "Dev Lead at PwC México",
+      "cutting daily inventory processing time by 88%"
+    ]
+  },
+  "workExperience": [
+    {
+      "position": "Dev Lead - Senior Associate",
+      "company": "PwC México",
+      "employmentType": "Full-time",
+      "startDate": "2025-06",
+      "endDate": null,
+      "duration": "Jun 2025 - Present",
+      "location": "Guadalajara, Jalisco, México",
+      "logo": "https://franciscoveloz1.github.io/resume-data-source/images/logos/pwc.webp",
+      "responsibilities": [
+        "Lead end-to-end full-stack delivery across a React microservices frontend, Node.js and Python backend services, and PySpark data pipelines",
+        "Own release documentation and feature promotion workflows, improving deployment reliability across services",
+        "Drive vulnerability remediation through software composition analysis scanning, reducing security risk and keeping services compliant",
+        "Define commit standards and repository management practices to keep codebases clean and auditable",
+        "Mentor junior developers through code reviews, technical guidance, and development planning",
+        "Work directly with technical and business stakeholders to align engineering priorities with product goals",
+        "Integrate AI-assisted development workflows with tools such as Cursor and Claude Code into the team's daily practice, accelerating feature delivery, debugging, and maintenance"
+      ],
+      "skills": [
+        3,
+        2,
+        16,
+        21,
+        30,
+        23
+      ]
+    },
+    {
+      "position": "Associate",
+      "company": "PwC México",
+      "employmentType": "Full-time",
+      "startDate": "2023-02",
+      "endDate": "2025-06",
+      "duration": "Feb 2023 - Jun 2025",
+      "location": "Guadalajara, Jalisco, México",
+      "logo": "https://franciscoveloz1.github.io/resume-data-source/images/logos/pwc.webp",
+      "responsibilities": [
+        "Designed secure data engineering workflows with Python and Databricks, processing on-chain and off-chain datasets through custom ETL and analytics pipelines",
+        "Built scalable web platforms integrated with blockchain-based data pipelines for enterprise clients",
+        "Used AI-assisted development tools such as Cursor and Claude Code to accelerate feature delivery, debugging, and maintenance"
+      ],
+      "skills": [
+        3,
+        22,
+        21,
+        25,
+        23,
+        2
+      ]
+    },
+    {
+      "position": "Full Stack Developer",
+      "company": "Del Norte Distribution",
+      "employmentType": "Contract",
+      "startDate": "2022-07",
+      "endDate": "2022-10",
+      "duration": "Jul 2022 - Oct 2022",
+      "location": "Oxnard, California, United States",
+      "logo": "https://franciscoveloz1.github.io/resume-data-source/images/logos/norte.webp",
+      "responsibilities": [
+        "Developed the React and TypeScript frontend alongside Node.js/Express REST APIs",
+        "Deployed and operated production infrastructure on DigitalOcean using PM2 and Nginx",
+        "Built a full-stack inventory management platform with real-time stock synchronization and order processing",
+        "Automated bulk inventory intake through Excel import workflows, replacing manual data entry"
+      ],
+      "skills": [
+        2,
+        16,
+        17,
+        31,
+        26
+      ]
+    },
+    {
+      "position": "Full Stack Developer",
+      "company": "Channel Islands Warehouse",
+      "employmentType": "Contract",
+      "startDate": "2021-06",
+      "endDate": "2022-04",
+      "duration": "Jun 2021 - Apr 2022",
+      "location": "Oxnard, California, United States",
+      "logo": "https://franciscoveloz1.github.io/resume-data-source/images/logos/channel.webp",
+      "responsibilities": [
+        "Designed Node.js/Express APIs that unified goods receiving and inventory management into a single system",
+        "Automated goods-receiving and inventory workflows, cutting daily manual processing time by 88% (from 2 hours to 15 minutes)",
+        "Delivered a cross-platform inventory management system spanning web (React) and mobile (React Native) applications"
+      ],
+      "skills": [
+        16,
+        1,
+        17
+      ]
+    },
+    {
+      "position": "Full Stack Developer",
+      "company": "Control System",
+      "employmentType": "Freelance",
+      "startDate": "2020-12",
+      "endDate": "2022-01",
+      "duration": "Dec 2020 - Jan 2022",
+      "location": "Lagos de Moreno, Jalisco, México",
+      "logo": "https://franciscoveloz1.github.io/resume-data-source/images/logos/control.webp",
+      "responsibilities": [
+        "Architected a GPS fleet-tracking platform for real-time vehicle monitoring",
+        "Built Node.js/Express backend services on MySQL with Google Maps integration for live geospatial visualization",
+        "Implemented secure authentication workflows using Passport.js"
+      ],
+      "skills": [
+        16,
+        1,
+        17,
+        31
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": 10,
+      "name": "React Native Speed Art",
+      "date": "2022-11-01",
+      "link": "https://github.com/FranciscoVeloz1/rn-speed-art",
+      "repo": "https://github.com/FranciscoVeloz1/rn-speed-art",
+      "video": "9Gqwq0AfYt8",
+      "demo": "",
+      "skills": [
+        9,
+        7,
+        2,
+        16
+      ],
+      "description": "Design library for React Native with customizable, reusable components and a utility-class system that reduces boilerplate styling code. The demo showcases a restaurant menu app with a modern design built in just a few lines of code.",
+      "writeup": "React Native Speed Art is a design library of reusable mobile UI pieces—buttons, inputs, containers—plus a set of utility classes so screens can be assembled with less one-off styling.\n\nIt exists to cut boilerplate in React Native apps. The published demo is a restaurant menu built in a few lines to show that the same components can carry a full layout.\n\nThe package is TypeScript compiled to dist/, published as rn-speed-art on npm, and imported by name from the library entry. Each component takes required and optional props rather than a separate CSS-in-JS layer.",
+      "image": "https://franciscoveloz1.github.io/resume-data-source/images/projects/speed-art.webp"
+    },
+    {
+      "id": 11,
+      "name": "React & Node.js REST API Template",
+      "date": "2022-10-20",
+      "link": "https://github.com/FranciscoVeloz1/react-node-template",
+      "repo": "https://github.com/FranciscoVeloz1/react-node-template",
+      "video": "GHAM2VTqn0U",
+      "demo": "",
+      "skills": [
+        7,
+        16,
+        2,
+        17
+      ],
+      "description": "Production-ready monorepo template built with React, Node.js, and TypeScript. Includes JWT authentication, Zod schema validation, REST APIs, route protection middleware, and a reusable, scalable architecture for both frontend and backend.",
+      "writeup": "This is a TypeScript monorepo template with a Vite React frontend and an Express API in npm workspaces. The backend includes JWT auth, Zod request validation, bcrypt password hashing, MySQL via mysql2, and REST routes for auth, users, and companies.\n\nIt exists as a starting point for full-stack products so a new app does not rebuild login, schema checks, and a split frontend/backend layout from scratch.\n\nThe API listens on Express, serves the built SPA from public/, and uses CORS plus JSON body parsing. Workspace scripts start the API and the Vite app independently.",
+      "image": "https://franciscoveloz1.github.io/resume-data-source/images/projects/template.webp"
+    },
+    {
+      "id": 1,
+      "name": "BoxBook",
+      "date": "2022-04-07",
+      "link": "https://github.com/FranciscoVeloz1/React-Next-Dashboard",
+      "repo": "https://github.com/FranciscoVeloz1/React-Next-Dashboard",
+      "video": "TNnKCNwQJE8",
+      "demo": "",
+      "skills": [
+        7,
+        16,
+        1,
+        8
+      ],
+      "description": "Social book-tracking platform built with Next.js that lets users manage reading progress, reviews, ratings, and social connections through a modern web interface.",
+      "writeup": "BoxBook is a social book-tracking platform. Users record reading progress, write reviews and ratings, and keep social connections through a web dashboard.\n\nIt was built so a reading community could live in the browser instead of a spreadsheet or a notes app.\n\nIt runs on a shared Next.js 12 dashboard (React 17, Bootstrap, next-auth, MySQL, cookie sessions) with public pages, auth, profile, and an admin area.",
+      "image": "https://franciscoveloz1.github.io/resume-data-source/images/projects/boxbook.webp"
+    },
+    {
+      "id": 2,
+      "name": "Lab Maintenance",
+      "date": "2022-03-23",
+      "link": "https://github.com/FranciscoVeloz1/React-Next-Dashboard",
+      "repo": "https://github.com/FranciscoVeloz1/React-Next-Dashboard",
+      "video": "AETMF4xCXJQ",
+      "demo": "",
+      "skills": [
+        7,
+        16,
+        1,
+        8
+      ],
+      "description": "Maintenance and support ticketing system for school computer laboratories, built on a custom Next.js dashboard template. Supports administrator and user roles, ticket registration, and full CRUD management of laboratories and their computers.",
+      "writeup": "Lab Maintenance is a support ticketing system for school computer laboratories. Administrators and users register tickets and run CRUD on laboratories and the computers inside them.\n\nIt exists to replace informal lab support with one dashboard where staff can see which rooms and machines need work.\n\nIt uses the same Next.js 12, MySQL, next-auth, and Bootstrap dashboard template as the other products in that repository, with admin and user roles in the page tree.",
+      "image": "https://franciscoveloz1.github.io/resume-data-source/images/projects/lab.webp"
+    },
+    {
+      "id": 3,
+      "name": "Stack Questions",
+      "date": "2022-03-10",
+      "link": "https://github.com/FranciscoVeloz1/React-Next-Dashboard",
+      "repo": "https://github.com/FranciscoVeloz1/React-Next-Dashboard",
+      "video": "3KcSOKeZfYQ",
+      "demo": "",
+      "skills": [
+        7,
+        16,
+        1,
+        8
+      ],
+      "description": "Stack Overflow-style Q&A community built with Next.js. Anyone can browse questions and answers, while registered users can post questions and contribute answers.",
+      "writeup": "Stack Questions is a Q&A community in the style of Stack Overflow. Anyone can browse questions and answers; registered users can post both.\n\nIt was built so a class or group could host their own Q&A without standing up a third-party forum.\n\nIt shares the Next.js 12 dashboard stack—MySQL, next-auth, Bootstrap—with auth pages for sign-in and the rest of the UI as React pages over API routes.",
+      "image": "https://franciscoveloz1.github.io/resume-data-source/images/projects/stack.webp"
+    },
+    {
+      "id": 4,
+      "name": "Mettaton Compiler",
+      "date": "2021-06-08",
+      "link": "https://github.com/FranciscoVeloz1/Mettaton-compiler",
+      "repo": "https://github.com/FranciscoVeloz1/Mettaton-compiler",
+      "video": "L29yk_CP0_I",
+      "demo": "",
+      "skills": [
+        16,
+        1,
+        17
+      ],
+      "description": "Custom robotics-focused programming language and compiler for Arduino, built with JavaScript and Node.js. Includes an integrated code editor, terminal, syntax validation, and automated Arduino compilation workflows.",
+      "writeup": "Mettaton Compiler is a custom language and toolchain aimed at Arduino robotics. The web app is a code editor with a terminal and syntax checks, and the repo also holds AVR tooling, Arduino cores, hex output, and an uploader.\n\nIt exists so robotics students can write a simpler language and still flash an Arduino without driving the full avr-gcc command line themselves.\n\nThe editor is an Express + EJS Node server. Routes post source to a controller; vendored avr binaries and Arduino cores sit beside the app.",
+      "image": "https://franciscoveloz1.github.io/resume-data-source/images/projects/metatton.webp"
+    },
+    {
+      "id": 5,
+      "name": "Smart House",
+      "date": "2020-06-04",
+      "link": "https://github.com/FranciscoVeloz1/Smart-house",
+      "repo": "https://github.com/FranciscoVeloz1/Smart-house",
+      "video": "vM1FTTQyAUg",
+      "demo": "",
+      "skills": [
+        16,
+        1,
+        31,
+        17
+      ],
+      "description": "IoT smart home platform built with JavaScript and Node.js, enabling remote control of lighting, fans, water systems, and environmental sensors through a web application.",
+      "writeup": "Smart House is an IoT home controller. A web application drives lighting, fans, water systems, and environmental sensors on the attached hardware.\n\nIt exists to operate real devices from a browser instead of only physical switches, with the Node server sitting next to the microcontroller link.\n\nThe stack is Express, Handlebars, MySQL sessions, Passport local auth, Socket.io, and Johnny-Five on a serial port (the project scripts chmod /dev/ttyACM0 for the board).",
+      "image": "https://franciscoveloz1.github.io/resume-data-source/images/projects/smart.webp"
+    },
+    {
+      "id": 6,
+      "name": "Mintel",
+      "date": "2021-02-06",
+      "link": "https://franciscoveloz1.github.io/mintel/",
+      "repo": "https://github.com/FranciscoVeloz1/mintel",
+      "video": "AUW6WLGywXE",
+      "demo": "https://franciscoveloz1.github.io/mintel/",
+      "skills": [
+        7,
+        1,
+        10
+      ],
+      "description": "Fully responsive landing page for the Smart House platform, built with React and Bootstrap. Presents the product's main features, pricing, and advantages with a clear, mobile-first design.",
+      "writeup": "Mintel is a marketing landing page for an IoT automation product aimed at homes and businesses. It presents the product's features, pricing, and advantages.\n\nIt exists as the public face of the Smart House idea—a place to explain the product without logging into the control app.\n\nThe current site is a Vite + React SPA with no backend, built and previewed with npm scripts and hosted on GitHub Pages.",
+      "image": "https://franciscoveloz1.github.io/resume-data-source/images/projects/mintel.webp"
+    },
+    {
+      "id": 12,
+      "name": "Kanban CLI",
+      "date": "2026-08-23",
+      "link": "https://github.com/FranciscoVeloz1/kanban-cli",
+      "repo": "https://github.com/FranciscoVeloz1/kanban-cli",
+      "video": "",
+      "demo": "",
+      "skills": [
+        2,
+        16,
+        18
+      ],
+      "description": "Command-line client for the personal-api kanban module. Login, tags, and task CRUD over HTTP with a stored session.",
+      "writeup": "Kanban CLI is a terminal client for the kanban module on personal-api. You log in, list or edit tags, and run task CRUD; each verb issues HTTP instead of drawing a TUI.\n\nIt exists so the same board can be driven from a shell without opening the dashboard. Accounts are provisioned by an admin, and a stored session keeps later commands from asking for a password every time.\n\nIt is a TypeScript Node process. Session tokens live in ~/.config/kanban-cli/session.json; access tokens expire in 15 minutes and the client retries once against POST /api/v1/auth/refresh. The API origin comes from KANBAN_API_URL.",
+      "image": ""
+    },
+    {
+      "id": 13,
+      "name": "Kanban Dashboard",
+      "date": "2026-08-23",
+      "link": "https://franciscoveloz1.github.io/kanban-dashboard/",
+      "repo": "https://github.com/FranciscoVeloz1/kanban-dashboard",
+      "video": "",
+      "demo": "https://franciscoveloz1.github.io/kanban-dashboard/",
+      "skills": [
+        7,
+        2,
+        18,
+        19
+      ],
+      "description": "Personal three-column kanban board backed by personal-api. Create tags and tasks, drag cards between columns, and persist state after reload.",
+      "writeup": "Kanban Dashboard is a personal three-column board backed by personal-api. After login you create tags and tasks, open edit pages, and the board stays in sync after reload.\n\nIt exists so the same kanban data used by the CLI can be managed on a web desk instead of only in a terminal. Accounts are provisioned; there is no public signup.\n\nIt is a Vite React SPA with TanStack Query and React Router. Refresh tokens live in localStorage under kanban:refresh:v1; access tokens stay in memory. Production builds deploy to GitHub Pages with VITE_API_BASE_URL pointing at the Railway API.",
+      "image": "https://franciscoveloz1.github.io/resume-data-source/images/projects/kanban-dashboard.webp"
+    },
+    {
+      "id": 14,
+      "name": "personal-api",
+      "date": "2026-08-23",
+      "link": "https://github.com/FranciscoVeloz1/personal-api",
+      "repo": "https://github.com/FranciscoVeloz1/personal-api",
+      "video": "",
+      "demo": "https://personal-api-production-3ca6.up.railway.app/api/v1/health/ping",
+      "skills": [
+        2,
+        16,
+        17,
+        18,
+        19,
+        32
+      ],
+      "description": "Shared platform REST API (Express, TypeScript, PostgreSQL, JWT). Hosts users, fitness, groceries, finance, and kanban modules on Railway.",
+      "writeup": "personal-api is a modular Express + TypeScript REST API on PostgreSQL with JWT access and refresh tokens. It hosts auth, users, health, demo, fitness, groceries, finance, and kanban modules.\n\nIt exists as one backend for several personal apps so each SPA or CLI does not own its own database and login. Public registration is off; the first admin is seeded.\n\nPrisma migrations run on deploy. GitHub CI covers lint, build, and tests. The service runs on Railway; frontends are allowed through CORS_ORIGINS. Fitness routes stay self-only even when the caller is an admin of other modules.",
+      "image": ""
+    },
+    {
+      "id": 15,
+      "name": "Mandado App",
+      "date": "2026-08-20",
+      "link": "https://franciscoveloz1.github.io/groceries-app/",
+      "repo": "https://github.com/FranciscoVeloz1/groceries-app",
+      "video": "",
+      "demo": "https://franciscoveloz1.github.io/groceries-app/",
+      "skills": [
+        7,
+        2,
+        11,
+        12
+      ],
+      "description": "Mobile-first grocery list. Browse a static catalog by category, build a cart with quantities, and export it to Excel in the browser.",
+      "writeup": "Mandado App is a mobile-first grocery list. You browse a static catalog by category, search by name, add quantities to a cart, and export an Excel file with subtotals and totals.\n\nIt exists for building a shopping list in the browser without an account or a server.\n\nIt is React 19 and TypeScript on Vite. Product data is static JSON; ExcelJS is lazy-loaded for the export. GitHub Pages hosts the build with base /groceries-app/.",
+      "image": "https://franciscoveloz1.github.io/resume-data-source/images/projects/groceries.webp"
+    },
+    {
+      "id": 16,
+      "name": "Slides Generator",
+      "date": "2026-08-08",
+      "link": "https://github.com/FranciscoVeloz1/slide-generator",
+      "repo": "https://github.com/FranciscoVeloz1/slide-generator",
+      "video": "",
+      "demo": "",
+      "skills": [
+        7,
+        2,
+        16
+      ],
+      "description": "Local generator for vertical educational decks (TikTok 9:16) using React and Reveal.js. Agents emit validated JSON; the app renders typed slide templates.",
+      "writeup": "Slides Generator is a local app for vertical educational decks (1080×1920, TikTok 9:16). Agents emit validated JSON; the UI renders typed Reveal.js templates such as cover, keyPoint, and steps—no arbitrary JSX.\n\nIt exists so short lessons can be drafted as data and previewed fullscreen, not edited as slides in a heavy GUI.\n\nThe preview is Vite + React. A CLI inits and validates kebab-case JSON against the schema in presentation-schema.ts. There is no LLM call, account, or export inside the app.",
+      "image": "https://franciscoveloz1.github.io/resume-data-source/images/projects/slides-generator.webp"
+    },
+    {
+      "id": 17,
+      "name": "heic-to-png",
+      "date": "2026-08-03",
+      "link": "https://github.com/FranciscoVeloz1/heic-to-png",
+      "repo": "https://github.com/FranciscoVeloz1/heic-to-png",
+      "video": "",
+      "demo": "",
+      "skills": [
+        2,
+        16
+      ],
+      "description": "CLI that converts HEIC/HEIF photos to lossless PNG or high-quality JPG, for a single file or a whole folder.",
+      "writeup": "heic-to-png is a CLI that converts HEIC/HEIF photos to PNG (default, lossless) or maximum-quality JPG, for a single file or a whole folder. Originals are never deleted; existing outputs can be overwritten.\n\nIt exists because phones store HEIC and many tools and sites still want PNG or JPG.\n\nIt is a TypeScript CLI run with tsx, using heic-convert, on Node 20+. Flags set --format and --out.",
+      "image": ""
+    },
+    {
+      "id": 18,
+      "name": "FitTrack",
+      "date": "2026-07-17",
+      "link": "https://franciscoveloz1.github.io/fitness-nutrition-tracker/",
+      "repo": "https://github.com/FranciscoVeloz1/fitness-nutrition-tracker",
+      "video": "",
+      "demo": "https://franciscoveloz1.github.io/fitness-nutrition-tracker/",
+      "skills": [
+        7,
+        2,
+        18,
+        19
+      ],
+      "description": "Fitness and nutrition tracker. Log meals, workouts, and weight, then sync history to personal-api after sign-in.",
+      "writeup": "FitTrack is a fitness and nutrition tracker. You log meals as followed, modified, or skipped, plus workouts and weight, then view a dashboard, history calendar, and analytics. After sign-in the data syncs to personal-api fitness routes.\n\nIt exists to keep personal fitness history in one installable PWA, including offline, instead of scattered notes.\n\nThe stack is React 19, Vite, Tailwind, TanStack Query, Zustand, IndexedDB with a localStorage fallback, and a Workbox service worker. Role comes from GET /auth/me: READ_ONLY can read; ADMIN can mutate. Fitness data is always self-only.",
+      "image": "https://franciscoveloz1.github.io/resume-data-source/images/projects/fitness.webp"
+    },
+    {
+      "id": 19,
+      "name": "User Management",
+      "date": "2026-07-17",
+      "link": "https://personal-api-production-3ca6.up.railway.app/",
+      "repo": "https://github.com/FranciscoVeloz1/user-management-app",
+      "video": "",
+      "demo": "https://personal-api-production-3ca6.up.railway.app/",
+      "skills": [
+        7,
+        2,
+        18,
+        19
+      ],
+      "description": "Admin SPA for personal-api users. Provision accounts, assign global roles, and manage the user directory from the same origin as the API.",
+      "writeup": "User Management is an admin SPA for personal-api accounts. Administrators provision users, assign a global READ_ONLY or ADMIN role, and edit or delete the directory.\n\nIt exists because public registration is disabled and someone has to create users. The API can host the built SPA at the same origin, or Vite can run it on its own port.\n\nAccess tokens stay in memory. Refresh tokens persist under user-management:session:v1 in localStorage. Route guards improve UX; personal-api remains the authorization source of truth.",
+      "image": "https://franciscoveloz1.github.io/resume-data-source/images/projects/user-management.webp"
+    },
+    {
+      "id": 20,
+      "name": "pdf-to-png",
+      "date": "2026-07-14",
+      "link": "https://github.com/FranciscoVeloz1/pdf-to-png",
+      "repo": "https://github.com/FranciscoVeloz1/pdf-to-png",
+      "video": "",
+      "demo": "",
+      "skills": [
+        2,
+        16
+      ],
+      "description": "CLI that renders every page of a PDF to page-N.png using pdf.js.",
+      "writeup": "pdf-to-png is a CLI that renders every page of a PDF to page-1.png, page-2.png, and so on.\n\nIt exists to turn documents into images without opening a GUI, for previews and pipelines.\n\nIt is TypeScript on Node 20+ (22+ recommended). pdfjs-dist draws with @napi-rs/canvas; Zod validates CLI arguments. Use tsx in development or the compiled dist/cli.js after build.",
+      "image": ""
+    },
+    {
+      "id": 21,
+      "name": "Screen Recorder",
+      "date": "2026-07-10",
+      "link": "https://franciscoveloz1.github.io/screen-recorder/",
+      "repo": "https://github.com/FranciscoVeloz1/screen-recorder",
+      "video": "",
+      "demo": "https://franciscoveloz1.github.io/screen-recorder/",
+      "skills": [
+        7,
+        2,
+        11,
+        12
+      ],
+      "description": "Browser screen recorder. Capture display (and optional system/mic audio), preview live, and download session recordings.",
+      "writeup": "Screen Recorder is a browser app that captures the display with getDisplayMedia, optional system and microphone audio, a live preview, FPS and resolution controls, and downloads for recordings in the current session.\n\nIt exists to record the screen without installing a desktop app, as long as the page is HTTPS or localhost.\n\nIt is React 19 and TypeScript on Vite with CSS Modules. MediaRecorder picks WebM or MP4 at runtime. A GitHub Actions workflow deploys to GitHub Pages.",
+      "image": "https://franciscoveloz1.github.io/resume-data-source/images/projects/screen-recorder.webp"
+    },
+    {
+      "id": 22,
+      "name": "Resume Data Source",
+      "date": "2026-06-12",
+      "link": "https://github.com/FranciscoVeloz1/resume-data-source",
+      "repo": "https://github.com/FranciscoVeloz1/resume-data-source",
+      "video": "",
+      "demo": "https://franciscoveloz1.github.io/resume-data-source/",
+      "skills": [
+        1,
+        29
+      ],
+      "description": "Single source of truth for resume JSON (profile, work, projects, skills) consumed by the portfolio and CV generator.",
+      "writeup": "Resume Data Source is the JSON source of truth for profile, work, projects, certifications, and skills, plus hosted images for the portfolio.\n\nIt exists so the portfolio and CV generator do not each copy resume fields. Change index.json once; consumers sync from this repo.\n\nThe project is static files on GitHub Pages. The portfolio copies the JSON with npm run sync:data and loads images from the Pages URL.",
+      "image": ""
+    },
+    {
+      "id": 23,
+      "name": "Car History App",
+      "date": "2026-06-13",
+      "link": "https://franciscoveloz1.github.io/car-history-app/",
+      "repo": "https://github.com/FranciscoVeloz1/car-history-app",
+      "video": "",
+      "demo": "https://franciscoveloz1.github.io/car-history-app/",
+      "skills": [
+        7,
+        2,
+        16,
+        31
+      ],
+      "description": "Maintenance history tracker for a Chevrolet Cavalier 2021. Stores service visits and inspections in MySQL and exposes a JSON export plus a web timeline.",
+      "writeup": "Car History App is a maintenance tracker for a Chevrolet Cavalier 2021. It stores service visits, inspections, tire checks, and guidelines, then shows a web timeline and a JSON export of the full history.\n\nIt exists to keep real service records queryable instead of a folder of PDFs and receipt photos.\n\nThe backend is Node with MySQL, SQL migrations, seeds, and an export CLI. The frontend is Vite, React, and Tailwind, with a script that syncs exported JSON into the UI.",
+      "image": "https://franciscoveloz1.github.io/resume-data-source/images/projects/car-history.webp"
+    },
+    {
+      "id": 24,
+      "name": "Greed Island Card API",
+      "date": "2026-02-15",
+      "link": "https://github.com/FranciscoVeloz1/greed-island-card-api",
+      "repo": "https://github.com/FranciscoVeloz1/greed-island-card-api",
+      "video": "",
+      "demo": "",
+      "skills": [
+        1,
+        16
+      ],
+      "description": "Scraper and JSON dataset of Greed Island card lists.",
+      "writeup": "Greed Island Card API is a scraper and JSON dataset of Hunter × Hunter Greed Island card lists. It pulls the fandom wiki page into index.json and downloads card images.\n\nIt exists so card data can be a local JSON dataset rather than scraping the wiki on every read.\n\nIt is a Node ESM script. Puppeteer (via getPageContent) fetches the wiki, writeFile saves index.json, and downloadImages writes into src/images.",
+      "image": ""
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Cursor AI Code Editor Course",
+      "issuer": "Platzi",
+      "date": "Jun 2026",
+      "link": "https://platzi.com/p/FranciscoVeloz1/curso/12166-cursor/diploma/detalle/",
+      "logo": "https://franciscoveloz1.github.io/resume-data-source/images/logos/platzi.webp",
+      "description": "Professional AI-assisted development with Cursor: dynamic contexts, custom automation rules, clean architecture, and unit/E2E testing with Jest, Pytest, and Playwright using MCP (Model Context Protocol)."
+    },
+    {
+      "name": "Databricks Course: Delta Lake Architecture",
+      "issuer": "Platzi",
+      "date": "Jan 2025",
+      "link": "https://platzi.com/p/FranciscoVeloz1/curso/9540-course/diploma/detalle/",
+      "logo": "https://franciscoveloz1.github.io/resume-data-source/images/logos/platzi.webp",
+      "description": "Delta Lake architecture on Databricks: building bronze, silver, and gold medallion layers, designing ETL flows, and leveraging the storage advantages of the Parquet and Delta formats."
+    },
+    {
+      "name": "Project Management Fundamentals",
+      "issuer": "Platzi",
+      "date": "Oct 2023",
+      "link": "https://platzi.com/p/FranciscoVeloz1/curso/2654-course/diploma/detalle/",
+      "logo": "https://franciscoveloz1.github.io/resume-data-source/images/logos/platzi.webp",
+      "description": "Project lifecycle management: planning and controlling time, resources, and cost; identifying risks; handling crises; and closing projects with fundamental project management practices."
+    },
+    {
+      "name": "Python Course: PIP and Virtual Environments",
+      "issuer": "Platzi",
+      "date": "Oct 2023",
+      "link": "https://platzi.com/p/FranciscoVeloz1/curso/4261-course/diploma/detalle/",
+      "logo": "https://franciscoveloz1.github.io/resume-data-source/images/logos/platzi.webp",
+      "description": "Professional Python tooling: dependency management with pip and virtual environments, containerizing applications with Docker, building web servers with FastAPI, and working with libraries such as Pandas and Requests."
+    },
+    {
+      "name": "React.js Practical Course",
+      "issuer": "Platzi",
+      "date": "Feb 2022",
+      "link": "https://platzi.com/p/FranciscoVeloz1/curso/2484-react-practico/diploma/detalle/",
+      "logo": "https://franciscoveloz1.github.io/resume-data-source/images/logos/platzi.webp",
+      "description": "Building reusable React components from HTML and CSS layouts, configuring a development environment with Webpack and Babel, and structuring components, containers, routes, and hooks."
+    },
+    {
+      "name": "Next.js Course: Authentication",
+      "issuer": "Platzi",
+      "date": "Feb 2022",
+      "link": "https://platzi.com/p/FranciscoVeloz1/curso/2428-course/diploma/detalle/",
+      "logo": "https://franciscoveloz1.github.io/resume-data-source/images/logos/platzi.webp",
+      "description": "Authentication strategies in Next.js: session- and token-based authentication for views and APIs, role and permission management, and route protection on both client and server."
+    },
+    {
+      "name": "Frontend Developer Practical Course",
+      "issuer": "Platzi",
+      "date": "Dec 2021",
+      "link": "https://platzi.com/p/FranciscoVeloz1/curso/2477-frontend-developer-practico/diploma/detalle/",
+      "logo": "https://franciscoveloz1.github.io/resume-data-source/images/logos/platzi.webp",
+      "description": "HTML document anatomy, CSS elements and properties, and responsive design applied to building the main screens of a production website."
+    },
+    {
+      "name": "React Router and Redux Course",
+      "issuer": "Platzi",
+      "date": "Jun 2021",
+      "link": "https://platzi.com/p/FranciscoVeloz1/course/1652-react-router-redux/diploma/detalle/",
+      "logo": "https://franciscoveloz1.github.io/resume-data-source/images/logos/platzi.webp",
+      "description": "Client-side routing with React Router DOM and centralized state management with Redux, covering the full Redux data flow in interactive web applications."
+    },
+    {
+      "name": "ECMAScript 6+ Course",
+      "issuer": "Platzi",
+      "date": "Jul 2020",
+      "link": "https://platzi.com/p/FranciscoVeloz1/curso/1815-ecmascript-6/diploma/detalle/",
+      "logo": "https://franciscoveloz1.github.io/resume-data-source/images/logos/platzi.webp",
+      "description": "Modern JavaScript language features introduced from ES6 through ES13, following the yearly ECMAScript specification process."
+    },
+    {
+      "name": "Asynchronous JavaScript Course",
+      "issuer": "Platzi",
+      "date": "Jul 2020",
+      "link": "https://platzi.com/p/FranciscoVeloz1/curso/1789-asincronismo-js/diploma/detalle/",
+      "logo": "https://franciscoveloz1.github.io/resume-data-source/images/logos/platzi.webp",
+      "description": "JavaScript's asynchronous model: callbacks, promises, and async/await, applied to building real asynchronous solutions."
+    }
+  ],
+  "education": [
+    {
+      "degree": "Computer Systems Engineering",
+      "institution": "Tecnológico Superior de Jalisco",
+      "duration": "2018 - 2022",
+      "location": "Lagos de Moreno, Jalisco, México",
+      "logo": "https://franciscoveloz1.github.io/resume-data-source/images/logos/tec.webp"
+    }
+  ],
+  "achievements": [
+    {
+      "title": "VEX IQ Highrise Programming Skills National Champion",
+      "description": [
+        "Engineered and programmed competitive robotics systems using sensors and autonomous control workflows",
+        "Qualified for the VEX IQ Robotics World Championship through top national performance"
+      ],
+      "date": "2015",
+      "link": "https://www.youtube.com/watch?v=IqKnjml3DBU",
+      "image": ""
+    },
+    {
+      "title": "VEX VRC Excellence National Champion - Nothing But Net",
+      "description": [
+        "Led robot programming and competition strategy for a high-performance VEX Robotics team",
+        "Qualified for the VEX VRC Robotics World Championship after winning the national Excellence Award"
+      ],
+      "date": "2016",
+      "link": "https://www.youtube.com/watch?v=m-pC46W6TSU",
+      "image": ""
+    },
+    {
+      "title": "VEX VRC National Champion - Starstruck",
+      "description": [
+        "Led programming strategy, robot optimization, and mechanical design in Autodesk Inventor for a nationally ranked robotics team",
+        "Achieved 7th place globally at the VEX Robotics World Championship 2017"
+      ],
+      "date": "2017",
+      "link": "https://www.youtube.com/watch?v=HbNMGtv_XZA",
+      "image": ""
+    }
+  ],
+  "languages": [
+    {
+      "language": "Spanish",
+      "proficiency": "Native"
+    },
+    {
+      "language": "English",
+      "proficiency": "Fluent (GESE certified - Trinity College London, 2023)"
+    }
+  ],
+  "socialNetworks": [
+    {
+      "platform": "LinkedIn",
+      "link": "https://www.linkedin.com/in/franciscoveloz/"
+    },
+    {
+      "platform": "GitHub",
+      "link": "https://github.com/FranciscoVeloz1"
+    },
+    {
+      "platform": "Portfolio",
+      "link": "https://franciscoveloz1.github.io/portfolio/"
+    },
+    {
+      "platform": "YouTube",
+      "link": "https://www.youtube.com/channel/UC_OcxydUU_51oT8mbcedriw"
+    }
+  ],
+  "skills": [
+    {
+      "id": 3,
+      "name": "Python",
+      "category": "languages"
+    },
+    {
+      "id": 2,
+      "name": "TypeScript",
+      "category": "languages"
+    },
+    {
+      "id": 1,
+      "name": "JavaScript",
+      "category": "languages"
+    },
+    {
+      "id": 16,
+      "name": "Node.js",
+      "category": "backend"
+    },
+    {
+      "id": 17,
+      "name": "Express",
+      "category": "backend"
+    },
+    {
+      "id": 18,
+      "name": "REST APIs",
+      "category": "backend"
+    },
+    {
+      "id": 21,
+      "name": "PySpark",
+      "category": "dataAndAI"
+    },
+    {
+      "id": 22,
+      "name": "Databricks",
+      "category": "dataAndAI"
+    },
+    {
+      "id": 4,
+      "name": "SQL",
+      "category": "languages"
+    },
+    {
+      "id": 32,
+      "name": "PostgreSQL",
+      "category": "databases"
+    },
+    {
+      "id": 31,
+      "name": "MySQL",
+      "category": "databases"
+    },
+    {
+      "id": 29,
+      "name": "Git",
+      "category": "devopsAndCloud"
+    },
+    {
+      "id": 30,
+      "name": "Azure DevOps",
+      "category": "devopsAndCloud"
+    },
+    {
+      "id": 26,
+      "name": "DigitalOcean",
+      "category": "devopsAndCloud"
+    },
+    {
+      "id": 27,
+      "name": "Nginx",
+      "category": "devopsAndCloud"
+    },
+    {
+      "id": 28,
+      "name": "PM2",
+      "category": "devopsAndCloud"
+    },
+    {
+      "id": 23,
+      "name": "AI Agents",
+      "category": "dataAndAI"
+    },
+    {
+      "id": 24,
+      "name": "LLM Integration",
+      "category": "dataAndAI"
+    },
+    {
+      "id": 25,
+      "name": "Blockchain Data Pipelines",
+      "category": "dataAndAI"
+    },
+    {
+      "id": 19,
+      "name": "JWT Authentication",
+      "category": "backend"
+    }
+  ]
+}

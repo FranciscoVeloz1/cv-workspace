@@ -1,0 +1,21 @@
+.stage {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  overflow: auto;
+  padding: 16px;
+  z-index: var(--z-sheet);
+}
+
+.scale {
+  flex: 0 0 auto;
+}
+
+@media print {
+  .stage {
+    display: block;
+    overflow: visible;
+    height: auto;
+    padding: 0;
+  }
+}

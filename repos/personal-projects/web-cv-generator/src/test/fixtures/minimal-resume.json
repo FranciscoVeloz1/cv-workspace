@@ -1,0 +1,49 @@
+{
+  "profile": {
+    "firstName": "Ada",
+    "lastName": "Lovelace",
+    "fullName": "Ada Lovelace",
+    "headline": "Analyst",
+    "email": "ada@example.com",
+    "phone": "",
+    "location": "London",
+    "website": "",
+    "profilePhoto": ""
+  },
+  "summary": {
+    "short": "Short blurb.",
+    "long": "Longer summary that must win."
+  },
+  "workExperience": [
+    {
+      "position": "Analyst",
+      "company": "Analytical Engine Co",
+      "employmentType": "Full-time",
+      "startDate": "2020-01",
+      "endDate": null,
+      "duration": "Jan 2020 - Present",
+      "location": "London",
+      "logo": "",
+      "responsibilities": ["Wrote notes on the engine."],
+      "skills": [1]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Mathematics",
+      "institution": "Home study",
+      "duration": "1830 - 1835",
+      "location": "London",
+      "logo": ""
+    }
+  ],
+  "projects": [],
+  "certifications": [],
+  "achievements": [],
+  "languages": [],
+  "socialNetworks": [],
+  "skills": [
+    { "id": 1, "name": "Mathematics", "category": "other" },
+    { "id": 2, "name": "Writing", "category": "other" }
+  ]
+}

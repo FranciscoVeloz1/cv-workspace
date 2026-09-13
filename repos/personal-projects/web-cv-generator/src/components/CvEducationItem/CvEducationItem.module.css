@@ -1,0 +1,36 @@
+.item {
+  break-inside: avoid;
+  page-break-inside: avoid;
+  margin-bottom: 10pt;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12pt;
+}
+
+.heading {
+  margin: 0;
+  font-size: var(--sheet-item-size);
+  font-weight: var(--sheet-item-weight);
+  color: var(--sheet-ink);
+}
+
+.dates {
+  margin: 0;
+  padding-left: 8pt;
+  font-size: var(--sheet-item-size);
+  font-weight: var(--sheet-item-weight);
+  white-space: nowrap;
+  color: var(--sheet-ink);
+}
+
+.institution {
+  margin: 0 0 2pt;
+  font-size: var(--sheet-body-size);
+  font-weight: 400;
+  color: var(--sheet-ink-body);
+  line-height: var(--sheet-body-line);
+}
