@@ -37,14 +37,14 @@ sin revisión y marketing no etiquetado.
 
 | # | Question | Suggested source types | Status |
 |---|----------|------------------------|--------|
-| q01 | ¿Qué es Ozempic (semaglutida): mecanismo, formulación, fabricante y relación con Wegovy/Rybelsus? | Fichas FDA/EMA, EPAR, sitio regulatorio de Novo Nordisk | researched — pending validation |
-| q02 | ¿Cuáles son las indicaciones autorizadas y el estatus regulatorio a nivel global (FDA, EMA y otras agencias)? | FDA label, EMA SmPC/EPAR, Health Canada, TGA, OMS/listas nacionales | researched — pending validation |
-| q03 | ¿Quiénes pueden utilizarlo según ficha: población, posología, contraindicaciones y precauciones? | Prescribing Information FDA, SmPC EMA, Medication Guide | researched — pending validation |
-| q04 | ¿Qué muestran los ensayos pivotales sobre eficacia glucémica, peso y resultados CV/renales? | SUSTAIN (NEJM y registros), FLOW, metaanálisis peer-reviewed | researched — pending validation |
-| q05 | ¿Cuál es el perfil de seguridad documentado: EA frecuentes, graves, boxed warning y alertas de agencias? | FDA label Warnings, EMA PRAC, FAERS/EudraVigilance summaries oficiales, papers de seguridad | researched — pending validation |
-| q06 | ¿Cómo se usa en la práctica global: diabetes vs obesidad off-label, desabastecimiento, acceso y coste? | FDA shortage, EMA, WHO, Reuters/AP, informes de ministerios de salud | researched — pending validation |
-| q07 | ¿Qué evidencia y críticas contradicen el relato de beneficio nítido (riesgos, recover de peso, uso inapropiado, litigios, compounding)? | FDA compounding/alerts, EMA, ensayos de deprivación, demandas reportadas por prensa de calidad, estudios de daño | researched — pending validation |
-| q08 | ¿Cómo se compara clínicamente Ozempic con Wegovy, tirzepatida (Mounjaro/Zepbound) y otros GLP-1? | Labels de comparadores, SURPASS/SURMOUNT, revisiones sistemáticas | researched — pending validation |
+| q01 | ¿Qué es Ozempic (semaglutida): mecanismo, formulación, fabricante y relación con Wegovy/Rybelsus? | Fichas FDA/EMA, EPAR, sitio regulatorio de Novo Nordisk | validated |
+| q02 | ¿Cuáles son las indicaciones autorizadas y el estatus regulatorio a nivel global (FDA, EMA y otras agencias)? | FDA label, EMA SmPC/EPAR, Health Canada, TGA, OMS/listas nacionales | validated |
+| q03 | ¿Quiénes pueden utilizarlo según ficha: población, posología, contraindicaciones y precauciones? | Prescribing Information FDA, SmPC EMA, Medication Guide | validated |
+| q04 | ¿Qué muestran los ensayos pivotales sobre eficacia glucémica, peso y resultados CV/renales? | SUSTAIN (NEJM y registros), FLOW, metaanálisis peer-reviewed | validated |
+| q05 | ¿Cuál es el perfil de seguridad documentado: EA frecuentes, graves, boxed warning y alertas de agencias? | FDA label Warnings, EMA PRAC, FAERS/EudraVigilance summaries oficiales, papers de seguridad | validated |
+| q06 | ¿Cómo se usa en la práctica global: diabetes vs obesidad off-label, desabastecimiento, acceso y coste? | FDA shortage, EMA, WHO, Reuters/AP, informes de ministerios de salud | validated |
+| q07 | ¿Qué evidencia y críticas contradicen el relato de beneficio nítido (riesgos, recover de peso, uso inapropiado, litigios, compounding)? | FDA compounding/alerts, EMA, ensayos de deprivación, demandas reportadas por prensa de calidad, estudios de daño | validated |
+| q08 | ¿Cómo se compara clínicamente Ozempic con Wegovy, tirzepatida (Mounjaro/Zepbound) y otros GLP-1? | Labels de comparadores, SURPASS/SURMOUNT, revisiones sistemáticas | validated |
 
 ## Report outline
 

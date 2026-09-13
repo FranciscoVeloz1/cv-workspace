@@ -1,6 +1,6 @@
 # q08: ¿Cómo se compara clínicamente Ozempic con Wegovy, tirzepatida (Mounjaro/Zepbound) y otros GLP-1?
 
-**Status:** researched — pending validation
+**Status:** validated
 **Source types to prioritize:** Labels de comparadores, SURPASS/SURMOUNT, revisiones sistemáticas
 
 ## Findings

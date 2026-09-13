@@ -1,6 +1,6 @@
 # q03: ¿Quiénes pueden utilizarlo según ficha: población, posología, contraindicaciones y precauciones?
 
-**Status:** researched — pending validation
+**Status:** validated
 **Source types to prioritize:** Prescribing Information FDA, SmPC EMA, Medication Guide
 
 ## Findings

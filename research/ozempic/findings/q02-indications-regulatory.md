@@ -1,6 +1,6 @@
 # q02: ¿Cuáles son las indicaciones autorizadas y el estatus regulatorio a nivel global (FDA, EMA y otras agencias)?
 
-**Status:** researched — pending validation
+**Status:** validated
 **Source types to prioritize:** FDA label, EMA SmPC/EPAR, Health Canada, TGA, OMS/listas nacionales
 
 ## Findings
@@ -32,7 +32,7 @@ Conflicto regulatorio de alcance de indicación: la FDA etiqueta de forma explí
 
 ## Open gaps / uncertainty
 
-- No se recuperó ficha vigente de COFEPRIS ni un registro ANVISA de indicación (solo normativa brasileña de retención de receta, q06).
+- No se recuperó ficha vigente de COFEPRIS ni un registro ANVISA de indicación en fuentes primarias de esta ronda.
 - El SBD canadiense puede no reflejar variaciones posteriores a FLOW; la indicación renal canadiense actual queda sin confirmar en esta ronda.
 - No se verificó inclusión de Ozempic en listas nacionales de medicamentos esenciales de países de renta media/baja más allá de la EML de la OMS.
 - El resumen EMA para el público aún menciona un máximo de 1 mg semanal, mientras que la SmPC del Reino Unido y la ficha FDA autorizan 2 mg; el overview de EMA no está sincronizado con la posología máxima actual [S2] vs [S1] y SmPC UK.

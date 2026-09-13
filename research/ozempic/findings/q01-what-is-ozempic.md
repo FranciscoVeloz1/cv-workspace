@@ -1,6 +1,6 @@
 # q01: ¿Qué es Ozempic (semaglutida): mecanismo, formulación, fabricante y relación con Wegovy/Rybelsus?
 
-**Status:** researched — pending validation
+**Status:** validated
 **Source types to prioritize:** Fichas FDA/EMA, EPAR, sitio regulatorio de Novo Nordisk
 
 ## Findings

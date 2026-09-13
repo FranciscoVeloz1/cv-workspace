@@ -1,11 +1,11 @@
 # q05: ¿Cuál es el perfil de seguridad documentado: EA frecuentes, graves, boxed warning y alertas de agencias?
 
-**Status:** researched — pending validation
+**Status:** validated
 **Source types to prioritize:** FDA label Warnings, EMA PRAC, FAERS/EudraVigilance summaries oficiales, papers de seguridad
 
 ## Findings
 
-EA frecuentes (FDA, ensayos controlados con placebo): náuseas, vómitos, diarrea, dolor abdominal y estreñimiento, cada uno en ≥5% de tratados. Tabla 1 (monoterapia + combinación con insulina basal): náuseas 15,8% (0,5 mg) y 20,3% (1 mg) vs 6,1% placebo; vómitos 5% y 9,2% vs 2,3%; diarrea 8,5% y 8,8% vs 1,9%; dolor abdominal 7,3% y 5,7% vs 4,6%; estreñimiento 5% y 3,1% vs 1,5% [S1]. En el pool, reacciones GI en 32,3% (0,5 mg) y 36,4% (1 mg) vs 15,3% placebo; la mayoría leves/moderadas y transitorias; más abandonos por GI que con placebo. La SmPC UK: náuseas y diarrea “muy frecuentes”; vómitos “comunes”; en 8 ensayos fase 3a, 4792 pacientes expuestos hasta 1 mg [S2]. EMA: problemas digestivos pueden afectar a más de 1 de cada 10; empeoramiento grave de retinopatía diabética “común” (hasta 1 de cada 10) en el resumen público, formulación más fuerte que la frecuencia de SUSTAIN-6 [S3] [S4].
+EA frecuentes (FDA, ensayos controlados con placebo): náuseas, vómitos, diarrea, dolor abdominal y estreñimiento, cada uno en ≥5% de tratados. Tabla 1 (monoterapia + combinación con insulina basal): náuseas 15,8% (0,5 mg) y 20,3% (1 mg) vs 6,1% placebo; vómitos 5% y 9,2% vs 2,3%; diarrea 8,5% y 8,8% vs 1,9%; dolor abdominal 7,3% y 5,7% vs 4,6%; estreñimiento 5% y 3,1% vs 1,5% [S1]. En el pool, reacciones GI en 32,7% (0,5 mg) y 36,4% (1 mg) vs 15,3% placebo; la mayoría leves/moderadas y transitorias; más abandonos por GI que con placebo. La SmPC UK: náuseas y diarrea “muy frecuentes”; vómitos “comunes”; en 8 ensayos fase 3a, 4792 pacientes expuestos hasta 1 mg [S2]. EMA: problemas digestivos pueden afectar a más de 1 de cada 10; empeoramiento grave de retinopatía diabética “común” (hasta 1 de cada 10) en el resumen público, formulación más fuerte que la frecuencia de SUSTAIN-6 [S3] [S4].
 
 Advertencia de caja FDA: en roedores, semaglutida causa tumores de células C tiroideas dependientes de dosis y duración a exposiciones clínicamente relevantes. Se desconoce si causa MTC en humanos. Contraindicado si MTC personal/familiar o MEN 2. No se recomienda cribado rutinario de calcitonina o ecografía tiroidea por valor incierto [S1]. La SmPC UK describe el mismo hallazgo no clínico y juzga la relevancia humana “baja, pero no puede excluirse por completo”; no es contraindicación europea [S2].
 

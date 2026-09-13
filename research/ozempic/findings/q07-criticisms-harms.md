@@ -1,6 +1,6 @@
 # q07: ¿Qué evidencia y críticas contradicen el relato de beneficio nítido (riesgos, recover de peso, uso inapropiado, litigios, compounding)?
 
-**Status:** researched — pending validation
+**Status:** validated
 **Source types to prioritize:** FDA compounding/alerts, EMA, ensayos de deprivación, demandas reportadas por prensa de calidad, estudios de daño
 
 ## Findings

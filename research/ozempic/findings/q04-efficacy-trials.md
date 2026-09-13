@@ -1,6 +1,6 @@
 # q04: ¿Qué muestran los ensayos pivotales sobre eficacia glucémica, peso y resultados CV/renales?
 
-**Status:** researched — pending validation
+**Status:** validated
 **Source types to prioritize:** SUSTAIN (NEJM y registros), FLOW, metaanálisis peer-reviewed
 
 ## Findings
