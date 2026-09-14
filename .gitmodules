@@ -128,3 +128,7 @@
 [submodule "repos/docs/cavalier-cluster-wiki"]
 	path = repos/docs/cavalier-cluster-wiki
 	url = git@github.com:FranciscoVeloz1/cavalier-cluster-wiki.git
+[submodule "repos/personal-projects/cavalier-digital-cluster"]
+	path = repos/personal-projects/cavalier-digital-cluster
+	url = git@github.com:FranciscoVeloz1/cavalier-digital-cluster.git
+	branch = main
