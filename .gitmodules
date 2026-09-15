@@ -136,3 +136,6 @@
 	path = repos/personal-projects/web-cv-generator
 	url = git@github.com:FranciscoVeloz1/web-cv-generator.git
 	branch = main
+[submodule "repos/utils/video-downloader"]
+	path = repos/utils/video-downloader
+	url = git@github.com:FranciscoVeloz1/video-downloader.git
